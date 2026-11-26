@@ -84,13 +84,19 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | REG-UC003-09 | A rede semântica incorporada deverá possuir identificação, integridade, controle de versão e disponibilidade para componentes e operações dependentes. | Decisão Q-01 | Homologada |
 | REG-UC003-10 | Administrador da Plataforma e Gestores de Entidade não poderão alterar a Ontologia nativa em suas atividades administrativas. | Decisão Q-01 | Homologada |
 | REG-UC003-11 | EOT, ENT e instâncias utilizarão os conceitos, propriedades e relações da rede semântica comum; a evolução ontológica ocorrerá somente por procedimento controlado de atualização da plataforma. | Decisão Q-01 | Homologada |
+| REG-UC003-12 | A Ontologia de Referência é única, nativa e transversal, distinguindo definições constitutivas estáveis de condições abertas à determinação progressiva. | Decisão Q-02 | Homologada |
+| REG-UC003-13 | As instâncias recebem determinações aplicáveis e preservam aquelas cuja definição compete a âmbitos institucionais posteriores. | Decisão Q-02 | Homologada |
+| REG-UC003-14 | As organizações somente determinam ou realizam condições no seu âmbito de competência, observando conceitos ontológicos, normas e relações institucionais. | Decisão Q-02 | Homologada |
+| REG-UC003-15 | Determinações institucionais deverão ser propagadas aos âmbitos aos quais se apliquem, sem pressupor subordinação de instituições autônomas. | Decisão Q-02 | Homologada |
+| REG-UC003-16 | A CIVITAS preservará rastreabilidade entre conceitos, determinações sucessivas, fundamentos normativos e realizações concretas, com historicidade. | Decisão Q-02 | Homologada |
+| REG-UC003-17 | Determinação institucional progressiva não modifica a Ontologia nativa nem cria ontologias independentes por organização. | Decisão Q-02 | Homologada |
 
 ## 9. Questões a aprofundar
 
 | ID | Questão | Situação |
 |---|---|---|
 | Q-01 | Como incorporar e representar a Ontologia nativa na plataforma? | **Homologada em 26/11/2026 — rede semântica constitutiva, fundamentada e versionada, incorporada pelo Desenvolvedor antes da administração da Plataforma.** |
-| Q-02 | Como delimitar formalmente a Estrutura de Realização Institucional de Referência? | Em discussão |
+| Q-02 | Como delimitar formalmente a Estrutura de Realização Institucional de Referência? | **Homologada em 26/11/2026 — substitui o conceito de estrutura separada pelo mecanismo de determinação institucional progressiva da Ontologia única; ajustar a narrativa em futura v0.3, preservando a v0.2.** |
 | Q-03 | Como verificar a compatibilidade semântica de EOT e ENT com a Ontologia? | Em discussão |
 | Q-04 | Como evidenciar condições de realização satisfeitas nas instâncias concretas? | Em discussão |
 | Q-05 | Como controlar e versionar a evolução da Ontologia sem perder coerência e historicidade? | Em discussão |
@@ -113,6 +119,28 @@ A evolução da Ontologia deverá ocorrer por meio de procedimentos controlados 
 
 **Delimitação:** não se fixa nesta etapa o formato técnico da rede (RDF, OWL, JSON-LD ou outro), nem o mecanismo de armazenamento ou carregamento.
 
+### Decisão homologada — Q-02: Ontologia de Referência e Determinação Institucional Progressiva
+
+**Situação:** redação integral homologada pelo autor em 26/11/2026. Constitui refinamento conceitual posterior à narrativa canônica UC-003 v0.2, que permanece preservada. A noção anterior de uma “Estrutura de Realização Institucional de Referência” separada deverá ser revista na próxima consolidação da narrativa, substituindo-a pelo mecanismo de determinação institucional progressiva.
+
+A Plataforma CIVITAS deverá utilizar uma Ontologia de Referência única, nativa e transversal, cujos conceitos, propriedades e relações constituem a base semântica comum da plataforma.
+
+A Ontologia de Referência deverá distinguir as definições conceituais constitutivas, que permanecem comuns e estáveis, das condições que admitem determinação institucional progressiva.
+
+Durante a constituição das organizações estatais, a plataforma deverá permitir que as instâncias institucionais recebam as definições e determinações aplicáveis ao seu âmbito, preservando aquelas que devam ser estabelecidas em níveis institucionais posteriores.
+
+Cada organização poderá realizar as determinações que lhe competirem, estabelecendo as condições institucionais correspondentes, respeitando os conceitos da Ontologia de Referência, as determinações aplicáveis e os fundamentos normativos pertinentes.
+
+As determinações estabelecidas em determinado âmbito institucional deverão ser preservadas e disponibilizadas às organizações às quais se aplicam, respeitando suas competências e relações institucionais, sem pressupor subordinação hierárquica entre organizações juridicamente autônomas.
+
+A plataforma deverá preservar a rastreabilidade entre cada conceito ontológico, suas determinações institucionais sucessivas, seus fundamentos normativos e suas realizações concretas, permitindo acompanhar sua evolução histórica.
+
+A determinação institucional progressiva não deverá modificar a Ontologia de Referência nem produzir ontologias independentes para cada organização. Constituirá um mecanismo de aplicação e concretização progressiva de uma única estrutura conceitual.
+
+Dessa forma, a CIVITAS preservará a unicidade e a estabilidade de sua Ontologia, permitindo que seus conceitos e relações sejam progressivamente determinados e realizados pelas organizações institucionais que compõem o Estado Digital.
+
+**Relação com EOT e ENT:** estas são estruturas tipológicas; a Ontologia não é tipológica, permanecendo única, com determinações progressivas ao longo dos âmbitos institucionais. O mecanismo não implica herança automática de competências nem hierarquia administrativa universal.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -120,5 +148,6 @@ A evolução da Ontologia deverá ocorrer por meio de procedimentos controlados 
 | Narrativa UC-003 v0.2 | **Homologada pelo autor em 26/11/2026** |
 | UC-001 e UC-002 | Referências conceituais relacionadas |
 | Q-01 — Incorporação da Ontologia nativa | **Homologada em 26/11/2026; REG-UC003-07 a REG-UC003-11 incorporadas** |
+| Q-02 — Determinação Institucional Progressiva | **Homologada em 26/11/2026; REG-UC003-12 a REG-UC003-17 incorporadas; consolidação narrativa v0.3 pendente** |
 | Demais seções do template | Organização inicial; revisão e detalhamento pendentes |
 | Decomposição funcional | Não iniciada |
