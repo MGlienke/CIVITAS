@@ -86,6 +86,10 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | REG-UC002-05 | O documento normativo constitutivo deve ser indicado na instanciação. | Narrativa v0.2 | Homologada |
 | REG-UC002-06 | A estrutura normativa instanciada admite fundamentação complementar por normas e dispositivos pertinentes. | Narrativa v0.2 | Homologada |
 | REG-UC002-07 | A correspondência entre modelos, versões, estruturas concretas e fundamentos normativos será preservada. | Narrativa v0.2 | Homologada |
+| REG-UC002-08 | Para cada tipo de elemento institucional e relação que exija fundamentação, a estrutura normativa tipológica identificará os tipos de documentos necessários à constituição, organização ou legitimação. | Q-01 | Homologada |
+| REG-UC002-09 | O conjunto dessas exigências e associações constitui a Estrutura Normativa de Referência, abstrata e desprovida de documentos concretos de uma organização determinada. | Q-01 | Homologada |
+| REG-UC002-10 | A instanciação organizacional deve instanciar as exigências normativas correspondentes e permitir indicar os documentos concretos que as satisfazem. | Q-01 | Homologada |
+| REG-UC002-11 | Estruturas organizacional e normativa tipológicas são elaboradas coordenadamente e importadas conjuntamente, preservando correspondências. | Q-01 | Homologada |
 
 **Diretriz interpretativa discutida:** exigir fundamentação de elementos e relações, não apenas cadastramento de documentos; a suficiência e a verificabilidade da fundamentação serão aprofundadas na especificação e na articulação com UC-001.
 
@@ -93,11 +97,29 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 
 | ID | Questão | Situação |
 |---|---|---|
-| Q-01 | Como será elaborada e empacotada a estrutura normativa em correspondência com o modelo tipológico? | A definir na fase pertinente |
+| Q-01 | Como será elaborada e empacotada a estrutura normativa em correspondência com o modelo tipológico? | **Homologada em 26/11/2026 — estrutura abstrata de exigências normativas vinculadas a tipos e relações; elaboração externa coordenada e importação conjunta. Formato técnico a definir.** |
 | Q-02 | Quais critérios verificam a compatibilidade entre os modelos abstratos? | A definir |
 | Q-03 | Como identificar, vincular e verificar normas e dispositivos concretos na instanciação? | A definir |
 | Q-04 | Como manter a vigência, a historicidade e a atualização dos fundamentos normativos? | A definir |
 | Q-05 | Como distribuir responsabilidades entre Administrador da Plataforma e Gestor de Entidade ao complementar a fundamentação? | A definir |
+
+### Decisão homologada — Q-01: estrutura normativa tipológica de referência
+
+**Situação:** redação integral aprovada pelo autor em 26/11/2026. Complementa a narrativa canônica UC-002 v0.2 sem alterá-la.
+
+A Estrutura Normativa de Referência deverá ser elaborada externamente, em correspondência com a Estrutura Organizacional Tipológica à qual estiver associada.
+
+Para cada tipo de elemento institucional e para cada relação organizacional que exija fundamentação normativa, deverão ser identificados os tipos de documentos normativos necessários à sua constituição, organização ou legitimação.
+
+O conjunto dessas exigências e de suas associações com os tipos e relações organizacionais constituirá a Estrutura Normativa de Referência, que terá natureza tipológica e abstrata, sem conter documentos normativos concretos de uma organização determinada.
+
+Durante a instanciação da estrutura organizacional, a plataforma deverá instanciar também as exigências normativas correspondentes, permitindo ao Administrador indicar os documentos normativos concretos que as satisfazem.
+
+A Estrutura Normativa de Referência e a Estrutura Organizacional Tipológica serão elaboradas de forma coordenada e importadas conjuntamente na Plataforma CIVITAS, preservando a correspondência entre seus elementos.
+
+Dessa forma, toda estrutura institucional concreta poderá ser acompanhada da estrutura de fundamentação normativa exigida pelo modelo tipológico adotado.
+
+**Delimitação conceitual:** a exigência normativa se refere à função jurídica que a fundamentação deverá desempenhar; sua satisfação por documento ou conjunto de dispositivos concretos deve ser examinada na instanciação. Não se define, nesta etapa, o formato técnico do arquivo de importação.
 
 ## Rastreabilidade e controle de mudanças
 
@@ -105,5 +127,6 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 |---|---|
 | Narrativa UC-002 v0.2 | **Homologada em 26/11/2026** |
 | UC-001 | Dependência funcional identificada; narrativa v0.5 preservada |
+| Q-01 — Estrutura normativa de referência tipológica | **Redação homologada em 26/11/2026; REG-UC002-08 a REG-UC002-11 incorporadas** |
 | Seções auxiliares 1–4 e 6–9 | Organização documental preliminar, sem homologação implícita |
 | Decomposição funcional | Não iniciada |
