@@ -104,6 +104,12 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | REG-UC002-23 | A revisão deverá resultar em decisão registrada de impacto com atualização da fundamentação ou ausência de impacto justificada. | Q-04 e observação do autor | Homologada |
 | REG-UC002-24 | A identificação de possível impacto poderá ser assistida por automação/IA, mas a conclusão da revisão e aprovação da fundamentação caberão a responsável autorizado. | Q-04 | Homologada |
 | REG-UC002-25 | Revisões devem preservar normas e dispositivos anteriores, alterações adotadas, responsáveis, justificativas e períodos aplicáveis, distinguindo vigência normativa e associação institucional. | Q-04 | Homologada |
+| REG-UC002-26 | Administração de EOT e ENT, incluindo importação, verificação e disponibilização, cabe exclusivamente ao Administrador da Plataforma. | Q-05 | Homologada |
+| REG-UC002-27 | O Administrador da Plataforma constitui as instâncias estatais de referência e mantém seus fundamentos normativos; exerce também a gestão institucional e normativa da instância Brasil. | Q-05 | Homologada |
+| REG-UC002-28 | Ao incorporar cliente, o Administrador constitui sua instância institucional inicial e identifica o documento constitutivo e demais fundamentos exigidos pela ENT. | Q-05 | Homologada |
+| REG-UC002-29 | O Gestor de Entidade autorizado constitui, administra e evolui a organização interna de seu cliente e a fundamentação normativa dos elementos e relações que instanciar. | Q-05 | Homologada |
+| REG-UC002-30 | Revisões normativas obrigatórias acompanham a responsabilidade institucional pelo elemento ou relação afetado e preservam rastreabilidade, fundamentos e responsável pela aprovação. | Q-05 | Homologada |
+| REG-UC002-31 | Participantes devem agir somente dentro dos contextos institucionais e autorizações atribuídos. | Q-05 | Homologada |
 
 **Diretriz interpretativa discutida:** exigir fundamentação de elementos e relações, não apenas cadastramento de documentos; a suficiência e a verificabilidade da fundamentação serão aprofundadas na especificação e na articulação com UC-001.
 
@@ -115,7 +121,7 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | Q-02 | Quais critérios verificam a compatibilidade entre os modelos abstratos? | **Homologada em 26/11/2026 — correspondência, completude e coerência; inconsistências comunicadas ao Administrador e modelos incompatíveis não disponibilizados.** |
 | Q-03 | Como identificar, vincular e verificar normas e dispositivos concretos na instanciação? | **Homologada em 26/11/2026 — identificação dos documentos, vinculação de dispositivos aos elementos/relações e exigências da ENT, análise assistida por IA, revisão humana e registro de pendências.** |
 | Q-04 | Como manter a vigência, a historicidade e a atualização dos fundamentos normativos? | **Homologada em 26/11/2026 — historicidade, revisão obrigatória de alterações normativas potencialmente relacionadas, decisão motivada de impacto ou ausência de impacto por responsável autorizado.** |
-| Q-05 | Como distribuir responsabilidades entre Administrador da Plataforma e Gestor de Entidade ao complementar a fundamentação? | A definir |
+| Q-05 | Como distribuir responsabilidades entre Administrador da Plataforma e Gestor de Entidade ao complementar a fundamentação? | **Homologada em 26/11/2026 — Administrador governa EOT/ENT, constitui as instâncias iniciais e seus fundamentos, inclusive clientes; Gestor de Entidade responde pelas estruturas internas e respectivas fundamentações e revisões; Administrador também gere a instância Brasil.** |
 
 ### Decisão homologada — Q-01: estrutura normativa tipológica de referência
 
@@ -203,6 +209,26 @@ Dessa forma, a Estrutura Normativa Instanciada deverá permitir tanto a identifi
 
 **Delimitação:** mecanismos de detecção das alterações normativas, prazo de revisão, efeitos operacionais de pendências, permissões e integração com a Biblioteca de Normas A108 serão especificados posteriormente.
 
+### Decisão homologada — Q-05: responsabilidades pela fundamentação normativa instanciada
+
+**Situação:** redação integral homologada pelo autor em 26/11/2026. Complementa a narrativa consolidada UC-002 v0.3 sem alterar seu texto.
+
+A administração das Estruturas Normativas Tipológicas e das Estruturas Normativas Instanciadas deverá observar as responsabilidades atribuídas aos participantes pela constituição e gestão das respectivas estruturas organizacionais.
+
+Caberá exclusivamente ao Administrador da Plataforma administrar as Estruturas Organizacionais Tipológicas e as Estruturas Normativas Tipológicas, incluindo sua importação, verificação de conformidade e disponibilização para utilização.
+
+O Administrador da Plataforma será responsável pela constituição inicial das organizações estatais de referência e pela fundamentação normativa das respectivas instâncias. No caso da instância do Estado brasileiro, o próprio Administrador da Plataforma exercerá também a responsabilidade por sua gestão institucional e normativa.
+
+Ao incorporar uma Entidade Pública como cliente da Plataforma CIVITAS, caberá ao Administrador da Plataforma constituir sua instância institucional inicial e identificar os fundamentos normativos de sua existência, incluindo o respectivo documento constitutivo e as demais referências exigidas pela Estrutura Normativa Tipológica.
+
+Após a habilitação do cliente e a atribuição do respectivo Gestor de Entidade, caberá a esse gestor constituir, administrar e evoluir a estrutura organizacional interna da organização sob sua responsabilidade, incluindo a identificação, associação e manutenção dos fundamentos normativos dos elementos e relações institucionais que constituir.
+
+A responsabilidade pelas revisões normativas obrigatórias acompanhará a responsabilidade institucional pelo elemento ou relação afetado, preservando-se a rastreabilidade das decisões, seus fundamentos e os responsáveis por sua aprovação.
+
+A Plataforma CIVITAS deverá assegurar que cada participante atue exclusivamente no âmbito das responsabilidades e autorizações que lhe forem atribuídas, mantendo a separação entre a administração dos modelos tipológicos, a constituição institucional dos clientes e a gestão de suas estruturas internas.
+
+**Distinção aprovada:** constituir institucionalmente um cliente, com seu documento constitutivo, não se confunde com constituir e evoluir sua estrutura administrativa interna. A mesma Pessoa poderá exercer papéis em diferentes contextos institucionais, conforme autorização; no caso da instância Brasil, a gestão caberá ao próprio Administrador da Plataforma.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -214,6 +240,7 @@ Dessa forma, a Estrutura Normativa Instanciada deverá permitir tanto a identifi
 | Q-02 — Compatibilidade entre modelos abstratos | **Redação homologada em 26/11/2026; REG-UC002-12 a REG-UC002-15 incorporadas** |
 | Q-03 — Associação de normas e dispositivos concretos | **Redação homologada em 26/11/2026; REG-UC002-16 a REG-UC002-20 incorporadas** |
 | Q-04 — Histórico e revisão obrigatória de fundamentação | **Redação homologada com exigência expressa de revisão mesmo para conclusão sem impacto; REG-UC002-21 a REG-UC002-25 incorporadas** |
+| Q-05 — Responsabilidades de administração e gestão | **Redação homologada em 26/11/2026; REG-UC002-26 a REG-UC002-31 incorporadas** |
 | Biblioteca de normas A108 | **Observação arquitetural do autor registrada; detalhamento futuro, inclusive orientação ao cidadão** |
 | Terminologia — EOT / ENT / ENI | **Homologada em 26/11/2026** |
 | Seções auxiliares 1–4 e 6–9 | Organização documental preliminar, sem homologação implícita |
