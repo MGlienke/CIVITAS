@@ -1,8 +1,8 @@
 # CIVITAS — UC-004 — Incorporar Organizações Institucionais à Estrutura Estatal
 
 **Template de referência:** CIV-UC-TPL v1.0  
-**Versão da narrativa:** **0.3 — consolidada e regularizada em 26/11/2026**  
-**Situação:** narrativa v0.3 aprovada no encaminhamento da construção do UC-005 e registrada no repositório durante regularização documental  
+**Versão da narrativa:** **0.3 — homologada; ratificação expressa em 26/11/2026**  
+**Situação:** narrativa v0.3 expressamente ratificada pelo autor em 26/11/2026, após regularização documental  
 **Nota terminológica:** a seção 5.1 reproduz a narrativa v0.3 previamente apresentada; a denominação histórica **Gestor de Entidade** em um parágrafo corresponde ao papel atualmente denominado **Gestor da Organização Institucional (GOI)**, conforme harmonização posterior dos UC-001, UC-002 e UC-005.
 
 > **Controle de versão e de sentido:** o texto da seção 5.1 conserva integralmente a redação da narrativa v0.3 discutida, sem alterar retroativamente seus termos. As seções complementares relacionam as decisões de instanciação progressiva, limites de autoridade e remissões aos UC-001 a UC-006. Nenhuma decomposição funcional é presumida.
@@ -14,10 +14,10 @@
 | Código do caso de uso | UC-CIV-004 |
 | Título | Incorporar Organizações Institucionais à Estrutura Estatal |
 | Versão | 0.3 |
-| Situação | Narrativa consolidada / registro regularizado |
+| Situação | Narrativa v0.3 homologada; ratificação expressa registrada |
 | Data | 2026-11-26 |
 | Responsável pela validação | Autor do projeto CIVITAS |
-| Histórico | Narrativas preliminares v0.1 e v0.2 discutidas; consolidação v0.3 apresentada; decisão de regularização registrada em 26/11/2026 |
+| Histórico | Narrativas preliminares v0.1 e v0.2 discutidas; v0.3 consolidada e registrada; autor confirmou expressamente que a redação previamente discutida estava homologada (26/11/2026) |
 | Dependências | UC-001 (EOT), UC-002 (ENT/ENI), UC-003 (Ontologia de Referência) |
 | Entrega para | UC-005 (habilitação de organização como cliente) |
 
@@ -118,6 +118,9 @@ A organização está representada na estrutura estatal, com identidade, tipolog
 | Q-04 | Tratamento de mudanças normativas que afetem instâncias já constituídas | Remissão ao UC-002 Q-04; detalhamento posterior |
 
 ## Rastreabilidade
+
+**Ratificação documental expressa (26/11/2026):** durante a conferência final dos UC-001 a UC-006, o autor confirmou que a redação discutida do UC-004 havia sido homologada e autorizou documentar essa condição. Assim, o texto consolidado da seção 5.1 passa a constar como narrativa v0.3 homologada. A atualização altera apenas o registro de status e rastreabilidade, não o conteúdo funcional da narrativa.
+
 
 | Referência | Relação |
 |---|---|
