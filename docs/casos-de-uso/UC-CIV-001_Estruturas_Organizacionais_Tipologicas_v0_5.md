@@ -124,6 +124,10 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | REG-24 | Cada cliente da plataforma deverá possuir um Gestor de Entidade, autorizado a constituir e manter a estrutura organizacional interna de sua respectiva Entidade Pública. | Governança / organização | Decisão Q-06 | Homologada |
 | REG-25 | O Gestor de Entidade atua no âmbito institucional autorizado, sem administrar os modelos tipológicos gerais ou os demais clientes da CIVITAS. | Autorização / segregação de funções | Decisão Q-06 | Homologada |
 | REG-26 | A existência jurídica/institucional de uma Entidade Pública é independente de sua habilitação como cliente CIVITAS. | Distinção institucional | Decisão Q-06 | Homologada |
+| REG-27 | Modelos tipológicos serão preparados externamente em aplicativo independente, instalado localmente, com operação offline pelo Administrador da Plataforma. | Preparação / intercâmbio | Decisão Q-01 | Homologada |
+| REG-28 | O aplicativo produzirá arquivos de intercâmbio conforme requisitos de compatibilidade com a CIVITAS, sem impor formato nesta etapa. | Interoperabilidade | Decisão Q-01 | Homologada |
+| REG-29 | A Plataforma CIVITAS receberá os arquivos preparados externamente e exigirá verificação de conformidade Q-02 antes de disponibilizar os modelos importados. | Conformidade / importação | Decisões Q-01 e Q-02 | Homologada |
+| REG-30 | Formato do arquivo, estrutura interna, interface e mecanismos de geração do aplicativo local serão especificados em etapa posterior. | Delimitação de escopo | Decisão Q-01 | Homologada |
 
 > As regras vinculadas à narrativa expressam requisitos de domínio e comportamento. Ainda não representam contratos técnicos nem serviços identificados.
 
@@ -131,7 +135,7 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 
 | ID | Questão | Alternativas / implicações | Decisão / situação |
 |---|---|---|---|
-| Q-01 | Como modelos tipológicos são empacotados e transportados para importação? | Formatos, intercâmbio e compatibilidade | Em aberto; etapa de especificação |
+| Q-01 | Como modelos tipológicos são empacotados e transportados para importação? | Aplicativo independente, local e offline para preparar e formatar os modelos; formato do arquivo e implementação definidos posteriormente; plataforma recebe e verifica conforme Q-02 | **Homologada — decisão Q-01 (26/11/2026); formato técnico a definir** |
 | Q-02 | Como se verifica e comunica a conformidade de um modelo? | Capacidade específica de verificação, serviço de conformidade, interface administrativa e relatório associado ao modelo e à versão | **Homologada — decisão Q-02 (26/11/2026); detalhamento técnico pendente** |
 | Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Substituição apenas após desativação de modelo vazio; modelos com instâncias vinculadas são protegidos contra alteração, desativação e substituição | **Homologada — decisão Q-03 (26/11/2026)** |
 | Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Proteger o modelo tipológico enquanto houver instâncias; admitir esvaziamento/exclusão de estrutura concreta sob condições de preservação; distinguir alteração constitutiva normativa de evolução da organização interna | **Homologada — decisão Q-04 (26/11/2026), com observação constitutiva do autor** |
@@ -276,6 +280,22 @@ A existência jurídica e institucional de uma Entidade Pública **independe de 
 
 **Referência arquitetural preliminar, sem atribuição de serviços nesta etapa:** A101-ADM, A102-GDC (CRM), A103-GEP, C302-EOR e C103-IEA.
 
+### Decisão homologada — Q-01: preparação e importação de modelos tipológicos
+
+**Situação:** Redação integral homologada pelo autor em 26/11/2026. Complementa o UC-001 sem modificar a narrativa canônica v0.5.
+
+Os modelos tipológicos de estruturas organizacionais serão preparados externamente à Plataforma CIVITAS, utilizando um aplicativo independente, instalado e executado localmente pelo Administrador da Plataforma, com capacidade de funcionamento offline.
+
+Esse aplicativo será responsável por preparar e formatar os modelos tipológicos de acordo com os requisitos de intercâmbio estabelecidos pela CIVITAS, produzindo arquivos destinados à posterior importação na plataforma.
+
+O formato desses arquivos, suas estruturas internas e os mecanismos de geração serão definidos durante a especificação e o desenvolvimento do aplicativo, não constituindo uma decisão necessária nesta etapa.
+
+Caberá à Plataforma CIVITAS receber os arquivos produzidos e submetê-los ao processo de verificação de conformidade estabelecido na Q-02, antes de disponibilizar os modelos tipológicos para utilização.
+
+O aplicativo de preparação e a Plataforma CIVITAS deverão, portanto, compartilhar requisitos de compatibilidade, preservando sua independência operacional.
+
+**Delimitação homologada:** não selecionar neste momento JSON, XML ou outro formato nem especificar a interface ou os mecanismos de geração do aplicativo. Essas escolhas permanecem para etapa posterior.
+
 ---
 
 ## Rastreabilidade e controle de mudanças
@@ -286,6 +306,7 @@ A existência jurídica e institucional de uma Entidade Pública **independe de 
 | CIV-UC-TPL v1.0 | **Template homologado** |
 | Transposição documental para as nove seções | **Preparada; revisão formal do detalhamento complementar pendente** |
 | MT-BR-001 a MT-BR-005 | **Decisões conceituais aprovadas; pertencem ao modelo brasileiro específico** |
+| Q-01 — Aplicativo local offline de preparação dos modelos | **Redação funcional homologada; formato técnico e desenvolvimento postergados** |
 | Q-02 — Verificação e comunicação da conformidade | **Redação funcional homologada; serviço específico e interface administrativa requeridos** |
 | Q-03 — Versionamento e substituição dos modelos | **Redação e definição de modelo vazio homologadas; substituição somente após desativação de versão sem instâncias vinculadas** |
 | Q-04 — Estabilidade constitutiva versus evolução organizacional | **Redação homologada com a observação constitutiva adicional do autor; condições técnicas e jurídicas específicas pendentes** |
