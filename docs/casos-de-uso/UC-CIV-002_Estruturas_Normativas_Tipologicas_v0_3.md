@@ -99,6 +99,11 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | REG-UC002-18 | A IA poderá propor associações fundamentadas e verificáveis, sujeitas a exame, correção, complemento e aprovação pelo Administrador. | Q-03 | Homologada |
 | REG-UC002-19 | A indicação isolada de documento não satisfaz a exigência: sua pertinência deve ser demonstrada; insuficiência, incompatibilidade ou impossibilidade de verificação gera pendência não validada. | Q-03 | Homologada |
 | REG-UC002-20 | Associações aprovadas integrarão a ENI, preservando a rastreabilidade entre elemento institucional, exigência tipológica e fundamento concreto. | Q-03 | Homologada |
+| REG-UC002-21 | A ENI deve preservar a fundamentação normativa historicamente associada a elementos e relações institucionais, com seus períodos de referência. | Q-04 | Homologada |
+| REG-UC002-22 | Alterações, revogações ou substituições normativas potencialmente pertinentes exigem revisão obrigatória da fundamentação associada, ainda que se conclua ausência de impacto. | Q-04 e observação do autor | Homologada |
+| REG-UC002-23 | A revisão deverá resultar em decisão registrada de impacto com atualização da fundamentação ou ausência de impacto justificada. | Q-04 e observação do autor | Homologada |
+| REG-UC002-24 | A identificação de possível impacto poderá ser assistida por automação/IA, mas a conclusão da revisão e aprovação da fundamentação caberão a responsável autorizado. | Q-04 | Homologada |
+| REG-UC002-25 | Revisões devem preservar normas e dispositivos anteriores, alterações adotadas, responsáveis, justificativas e períodos aplicáveis, distinguindo vigência normativa e associação institucional. | Q-04 | Homologada |
 
 **Diretriz interpretativa discutida:** exigir fundamentação de elementos e relações, não apenas cadastramento de documentos; a suficiência e a verificabilidade da fundamentação serão aprofundadas na especificação e na articulação com UC-001.
 
@@ -109,7 +114,7 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | Q-01 | Como será elaborada e empacotada a estrutura normativa em correspondência com o modelo tipológico? | **Homologada em 26/11/2026 — estrutura abstrata de exigências normativas vinculadas a tipos e relações; elaboração externa coordenada e importação conjunta. Formato técnico a definir.** |
 | Q-02 | Quais critérios verificam a compatibilidade entre os modelos abstratos? | **Homologada em 26/11/2026 — correspondência, completude e coerência; inconsistências comunicadas ao Administrador e modelos incompatíveis não disponibilizados.** |
 | Q-03 | Como identificar, vincular e verificar normas e dispositivos concretos na instanciação? | **Homologada em 26/11/2026 — identificação dos documentos, vinculação de dispositivos aos elementos/relações e exigências da ENT, análise assistida por IA, revisão humana e registro de pendências.** |
-| Q-04 | Como manter a vigência, a historicidade e a atualização dos fundamentos normativos? | A definir |
+| Q-04 | Como manter a vigência, a historicidade e a atualização dos fundamentos normativos? | **Homologada em 26/11/2026 — historicidade, revisão obrigatória de alterações normativas potencialmente relacionadas, decisão motivada de impacto ou ausência de impacto por responsável autorizado.** |
 | Q-05 | Como distribuir responsabilidades entre Administrador da Plataforma e Gestor de Entidade ao complementar a fundamentação? | A definir |
 
 ### Decisão homologada — Q-01: estrutura normativa tipológica de referência
@@ -176,6 +181,28 @@ O autor recordou a previsão do **módulo A108**, destinado à constituição de
 
 **Situação da observação:** referência arquitetural para aprofundamento posterior; não é decisão de criar ou especificar serviços no âmbito do UC-002. Deve-se preservar a distinção entre a biblioteca de documentos normativos (fontes concretas) e a Estrutura Normativa Tipológica (exigências abstratas), bem como a rastreabilidade das associações da ENI.
 
+### Decisão homologada — Q-04: vigência, historicidade e revisão obrigatória dos fundamentos
+
+**Situação:** proposta funcional acolhida pelo autor em 26/11/2026 com esclarecimento vinculante: **deve haver obrigatoriamente revisão diante de alteração normativa potencialmente relacionada, mesmo quando a conclusão seja “sem impacto”**. Complementa a narrativa consolidada UC-002 v0.3, sem alterá-la.
+
+A Plataforma CIVITAS deverá preservar a historicidade dos fundamentos normativos associados às estruturas organizacionais instanciadas, permitindo identificar quais normas e dispositivos sustentavam determinado elemento ou relação institucional em cada período de sua existência.
+
+As alterações, revogações e substituições de normas deverão ser reconhecidas na estrutura de fundamentação, sem eliminar os registros das associações normativas anteriormente utilizadas.
+
+Quando uma alteração normativa afetar ou puder afetar a fundamentação de determinado elemento ou relação institucional, a plataforma deverá identificar a ocorrência e **instaurar uma revisão obrigatória** pelo responsável autorizado.
+
+A revisão poderá concluir, mediante justificativa registrada, que a alteração é **sem impacto** para a estrutura ou relação examinada. Quando houver impacto, a fundamentação e, quando necessário, a situação institucional pertinente deverão ser atualizadas segundo as regras aplicáveis. **A ausência de impacto não dispensa a realização e o registro da revisão.**
+
+A atualização da fundamentação deverá preservar a identificação das normas e dispositivos anteriormente aplicáveis, a nova fundamentação adotada, a conclusão da revisão, sua justificativa e os respectivos períodos de referência, permitindo reconstruir a evolução normativa da organização.
+
+A plataforma deverá distinguir a vigência das normas jurídicas da validade temporal das associações de fundamentação estabelecidas para cada estrutura institucional.
+
+A identificação de alterações e de possíveis impactos poderá ser automatizada ou assistida por inteligência artificial, mas **a conclusão da revisão e a aprovação da fundamentação institucional dependerão de responsável autorizado**. A plataforma deverá acompanhar as revisões pendentes e seus desfechos, sem tratar automaticamente uma fundamentação potencialmente afetada como revisada ou regularizada.
+
+Dessa forma, a Estrutura Normativa Instanciada deverá permitir tanto a identificação dos fundamentos normativos atuais quanto a reconstrução histórica daqueles que sustentaram a organização e suas relações institucionais, reduzindo o risco de uma Entidade Pública operar com fundamento constitutivo ou competência desatualizados.
+
+**Delimitação:** mecanismos de detecção das alterações normativas, prazo de revisão, efeitos operacionais de pendências, permissões e integração com a Biblioteca de Normas A108 serão especificados posteriormente.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -186,6 +213,7 @@ O autor recordou a previsão do **módulo A108**, destinado à constituição de
 | Q-01 — Estrutura normativa de referência tipológica | **Redação homologada em 26/11/2026; REG-UC002-08 a REG-UC002-11 incorporadas** |
 | Q-02 — Compatibilidade entre modelos abstratos | **Redação homologada em 26/11/2026; REG-UC002-12 a REG-UC002-15 incorporadas** |
 | Q-03 — Associação de normas e dispositivos concretos | **Redação homologada em 26/11/2026; REG-UC002-16 a REG-UC002-20 incorporadas** |
+| Q-04 — Histórico e revisão obrigatória de fundamentação | **Redação homologada com exigência expressa de revisão mesmo para conclusão sem impacto; REG-UC002-21 a REG-UC002-25 incorporadas** |
 | Biblioteca de normas A108 | **Observação arquitetural do autor registrada; detalhamento futuro, inclusive orientação ao cidadão** |
 | Terminologia — EOT / ENT / ENI | **Homologada em 26/11/2026** |
 | Seções auxiliares 1–4 e 6–9 | Organização documental preliminar, sem homologação implícita |
