@@ -1,8 +1,8 @@
 # CIVITAS — JRN-CIV-001 — Preparação da Plataforma e Habilitação da Primeira Organização Institucional
 
-**Versão:** 0.1 — proposta documental para homologação  
+**Versão:** 0.1 — homologada em 26/11/2026  
 **Data:** 2026-11-26  
-**Situação:** jornada inicial formalizada para conferência do autor; seus casos de uso de referência já possuem versões homologadas  
+**Situação:** jornada JRN-CIV-001 expressamente homologada pelo autor; referências UC-001 a UC-006 preservadas  
 **Abrangência:** UC-001 a UC-006  
 **Marco de conclusão:** **Marco A — Autorização da Operação Administrativa Inicial**  
 **Natureza:** jornada integradora, sem decomposição funcional ou implementação técnica antecipada
@@ -129,3 +129,7 @@ A escolha da primeira organização concreta e as evidências de testes de integ
 **Jornadas futuras, fora do escopo da JRN-CIV-001:** constituição de sistemas estruturantes e organização administrativa complementar; preparação, publicação e execução de serviços públicos. Seus critérios específicos de realização ontológica deverão ser definidos nas futuras jornadas e casos de uso.
 
 **Questões rastreadas para tratamento futuro:** evolução de modelos tipológicos já instanciados; ajustes editoriais históricos do UC-003; detalhamento de evidências, estados e procedimentos de validação. Nenhuma dessas questões autoriza presumir condições ainda não realizadas.
+
+## Homologação
+
+**Decisão do autor (26/11/2026):** “a jornada 1 está homologada”. Fica aprovada a JRN-CIV-001 v0.1 como percurso integrador dos UC-001 a UC-006 até o Marco A, sem exigir conclusão de sistemas estruturantes ou publicação de serviços públicos. A homologação não inclui novas jornadas ou especificações não discutidas.
