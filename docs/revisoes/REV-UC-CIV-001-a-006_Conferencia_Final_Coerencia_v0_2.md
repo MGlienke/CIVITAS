@@ -2,7 +2,7 @@
 
 **Versão:** 0.2 — diagnóstico da conferência (26/11/2026)  
 **Natureza:** auditoria documental e conceitual, **não altera** narrativas homologadas, nem equivale à homologação de novas regras  
-**Base:** UC-001 v0.6, UC-002 v0.4, UC-003 v0.4, UC-004 v0.3, UC-005 v0.3, UC-006 v0.1 (branch main).
+**Base original da conferência:** UC-001 v0.6, UC-002 v0.4, UC-003 v0.4, UC-004 v0.3, UC-005 v0.3, UC-006 v0.1 (branch main). **Atualização após decisões:** UC-005 v0.4, UC-006 v0.2, UC-004 v0.3 com homologação ratificada.
 
 ## Conclusão
 
@@ -71,6 +71,12 @@ A sequência conceitual **metamodelo/EOT → ENT/ENI → Ontologia e Determinaç
 | Prestação de serviços aos cidadãos | Serviços individualmente fundamentados, configurados e autorizados segundo suas condições ontológicas |
 
 A realização integral segue obrigatória **por âmbito autorizado**, sem presunção de completude para outros âmbitos.
+
+## Atualização das deliberações A-03 e A-04 — 26/11/2026
+
+- **A-03 — RESOLVIDO / HOMOLOGADO:** o envio pelo GOI da designação do Mandatário para homologação do Administrador é seu último ato de administração e o bloqueia imediatamente. O Administrador verifica/homologa o Mandatário, e o Mandatário convalida o GOI; o fluxo ordinário só é retomado depois de ambos os atos. Continua possível desbloqueio administrativo excepcional pelo Administrador, expressamente fundamentado, sem equivalência à convalidação. Incorporado ao UC-005 v0.4 e UC-006 v0.2.
+- **A-04 — RESOLVIDO / RATIFICADO:** o autor confirmou expressamente que a redação do UC-004 v0.3 discutida anteriormente havia sido homologada. O status foi corrigido no arquivo UC-004 v0.3, sem alterar o texto canônico.
+- **Histórico:** as constatações abaixo refletem a fotografia documental anterior à correção; A-03 e A-04 deixam de ser pendências.
 
 ## Estado da revisão
 
