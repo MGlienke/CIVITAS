@@ -90,6 +90,11 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | REG-UC003-15 | Determinações institucionais deverão ser propagadas aos âmbitos aos quais se apliquem, sem pressupor subordinação de instituições autônomas. | Decisão Q-02 | Homologada |
 | REG-UC003-16 | A CIVITAS preservará rastreabilidade entre conceitos, determinações sucessivas, fundamentos normativos e realizações concretas, com historicidade. | Decisão Q-02 | Homologada |
 | REG-UC003-17 | Determinação institucional progressiva não modifica a Ontologia nativa nem cria ontologias independentes por organização. | Decisão Q-02 | Homologada |
+| REG-UC003-18 | EOT e ENT devem ser verificadas quanto à compatibilidade semântica com a Ontologia de Referência antes de sua disponibilização. | Decisão Q-03 | Homologada |
+| REG-UC003-19 | Tipos, relações e exigências tipológicas devem ter correspondência identificável com conceitos, propriedades e relações da Ontologia. | Decisão Q-03 | Homologada |
+| REG-UC003-20 | Modelos tipológicos não podem modificar, contradizer ou descaracterizar definições constitutivas da Ontologia de Referência. | Decisão Q-03 | Homologada |
+| REG-UC003-21 | Modelos tipológicos devem preservar determinações abertas para os âmbitos institucionais competentes, sem antecipá-las indevidamente. | Decisão Q-03 | Homologada |
+| REG-UC003-22 | Incompatibilidades semânticas devem ser comunicadas ao Administrador para correção externa e nova verificação; modelos incompatíveis não serão disponibilizados. | Decisão Q-03 | Homologada |
 
 ## 9. Questões a aprofundar
 
@@ -97,7 +102,7 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 |---|---|---|
 | Q-01 | Como incorporar e representar a Ontologia nativa na plataforma? | **Homologada em 26/11/2026 — rede semântica constitutiva, fundamentada e versionada, incorporada pelo Desenvolvedor antes da administração da Plataforma.** |
 | Q-02 | Como delimitar formalmente a Estrutura de Realização Institucional de Referência? | **Homologada em 26/11/2026 — substitui o conceito de estrutura separada pelo mecanismo de determinação institucional progressiva da Ontologia única; ajustar a narrativa em futura v0.3, preservando a v0.2.** |
-| Q-03 | Como verificar a compatibilidade semântica de EOT e ENT com a Ontologia? | Em discussão |
+| Q-03 | Como verificar a compatibilidade semântica de EOT e ENT com a Ontologia? | **Homologada em 26/11/2026 — correspondência semântica, preservação das definições constitutivas, respeito à determinação progressiva e bloqueio de modelos incompatíveis.** |
 | Q-04 | Como evidenciar condições de realização satisfeitas nas instâncias concretas? | Em discussão |
 | Q-05 | Como controlar e versionar a evolução da Ontologia sem perder coerência e historicidade? | Em discussão |
 
@@ -141,6 +146,24 @@ Dessa forma, a CIVITAS preservará a unicidade e a estabilidade de sua Ontologia
 
 **Relação com EOT e ENT:** estas são estruturas tipológicas; a Ontologia não é tipológica, permanecendo única, com determinações progressivas ao longo dos âmbitos institucionais. O mecanismo não implica herança automática de competências nem hierarquia administrativa universal.
 
+### Decisão homologada — Q-03: compatibilidade semântica de EOT e ENT
+
+**Situação:** redação integral homologada pelo autor em 26/11/2026. Complementa a narrativa canônica UC-003 v0.2, preservada sem reformulação. A futura narrativa v0.3 deverá integrar as decisões conceituais aprovadas.
+
+A Plataforma CIVITAS deverá verificar a compatibilidade semântica das Estruturas Organizacionais Tipológicas e das Estruturas Normativas Tipológicas com a Ontologia de Referência antes de disponibilizá-las para utilização.
+
+Essa verificação deverá assegurar a correspondência entre os conceitos, propriedades e relações definidos na Ontologia e os tipos, relações e exigências estabelecidos nos modelos tipológicos.
+
+Os modelos tipológicos não poderão modificar, contradizer ou descaracterizar as definições constitutivas da Ontologia de Referência.
+
+A verificação deverá também assegurar que os modelos respeitem o mecanismo de determinação institucional progressiva, preservando as definições que devam ser estabelecidas pelas organizações competentes durante sua instanciação.
+
+As inconsistências identificadas deverão ser comunicadas ao Administrador da Plataforma, permitindo sua correção nos modelos elaborados externamente e posterior reapresentação para verificação.
+
+Somente modelos considerados semanticamente compatíveis com a Ontologia de Referência poderão ser disponibilizados para instanciação na CIVITAS.
+
+**Critérios aprovados:** (i) correspondência semântica, (ii) preservação das definições constitutivas e (iii) respeito à determinação institucional progressiva. Não se define nesta etapa um serviço ou formato técnico de verificação.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -149,5 +172,6 @@ Dessa forma, a CIVITAS preservará a unicidade e a estabilidade de sua Ontologia
 | UC-001 e UC-002 | Referências conceituais relacionadas |
 | Q-01 — Incorporação da Ontologia nativa | **Homologada em 26/11/2026; REG-UC003-07 a REG-UC003-11 incorporadas** |
 | Q-02 — Determinação Institucional Progressiva | **Homologada em 26/11/2026; REG-UC003-12 a REG-UC003-17 incorporadas; consolidação narrativa v0.3 pendente** |
+| Q-03 — Compatibilidade semântica EOT/ENT | **Homologada em 26/11/2026; REG-UC003-18 a REG-UC003-22 incorporadas** |
 | Demais seções do template | Organização inicial; revisão e detalhamento pendentes |
 | Decomposição funcional | Não iniciada |
