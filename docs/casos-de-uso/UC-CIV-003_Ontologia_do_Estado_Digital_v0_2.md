@@ -103,6 +103,12 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | REG-UC003-28 | O início da operação de uma Entidade Pública na CIVITAS depende da demonstração da realização de todas as condições ontológicas aplicáveis ao seu âmbito, inclusive as herdadas que exijam realização local. | Decisão Q-04 — observação do autor | Homologada |
 | REG-UC003-29 | A definição de como realizar uma condição, sem a demonstração da realização exigida, não libera o início de operação da entidade. | Decisão Q-04 — observação do autor | Homologada |
 | REG-UC003-30 | A plataforma deverá verificar a completude das realizações ontológicas aplicáveis antes da autorização de início da operação e bloquear a autorização enquanto houver pendências. | Decisão Q-04 — observação do autor | Homologada |
+| REG-UC003-31 | Evolução da Ontologia ocorrerá exclusivamente por procedimento controlado de desenvolvimento, com identificação e histórico das versões. | Decisão Q-05 | Homologada |
+| REG-UC003-32 | Nova versão da Ontologia exige avaliação prévia de possíveis impactos em EOT, ENT, determinações e instâncias existentes. | Decisão Q-05 | Homologada |
+| REG-UC003-33 | Condições anteriormente realizadas e afetadas por atualização ontológica exigem revisão e adequação institucional rastreáveis. | Decisão Q-05 | Homologada |
+| REG-UC003-34 | Mudanças ontológicas não podem alterar retroativamente os fundamentos conceituais históricos; a plataforma deve preservar a correspondência entre versão e situação institucional. | Decisão Q-05 | Homologada |
+| REG-UC003-35 | Autorização inicial de operação exige realização integral das condições ontológicas aplicáveis; continuidade operacional diante de evolução ontológica segue processo formal de avaliação e adequação. | Decisão Q-05 — esclarecimento do autor | Homologada |
+| REG-UC003-36 | Nova exigência ontológica não implica suspensão automática de entidade em operação nem pode permanecer sem tratamento: devem ser registrados impactos, pendências e adequações sob acompanhamento. | Decisão Q-05 — esclarecimento do autor | Homologada |
 
 ## 9. Questões a aprofundar
 
@@ -112,7 +118,7 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | Q-02 | Como delimitar formalmente a Estrutura de Realização Institucional de Referência? | **Homologada em 26/11/2026 — substitui o conceito de estrutura separada pelo mecanismo de determinação institucional progressiva da Ontologia única; ajustar a narrativa em futura v0.3, preservando a v0.2.** |
 | Q-03 | Como verificar a compatibilidade semântica de EOT e ENT com a Ontologia? | **Homologada em 26/11/2026 — correspondência semântica, preservação das definições constitutivas, respeito à determinação progressiva e bloqueio de modelos incompatíveis.** |
 | Q-04 | Como evidenciar condições de realização satisfeitas nas instâncias concretas? | **Homologada em 26/11/2026 — determinações herdadas, próprias ou abertas; demonstração verificável da realização; bloqueio do início da operação enquanto houver condições ontológicas aplicáveis não realizadas.** |
-| Q-05 | Como controlar e versionar a evolução da Ontologia sem perder coerência e historicidade? | Em discussão |
+| Q-05 | Como controlar e versionar a evolução da Ontologia sem perder coerência e historicidade? | **Homologada em 26/11/2026 — versões e histórico, avaliação de impactos, revisão das realizações afetadas, distinção entre autorização inicial integral e continuidade operacional com adequação formal, sem suspensão automática.** |
 
 ### Decisão homologada — Q-01: incorporação da Ontologia pelo desenvolvimento da Plataforma
 
@@ -200,6 +206,30 @@ Antes de autorizar o início da operação, a plataforma deverá executar uma ve
 
 **Delimitação:** a exigência recai sobre a realização de todas as condições **aplicáveis**, e não sobre a criação de instâncias para cada conceito da Ontologia. A classificação de aplicabilidade e os meios técnicos de demonstração serão especificados posteriormente. A autorização de operação na CIVITAS não se confunde com a existência jurídica da Entidade Pública.
 
+### Decisão homologada — Q-05: evolução ontológica e continuidade operacional
+
+**Situação:** redação funcional acolhida pelo autor em 26/11/2026, com esclarecimento vinculante: distinguir a autorização inicial da operação da continuidade de entidades já operantes diante de evolução da Ontologia. Complementa a narrativa canônica UC-003 v0.2, sem alterá-la.
+
+A evolução da Ontologia de Referência deverá ocorrer exclusivamente por meio de procedimentos controlados de desenvolvimento e atualização da Plataforma CIVITAS.
+
+Cada versão da Ontologia deverá possuir identificação própria, preservando-se o histórico das alterações realizadas em seus conceitos, propriedades, relações e condições de determinação institucional.
+
+Antes da disponibilização de uma nova versão, a plataforma deverá permitir a identificação e a avaliação de seus possíveis impactos sobre os modelos tipológicos, as determinações institucionais progressivas e as organizações concretas já constituídas.
+
+As alterações que afetarem condições ontológicas anteriormente realizadas deverão exigir a revisão das determinações e realizações institucionais correspondentes, preservando-se os registros históricos e as evidências anteriores.
+
+A atualização da Ontologia não poderá eliminar ou modificar retroativamente os fundamentos conceituais utilizados para representar situações institucionais passadas.
+
+O processo de atualização deverá assegurar a rastreabilidade entre as versões da Ontologia e as informações e estruturas constituídas sob cada uma delas, permitindo reconstruir a realidade institucional segundo os referenciais conceituais aplicáveis em cada período.
+
+#### Distinção homologada — autorização inicial e continuidade operacional
+
+**Autorização inicial de operação:** permanece sujeita à Q-04: somente será concedida quando todas as condições ontológicas aplicáveis à entidade estiverem efetivamente realizadas e verificadas.
+
+**Continuidade operacional após evolução da Ontologia:** entidades já em operação deverão ter os impactos da nova versão avaliados e, quando houver novas condições ou alterações de condições aplicáveis, submetidos a **processo formal de adequação** com registro de pendências, responsabilidades, decisões e acompanhamento. Uma evolução ontológica **não provocará por si só suspensão automática** de operação; tampouco autoriza ignorar indefinidamente novas exigências.
+
+**Delimitações:** prazos, critérios de transição, eventuais restrições operacionais e consequências de descumprimento serão decididos posteriormente, conforme o impacto e as competências institucionais. Não se pressupõe que qualquer mudança da Ontologia afete necessariamente todas as entidades. A distinção não altera a exigência de realização integral para a autorização inicial da Q-04.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -210,5 +240,6 @@ Antes de autorizar o início da operação, a plataforma deverá executar uma ve
 | Q-02 — Determinação Institucional Progressiva | **Homologada em 26/11/2026; REG-UC003-12 a REG-UC003-17 incorporadas; consolidação narrativa v0.3 pendente** |
 | Q-03 — Compatibilidade semântica EOT/ENT | **Homologada em 26/11/2026; REG-UC003-18 a REG-UC003-22 incorporadas** |
 | Q-04 — Realização ontológica e autorização de operação | **Homologada em 26/11/2026; REG-UC003-23 a REG-UC003-30 incorporadas; realização completa obrigatória para iniciar operação na CIVITAS** |
+| Q-05 — Evolução da Ontologia e continuidade operacional | **Homologada em 26/11/2026; REG-UC003-31 a REG-UC003-36 incorporadas; adequação formal sem suspensão automática** |
 | Demais seções do template | Organização inicial; revisão e detalhamento pendentes |
 | Decomposição funcional | Não iniciada |
