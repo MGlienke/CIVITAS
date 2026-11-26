@@ -94,6 +94,11 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | REG-UC002-13 | A verificação examina correspondência, completude e coerência entre tipos/relações e exigências de fundamentação. | Q-02 | Homologada |
 | REG-UC002-14 | Inconsistências devem ser comunicadas ao Administrador para correção externa e repetição da verificação. | Q-02 | Homologada |
 | REG-UC002-15 | Somente conjuntos de modelos conformes e compatíveis podem ser disponibilizados para instanciação. | Q-02 | Homologada |
+| REG-UC002-16 | Documentos normativos concretos devem ser individualizados por identificação, natureza, origem institucional e referências pertinentes, para consulta e verificação. | Q-03 | Homologada |
+| REG-UC002-17 | Documentos e dispositivos normativos devem ser associados às exigências da ENT e aos elementos/relações institucionais que fundamentam. | Q-03 | Homologada |
+| REG-UC002-18 | A IA poderá propor associações fundamentadas e verificáveis, sujeitas a exame, correção, complemento e aprovação pelo Administrador. | Q-03 | Homologada |
+| REG-UC002-19 | A indicação isolada de documento não satisfaz a exigência: sua pertinência deve ser demonstrada; insuficiência, incompatibilidade ou impossibilidade de verificação gera pendência não validada. | Q-03 | Homologada |
+| REG-UC002-20 | Associações aprovadas integrarão a ENI, preservando a rastreabilidade entre elemento institucional, exigência tipológica e fundamento concreto. | Q-03 | Homologada |
 
 **Diretriz interpretativa discutida:** exigir fundamentação de elementos e relações, não apenas cadastramento de documentos; a suficiência e a verificabilidade da fundamentação serão aprofundadas na especificação e na articulação com UC-001.
 
@@ -103,7 +108,7 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 |---|---|---|
 | Q-01 | Como será elaborada e empacotada a estrutura normativa em correspondência com o modelo tipológico? | **Homologada em 26/11/2026 — estrutura abstrata de exigências normativas vinculadas a tipos e relações; elaboração externa coordenada e importação conjunta. Formato técnico a definir.** |
 | Q-02 | Quais critérios verificam a compatibilidade entre os modelos abstratos? | **Homologada em 26/11/2026 — correspondência, completude e coerência; inconsistências comunicadas ao Administrador e modelos incompatíveis não disponibilizados.** |
-| Q-03 | Como identificar, vincular e verificar normas e dispositivos concretos na instanciação? | A definir |
+| Q-03 | Como identificar, vincular e verificar normas e dispositivos concretos na instanciação? | **Homologada em 26/11/2026 — identificação dos documentos, vinculação de dispositivos aos elementos/relações e exigências da ENT, análise assistida por IA, revisão humana e registro de pendências.** |
 | Q-04 | Como manter a vigência, a historicidade e a atualização dos fundamentos normativos? | A definir |
 | Q-05 | Como distribuir responsabilidades entre Administrador da Plataforma e Gestor de Entidade ao complementar a fundamentação? | A definir |
 
@@ -145,6 +150,32 @@ Somente os conjuntos de modelos considerados conformes e compatíveis poderão s
 
 **Terminologia homologada:** Estrutura Organizacional Tipológica (EOT); Estrutura Normativa Tipológica (ENT); Estrutura Normativa Instanciada (ENI). A versão v0.2 permanece preservada como fonte histórica.
 
+### Decisão homologada — Q-03: identificação e verificação dos fundamentos normativos concretos
+
+**Situação:** redação integral homologada pelo autor em 26/11/2026. Complementa a narrativa consolidada UC-002 v0.3, sem alterar seu texto.
+
+Durante a instanciação de uma estrutura organizacional, a Plataforma CIVITAS deverá permitir que o Administrador identifique e associe os documentos normativos concretos às exigências de fundamentação estabelecidas pela Estrutura Normativa Tipológica correspondente.
+
+Cada documento normativo deverá ser identificado de maneira suficiente para permitir sua individualização, consulta e verificação, preservando sua natureza, identificação oficial, origem institucional e referências pertinentes.
+
+A plataforma deverá permitir a vinculação de documentos e dispositivos normativos específicos aos elementos e relações organizacionais que fundamentam, identificando qual exigência normativa tipológica está sendo atendida.
+
+A identificação e a análise dessas vinculações poderão ser assistidas por inteligência artificial, que deverá examinar os documentos indicados, identificar os dispositivos pertinentes e apresentar propostas de associação fundamentadas e verificáveis.
+
+O Administrador deverá poder examinar, corrigir, complementar e aprovar as associações propostas. A plataforma não deverá considerar satisfeita uma exigência normativa apenas pela indicação de um documento, sem que esteja demonstrada sua pertinência em relação ao elemento ou à relação institucional correspondente.
+
+Quando a fundamentação apresentada for insuficiente, incompatível ou não puder ser verificada, a plataforma deverá identificar a pendência, impedindo que a associação seja considerada validada até sua resolução.
+
+As associações aprovadas deverão integrar a Estrutura Normativa Instanciada, preservando a correspondência entre o elemento institucional, a exigência normativa tipológica e os documentos ou dispositivos concretos utilizados em sua fundamentação.
+
+**Esclarecimentos conceituais:** uma exigência pode ser sustentada por múltiplas normas e dispositivos. A validação da associação não constitui declaração definitiva de constitucionalidade ou legalidade da norma.
+
+#### Observação antecipada do autor — biblioteca de normas A108
+
+O autor recordou a previsão do **módulo A108**, destinado à constituição de uma biblioteca de normas. Essa biblioteca poderá abrigar os documentos normativos e seus dispositivos, compartilhando-os como fontes de fundamentação para as Estruturas Normativas Instanciadas e, posteriormente, para apoiar a **orientação normativa ao cidadão**.
+
+**Situação da observação:** referência arquitetural para aprofundamento posterior; não é decisão de criar ou especificar serviços no âmbito do UC-002. Deve-se preservar a distinção entre a biblioteca de documentos normativos (fontes concretas) e a Estrutura Normativa Tipológica (exigências abstratas), bem como a rastreabilidade das associações da ENI.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -154,6 +185,8 @@ Somente os conjuntos de modelos considerados conformes e compatíveis poderão s
 | UC-001 | Dependência funcional identificada; narrativa v0.5 preservada |
 | Q-01 — Estrutura normativa de referência tipológica | **Redação homologada em 26/11/2026; REG-UC002-08 a REG-UC002-11 incorporadas** |
 | Q-02 — Compatibilidade entre modelos abstratos | **Redação homologada em 26/11/2026; REG-UC002-12 a REG-UC002-15 incorporadas** |
+| Q-03 — Associação de normas e dispositivos concretos | **Redação homologada em 26/11/2026; REG-UC002-16 a REG-UC002-20 incorporadas** |
+| Biblioteca de normas A108 | **Observação arquitetural do autor registrada; detalhamento futuro, inclusive orientação ao cidadão** |
 | Terminologia — EOT / ENT / ENI | **Homologada em 26/11/2026** |
 | Seções auxiliares 1–4 e 6–9 | Organização documental preliminar, sem homologação implícita |
 | Decomposição funcional | Não iniciada |
