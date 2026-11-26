@@ -79,16 +79,39 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | REG-UC003-04 | EOT e ENT devem preservar compatibilidade semântica com a Ontologia. | Narrativa v0.2 | Homologada |
 | REG-UC003-05 | Instâncias institucionais podem evoluir sem modificar a Ontologia, preservando identidade, fundamentos e historicidade. | Narrativa v0.2 | Homologada |
 | REG-UC003-06 | Evolução da Ontologia depende de mudanças controladas da CIVITAS, com coerência e compatibilidade com estruturas e informações preexistentes. | Narrativa v0.2 | Homologada |
+| REG-UC003-07 | A Ontologia do Estado Digital será incorporada como rede semântica de conceitos, propriedades e relações fundamentados, constitutiva da plataforma. | Decisão Q-01 | Homologada |
+| REG-UC003-08 | Elaborar, manter, incorporar e atualizar controladamente a rede semântica são responsabilidades do desenvolvimento da Plataforma CIVITAS, anteriores à administração operacional. | Decisão Q-01 | Homologada |
+| REG-UC003-09 | A rede semântica incorporada deverá possuir identificação, integridade, controle de versão e disponibilidade para componentes e operações dependentes. | Decisão Q-01 | Homologada |
+| REG-UC003-10 | Administrador da Plataforma e Gestores de Entidade não poderão alterar a Ontologia nativa em suas atividades administrativas. | Decisão Q-01 | Homologada |
+| REG-UC003-11 | EOT, ENT e instâncias utilizarão os conceitos, propriedades e relações da rede semântica comum; a evolução ontológica ocorrerá somente por procedimento controlado de atualização da plataforma. | Decisão Q-01 | Homologada |
 
 ## 9. Questões a aprofundar
 
 | ID | Questão | Situação |
 |---|---|---|
-| Q-01 | Como incorporar e representar a Ontologia nativa na plataforma? | Em discussão |
+| Q-01 | Como incorporar e representar a Ontologia nativa na plataforma? | **Homologada em 26/11/2026 — rede semântica constitutiva, fundamentada e versionada, incorporada pelo Desenvolvedor antes da administração da Plataforma.** |
 | Q-02 | Como delimitar formalmente a Estrutura de Realização Institucional de Referência? | Em discussão |
 | Q-03 | Como verificar a compatibilidade semântica de EOT e ENT com a Ontologia? | Em discussão |
 | Q-04 | Como evidenciar condições de realização satisfeitas nas instâncias concretas? | Em discussão |
 | Q-05 | Como controlar e versionar a evolução da Ontologia sem perder coerência e historicidade? | Em discussão |
+
+### Decisão homologada — Q-01: incorporação da Ontologia pelo desenvolvimento da Plataforma
+
+**Situação:** redação integral homologada pelo autor em 26/11/2026. Complementa a narrativa canônica UC-003 v0.2, que permanece inalterada.
+
+A Plataforma CIVITAS deverá possuir, como componente constitutivo de sua arquitetura, uma Ontologia do Estado Digital representada por uma rede semântica de conceitos, propriedades e relações devidamente fundamentados.
+
+Essa rede semântica deverá ser elaborada e mantida sob responsabilidade do desenvolvimento da Plataforma CIVITAS, antecedendo sua disponibilização para administração e utilização.
+
+Caberá ao Desenvolvedor da Plataforma incorporar a rede semântica à CIVITAS, assegurando sua integridade, identificação e controle de versão, bem como sua disponibilidade para os componentes e operações que dependam de sua estrutura conceitual.
+
+A Ontologia deverá ser carregada como parte da constituição ou atualização controlada da plataforma, não constituindo um modelo configurável ou modificável pelo Administrador da Plataforma ou pelos Gestores de Entidade durante suas atividades administrativas.
+
+Os modelos tipológicos, as estruturas institucionais concretas e os demais elementos da CIVITAS deverão utilizar os conceitos, propriedades e relações estabelecidos nessa rede semântica, preservando sua identidade conceitual comum.
+
+A evolução da Ontologia deverá ocorrer por meio de procedimentos controlados de desenvolvimento e atualização da plataforma, assegurando a preservação da coerência semântica e a compatibilidade com as estruturas e informações anteriormente constituídas.
+
+**Delimitação:** não se fixa nesta etapa o formato técnico da rede (RDF, OWL, JSON-LD ou outro), nem o mecanismo de armazenamento ou carregamento.
 
 ## Rastreabilidade e controle de mudanças
 
@@ -96,5 +119,6 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 |---|---|
 | Narrativa UC-003 v0.2 | **Homologada pelo autor em 26/11/2026** |
 | UC-001 e UC-002 | Referências conceituais relacionadas |
+| Q-01 — Incorporação da Ontologia nativa | **Homologada em 26/11/2026; REG-UC003-07 a REG-UC003-11 incorporadas** |
 | Demais seções do template | Organização inicial; revisão e detalhamento pendentes |
 | Decomposição funcional | Não iniciada |
