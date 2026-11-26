@@ -110,6 +110,10 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | REG-10 | Modelo tipológico vazio, para fins de substituição, é aquele sem nenhuma estrutura organizacional concreta vinculada à sua identificação e versão, independentemente dos tipos e relações que o compõem. | Regra conceitual | Decisão Q-03 | Homologada |
 | REG-11 | Substituição por nova versão requer desativação prévia da versão anterior, permitida apenas quando vazia. | Versionamento / integridade | Decisão Q-03 | Homologada |
 | REG-12 | Nova versão importada deve passar pela verificação de conformidade da Q-02 antes de ser disponibilizada. | Conformidade | Decisões Q-02 e Q-03 | Homologada |
+| REG-13 | Distinguir o fundamento normativo constitutivo do Estado/Entidade Pública de sua organização administrativa interna evolutiva. | Institucional / normativa | Decisão Q-04 e observação homologatória | Homologada como princípio conceitual |
+| REG-14 | A substituição do modelo constitutivo depende de alteração do fundamento normativo constitutivo pertinente, além das condições de integridade da Q-03. | Integridade / normativa | Decisão Q-04 e observação homologatória | Homologada como diretriz; critérios jurídicos específicos a detalhar |
+| REG-15 | Mudanças na estrutura organizacional interna de Estado, Entidade Pública ou Órgão não implicam necessariamente substituição do tipo ou perda de identidade institucional. | Historicidade / organização | Decisão Q-04 | Homologada |
+| REG-16 | A exclusão de uma estrutura concreta para esvaziamento do modelo só será admitida quando não comprometer dados ou relações institucionais sujeitos a preservação; condições detalhadas a definir. | Integridade / historicidade | Decisão Q-04 | Homologada com detalhamento pendente |
 
 > As regras vinculadas à narrativa expressam requisitos de domínio e comportamento. Ainda não representam contratos técnicos nem serviços identificados.
 
@@ -120,7 +124,7 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | Q-01 | Como modelos tipológicos são empacotados e transportados para importação? | Formatos, intercâmbio e compatibilidade | Em aberto; etapa de especificação |
 | Q-02 | Como se verifica e comunica a conformidade de um modelo? | Capacidade específica de verificação, serviço de conformidade, interface administrativa e relatório associado ao modelo e à versão | **Homologada — decisão Q-02 (26/11/2026); detalhamento técnico pendente** |
 | Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Substituição apenas após desativação de modelo vazio; modelos com instâncias vinculadas são protegidos contra alteração, desativação e substituição | **Homologada — decisão Q-03 (26/11/2026)** |
-| Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Q-03 impede alteração/desativação/substituição do modelo utilizado; eventual evolução ou outra política para estruturas já instanciadas permanece fora do escopo da Q-03 | Parcialmente delimitada; pendente |
+| Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Proteger o modelo tipológico enquanto houver instâncias; admitir esvaziamento/exclusão de estrutura concreta sob condições de preservação; distinguir alteração constitutiva normativa de evolução da organização interna | **Homologada — decisão Q-04 (26/11/2026), com observação constitutiva do autor** |
 | Q-05 | Quais estados de elaboração de uma estrutura concreta serão admitidos? | Estruturas parciais, revisão e publicação | Em aberto |
 | Q-06 | Qual o escopo de permissões do Administrador e de eventuais outros participantes? | Autorização e responsabilidades | Em aberto |
 | Q-07 | Como o MT-BR deverá materializar os tipos, relações e restrições aprovados? | Artefato conceitual separado; matriz tipológica própria | Em elaboração; fora da homologação UC-001 v0.5 |
@@ -159,6 +163,30 @@ A nova versão deverá ser importada e submetida ao processo de verificação de
 
 **Consequência registrada:** uma versão já utilizada para instanciar uma estrutura concreta permanece protegida contra substituição enquanto houver essa vinculação; eventuais estratégias futuras de evolução não foram definidas nesta decisão.
 
+### Decisão homologada — Q-04: estabilidade constitutiva e evolução organizacional
+
+**Situação:** Redação aprovada pelo autor em 26/11/2026, expressamente condicionada à observação sobre fundamento constitucional/normativo constitutivo. Complementa as decisões Q-02 e Q-03 sem modificar a narrativa canônica UC-001 v0.5.
+
+A Plataforma CIVITAS deverá distinguir a evolução das estruturas organizacionais concretas da evolução dos modelos tipológicos utilizados para constituí-las.
+
+Os modelos tipológicos estarão sujeitos às regras de integridade referencial estabelecidas na Q-03, não podendo ser alterados, desativados ou substituídos enquanto possuírem instâncias vinculadas.
+
+O Administrador poderá excluir uma estrutura organizacional concreta instanciada, incluindo os elementos que a compõem, desde que essa exclusão seja admissível e não comprometa informações ou relações institucionais que devam ser preservadas. Uma vez eliminadas todas as instâncias vinculadas ao modelo tipológico, este será considerado vazio e poderá ser desativado e substituído, conforme a Q-03.
+
+A evolução da organização interna de uma Entidade Pública ou de um Órgão Público será tratada separadamente. Suas estruturas organizacionais concretas poderão ser criadas, modificadas e reorganizadas ao longo do tempo, respeitando as regras institucionais e os fundamentos normativos aplicáveis.
+
+Dessa forma, a estabilidade do modelo tipológico não impedirá a evolução das estruturas administrativas concretas constituídas no âmbito das Entidades Públicas e dos Órgãos.
+
+#### Observação constitutiva adicional do autor — integrante da homologação
+
+O modelo tipológico de organização de um Estado tem fundamento na respectiva Constituição. Sua substituição corresponde a uma alteração do fundamento constitucional que define o modelo, **não** a uma reorganização ordinária de órgãos e unidades. Uma instância de organização estatal só deve ser eliminada se tal exclusão for admissível em face de sua existência e de sua integridade institucional, não como artifício para substituir o modelo tipológico.
+
+Por analogia, a existência e a identidade de uma Entidade Pública decorrem de seu **fundamento normativo constitutivo**. Sua substituição ou extinção depende de alteração jurídica constitutiva pertinente; a reorganização interna da Entidade Pública ou de um Órgão não representa, por si, sua extinção ou substituição.
+
+A CIVITAS deverá, portanto, preservar a distinção entre **(a) alteração ou extinção constitutiva, (b) permanência da identidade institucional e (c) evolução histórica da estrutura interna**.
+
+**Delimitação:** a relação exata entre determinadas alterações constitucionais, a necessidade de nova versão tipológica e a extinção de entes ou entidades exige análise normativa específica. A expressão “somente se a Constituição for mudada” é registrada como a diretriz conceitual aprovada para este modelo, sem afirmar que toda emenda constitucional exija substituição tipológica. A evolução da organização interna e seu controle histórico serão detalhados em casos de uso próprios.
+
 ---
 
 ## Rastreabilidade e controle de mudanças
@@ -171,6 +199,7 @@ A nova versão deverá ser importada e submetida ao processo de verificação de
 | MT-BR-001 a MT-BR-005 | **Decisões conceituais aprovadas; pertencem ao modelo brasileiro específico** |
 | Q-02 — Verificação e comunicação da conformidade | **Redação funcional homologada; serviço específico e interface administrativa requeridos** |
 | Q-03 — Versionamento e substituição dos modelos | **Redação e definição de modelo vazio homologadas; substituição somente após desativação de versão sem instâncias vinculadas** |
+| Q-04 — Estabilidade constitutiva versus evolução organizacional | **Redação homologada com a observação constitutiva adicional do autor; condições técnicas e jurídicas específicas pendentes** |
 | Decomposição funcional e especificação dos serviços derivados | **Não iniciadas por este documento** |
 
 **Atenção:** o fato de este documento ter sido salvo em repositório não constitui, por si só, homologação das novas formulações complementares. Qualquer alteração da narrativa canônica exige uma nova versão e aprovação explícita.
