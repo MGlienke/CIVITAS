@@ -75,12 +75,12 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 
 ## 6. Situações alternativas
 
-**A definir.** As situações abaixo são *questões candidatas à discussão*, não comportamentos aprovados.
+**Situações candidatas à discussão, exceto ALT-02, cuja regra foi homologada na Q-03.** Os demais comportamentos permanecem em aberto.
 
 | ID | Condição / variação | Comportamento esperado | Situação |
 |---|---|---|---|
 | ALT-01 | Modelo importado incompatível com o metamodelo nativo | A definir (rejeição, relatório de inconsistências e correção externa) | Em aberto |
-| ALT-02 | Nova versão de modelo já utilizado para instanciação | A definir (convivência de versões, migração, preservação histórica) | Em aberto |
+| ALT-02 | Solicitação de substituição de modelo tipológico | Proibida enquanto existirem instâncias concretas; somente modelo vazio poderá ser desativado e, depois, substituído por nova versão submetida à verificação Q-02 | **Homologada na Q-03** |
 | ALT-03 | Tentativa de instanciar relação não admitida pelo modelo | A definir (impedimento, justificativa e tratamento) | Em aberto |
 | ALT-04 | Interrupção antes de completar a organização concreta | A definir (persistência de estrutura parcial e regras de retomada) | Em aberto |
 
@@ -105,7 +105,11 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | REG-05 | As instâncias subsequentes respeitam tipos, relações e restrições do modelo adotado. | Organizacional | UC-001 v0.5 | Acordada |
 | REG-06 | Identificação e versão do modelo, e correspondência tipo–instância, devem ser preservadas. | Rastreabilidade | UC-001 v0.5 | Acordada |
 | REG-07 | O modelo brasileiro deve preservar as especializações e relações estabelecidas em MT-BR-001 a MT-BR-005. | Referência para modelo específico | Decisões conceituais MT-BR-001 a MT-BR-005 | Aprovada no MT-BR; não altera o UC-001 |
-| REG-08 | Critérios técnicos de conformidade, formatos de importação e política de versionamento. | Técnica/operacional | Não definidos | A definir |
+| REG-08 | Critérios técnicos de conformidade e formatos de importação. | Técnica/operacional | Não definidos | A definir |
+| REG-09 | Modelo tipológico com uma ou mais instâncias concretas vinculadas não pode ser alterado, desativado ou substituído. | Integridade referencial | Decisão Q-03 | Homologada |
+| REG-10 | Modelo tipológico vazio, para fins de substituição, é aquele sem nenhuma estrutura organizacional concreta vinculada à sua identificação e versão, independentemente dos tipos e relações que o compõem. | Regra conceitual | Decisão Q-03 | Homologada |
+| REG-11 | Substituição por nova versão requer desativação prévia da versão anterior, permitida apenas quando vazia. | Versionamento / integridade | Decisão Q-03 | Homologada |
+| REG-12 | Nova versão importada deve passar pela verificação de conformidade da Q-02 antes de ser disponibilizada. | Conformidade | Decisões Q-02 e Q-03 | Homologada |
 
 > As regras vinculadas à narrativa expressam requisitos de domínio e comportamento. Ainda não representam contratos técnicos nem serviços identificados.
 
@@ -115,8 +119,8 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 |---|---|---|---|
 | Q-01 | Como modelos tipológicos são empacotados e transportados para importação? | Formatos, intercâmbio e compatibilidade | Em aberto; etapa de especificação |
 | Q-02 | Como se verifica e comunica a conformidade de um modelo? | Capacidade específica de verificação, serviço de conformidade, interface administrativa e relatório associado ao modelo e à versão | **Homologada — decisão Q-02 (26/11/2026); detalhamento técnico pendente** |
-| Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Evolução, compatibilidade e histórico | Em aberto |
-| Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Migração, permanência da versão anterior, validação | Em aberto |
+| Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Substituição apenas após desativação de modelo vazio; modelos com instâncias vinculadas são protegidos contra alteração, desativação e substituição | **Homologada — decisão Q-03 (26/11/2026)** |
+| Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Q-03 impede alteração/desativação/substituição do modelo utilizado; eventual evolução ou outra política para estruturas já instanciadas permanece fora do escopo da Q-03 | Parcialmente delimitada; pendente |
 | Q-05 | Quais estados de elaboração de uma estrutura concreta serão admitidos? | Estruturas parciais, revisão e publicação | Em aberto |
 | Q-06 | Qual o escopo de permissões do Administrador e de eventuais outros participantes? | Autorização e responsabilidades | Em aberto |
 | Q-07 | Como o MT-BR deverá materializar os tipos, relações e restrições aprovados? | Artefato conceitual separado; matriz tipológica própria | Em elaboração; fora da homologação UC-001 v0.5 |
@@ -137,6 +141,24 @@ Somente modelos cuja conformidade tenha sido aprovada poderão ser disponibiliza
 
 **Delimitação:** a necessidade de um serviço específico e de uma interface administrativa está homologada. A decisão sobre adotar um microserviço independente permanece para a decomposição técnica. A distinção entre conformidade estrutural e validação jurídica/normativa foi recomendada para análise futura, não homologada como parte da redação Q-02.
 
+### Decisão homologada — Q-03: controle de versões e substituição de modelos tipológicos
+
+**Situação:** Redação integral homologada pelo autor em 26/11/2026. Complementa o UC-001 sem modificar a narrativa canônica v0.5.
+
+A Plataforma CIVITAS deverá preservar a integridade referencial entre os modelos tipológicos de estruturas organizacionais e as estruturas concretas constituídas a partir deles.
+
+Um modelo tipológico que já tenha sido utilizado para constituir uma estrutura organizacional concreta não poderá ser substituído, alterado ou desativado enquanto existirem instâncias vinculadas a ele.
+
+A substituição de um modelo tipológico por uma nova versão somente será permitida quando a versão anterior estiver desativada. Para que a desativação seja autorizada, o modelo deverá estar vazio, isto é, **não poderá possuir qualquer estrutura organizacional concreta constituída a partir dele**.
+
+Dessa forma, a plataforma não precisará examinar individualmente outras vinculações ou dependências para autorizar a substituição. A existência de instâncias organizacionais será a condição determinante para impedir a desativação e a substituição.
+
+A nova versão deverá ser importada e submetida ao processo de verificação de conformidade estabelecido na Q-02 antes de ser disponibilizada para utilização.
+
+**Definição homologada — Modelo tipológico vazio:** modelo que não possui nenhuma estrutura organizacional concreta vinculada à sua identificação e versão, independentemente da quantidade de tipos e relações que contenha.
+
+**Consequência registrada:** uma versão já utilizada para instanciar uma estrutura concreta permanece protegida contra substituição enquanto houver essa vinculação; eventuais estratégias futuras de evolução não foram definidas nesta decisão.
+
 ---
 
 ## Rastreabilidade e controle de mudanças
@@ -148,6 +170,7 @@ Somente modelos cuja conformidade tenha sido aprovada poderão ser disponibiliza
 | Transposição documental para as nove seções | **Preparada; revisão formal do detalhamento complementar pendente** |
 | MT-BR-001 a MT-BR-005 | **Decisões conceituais aprovadas; pertencem ao modelo brasileiro específico** |
 | Q-02 — Verificação e comunicação da conformidade | **Redação funcional homologada; serviço específico e interface administrativa requeridos** |
+| Q-03 — Versionamento e substituição dos modelos | **Redação e definição de modelo vazio homologadas; substituição somente após desativação de versão sem instâncias vinculadas** |
 | Decomposição funcional e especificação dos serviços derivados | **Não iniciadas por este documento** |
 
 **Atenção:** o fato de este documento ter sido salvo em repositório não constitui, por si só, homologação das novas formulações complementares. Qualquer alteração da narrativa canônica exige uma nova versão e aprovação explícita.
