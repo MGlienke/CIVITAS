@@ -95,6 +95,14 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | REG-UC003-20 | Modelos tipológicos não podem modificar, contradizer ou descaracterizar definições constitutivas da Ontologia de Referência. | Decisão Q-03 | Homologada |
 | REG-UC003-21 | Modelos tipológicos devem preservar determinações abertas para os âmbitos institucionais competentes, sem antecipá-las indevidamente. | Decisão Q-03 | Homologada |
 | REG-UC003-22 | Incompatibilidades semânticas devem ser comunicadas ao Administrador para correção externa e nova verificação; modelos incompatíveis não serão disponibilizados. | Decisão Q-03 | Homologada |
+| REG-UC003-23 | A plataforma acompanha as condições derivadas da Ontologia, diferenciando determinações herdadas, próprias e ainda abertas. | Decisão Q-04 | Homologada |
+| REG-UC003-24 | A determinação institucional não equivale, por si só, à demonstração da realização efetiva de determinada condição. | Decisão Q-04 | Homologada |
+| REG-UC003-25 | A realização das condições aplicáveis requer identificação de elementos, capacidades, relações, responsabilidades e evidências verificáveis. | Decisão Q-04 | Homologada |
+| REG-UC003-26 | Insuficiência de determinação ou de comprovação de realização produz pendência sem presunção de atendimento. | Decisão Q-04 | Homologada |
+| REG-UC003-27 | Determinações e realizações observarão competências e autorizações institucionais, com historicidade e rastreabilidade. | Decisão Q-04 | Homologada |
+| REG-UC003-28 | O início da operação de uma Entidade Pública na CIVITAS depende da demonstração da realização de todas as condições ontológicas aplicáveis ao seu âmbito, inclusive as herdadas que exijam realização local. | Decisão Q-04 — observação do autor | Homologada |
+| REG-UC003-29 | A definição de como realizar uma condição, sem a demonstração da realização exigida, não libera o início de operação da entidade. | Decisão Q-04 — observação do autor | Homologada |
+| REG-UC003-30 | A plataforma deverá verificar a completude das realizações ontológicas aplicáveis antes da autorização de início da operação e bloquear a autorização enquanto houver pendências. | Decisão Q-04 — observação do autor | Homologada |
 
 ## 9. Questões a aprofundar
 
@@ -103,7 +111,7 @@ A definir na discussão funcional; a narrativa estabelece identidade semântica,
 | Q-01 | Como incorporar e representar a Ontologia nativa na plataforma? | **Homologada em 26/11/2026 — rede semântica constitutiva, fundamentada e versionada, incorporada pelo Desenvolvedor antes da administração da Plataforma.** |
 | Q-02 | Como delimitar formalmente a Estrutura de Realização Institucional de Referência? | **Homologada em 26/11/2026 — substitui o conceito de estrutura separada pelo mecanismo de determinação institucional progressiva da Ontologia única; ajustar a narrativa em futura v0.3, preservando a v0.2.** |
 | Q-03 | Como verificar a compatibilidade semântica de EOT e ENT com a Ontologia? | **Homologada em 26/11/2026 — correspondência semântica, preservação das definições constitutivas, respeito à determinação progressiva e bloqueio de modelos incompatíveis.** |
-| Q-04 | Como evidenciar condições de realização satisfeitas nas instâncias concretas? | Em discussão |
+| Q-04 | Como evidenciar condições de realização satisfeitas nas instâncias concretas? | **Homologada em 26/11/2026 — determinações herdadas, próprias ou abertas; demonstração verificável da realização; bloqueio do início da operação enquanto houver condições ontológicas aplicáveis não realizadas.** |
 | Q-05 | Como controlar e versionar a evolução da Ontologia sem perder coerência e historicidade? | Em discussão |
 
 ### Decisão homologada — Q-01: incorporação da Ontologia pelo desenvolvimento da Plataforma
@@ -164,6 +172,34 @@ Somente modelos considerados semanticamente compatíveis com a Ontologia de Refe
 
 **Critérios aprovados:** (i) correspondência semântica, (ii) preservação das definições constitutivas e (iii) respeito à determinação institucional progressiva. Não se define nesta etapa um serviço ou formato técnico de verificação.
 
+### Decisão homologada — Q-04: verificação de realização e condição para início da operação
+
+**Situação:** redação funcional aprovada pelo autor em 26/11/2026, com observação vinculante de que uma Entidade Pública não poderá iniciar operação na CIVITAS sem a realização completa de todas as condições ontológicas que lhe sejam aplicáveis. Complementa a narrativa canônica UC-003 v0.2, mantida intacta.
+
+A Plataforma CIVITAS deverá permitir o acompanhamento das determinações institucionais progressivas derivadas da Ontologia de Referência, identificando sua aplicação e realização nas organizações concretas.
+
+Para cada condição ontológica aplicável, a plataforma deverá permitir identificar as determinações herdadas, aquelas estabelecidas pela própria organização e as condições que permanecem abertas para determinação posterior.
+
+A plataforma deverá distinguir a determinação institucional de sua efetiva realização, permitindo identificar os elementos, capacidades, relações e responsabilidades concretas que demonstram o atendimento das condições estabelecidas.
+
+A realização de uma condição deverá ser acompanhada de informações e evidências suficientes para permitir sua verificação, preservando a correspondência com o conceito ontológico de origem, as determinações aplicáveis e os fundamentos normativos pertinentes.
+
+Quando uma condição não estiver suficientemente determinada ou sua realização não puder ser demonstrada, a plataforma deverá registrar a pendência correspondente, sem presumir seu atendimento.
+
+A responsabilidade pela determinação e pela demonstração de sua realização deverá respeitar as competências e autorizações institucionais dos participantes envolvidos.
+
+A plataforma deverá preservar a historicidade das determinações e realizações institucionais, permitindo acompanhar suas alterações e reconstruir a situação existente em determinado momento.
+
+#### Condição expressa de autorização do início da operação — homologada
+
+Ao alcançar o nível da Entidade Pública instanciada, **todas as condições ontológicas aplicáveis àquela entidade deverão estar efetivamente realizadas e demonstradas**. A CIVITAS não poderá autorizar o início da operação da Entidade Pública enquanto existir alguma condição ontológica obrigatória ainda aberta, apenas determinada, insuficientemente realizada ou sem evidências verificáveis de realização.
+
+A mera definição de como uma condição será realizada **não equivale à sua realização** e não substitui a comprovação exigida para autorização de operação. Condições cuja realização se dê legitimamente por capacidades compartilhadas ou por outra organização competente deverão ter essa forma de atendimento demonstrada; não se exige a criação artificial de unidades próprias quando a realização institucional válida ocorrer de outra maneira.
+
+Antes de autorizar o início da operação, a plataforma deverá executar uma verificação de completude das condições ontológicas aplicáveis e comunicar as pendências ao responsável institucional. Somente a inexistência de pendências impeditivas permitirá autorizar a operação.
+
+**Delimitação:** a exigência recai sobre a realização de todas as condições **aplicáveis**, e não sobre a criação de instâncias para cada conceito da Ontologia. A classificação de aplicabilidade e os meios técnicos de demonstração serão especificados posteriormente. A autorização de operação na CIVITAS não se confunde com a existência jurídica da Entidade Pública.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -173,5 +209,6 @@ Somente modelos considerados semanticamente compatíveis com a Ontologia de Refe
 | Q-01 — Incorporação da Ontologia nativa | **Homologada em 26/11/2026; REG-UC003-07 a REG-UC003-11 incorporadas** |
 | Q-02 — Determinação Institucional Progressiva | **Homologada em 26/11/2026; REG-UC003-12 a REG-UC003-17 incorporadas; consolidação narrativa v0.3 pendente** |
 | Q-03 — Compatibilidade semântica EOT/ENT | **Homologada em 26/11/2026; REG-UC003-18 a REG-UC003-22 incorporadas** |
+| Q-04 — Realização ontológica e autorização de operação | **Homologada em 26/11/2026; REG-UC003-23 a REG-UC003-30 incorporadas; realização completa obrigatória para iniciar operação na CIVITAS** |
 | Demais seções do template | Organização inicial; revisão e detalhamento pendentes |
 | Decomposição funcional | Não iniciada |
