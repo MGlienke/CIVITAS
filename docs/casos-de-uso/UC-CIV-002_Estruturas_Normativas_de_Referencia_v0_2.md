@@ -90,6 +90,10 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | REG-UC002-09 | O conjunto dessas exigências e associações constitui a Estrutura Normativa de Referência, abstrata e desprovida de documentos concretos de uma organização determinada. | Q-01 | Homologada |
 | REG-UC002-10 | A instanciação organizacional deve instanciar as exigências normativas correspondentes e permitir indicar os documentos concretos que as satisfazem. | Q-01 | Homologada |
 | REG-UC002-11 | Estruturas organizacional e normativa tipológicas são elaboradas coordenadamente e importadas conjuntamente, preservando correspondências. | Q-01 | Homologada |
+| REG-UC002-12 | A disponibilização dos modelos exige verificação prévia de compatibilidade organizacional-normativa. | Q-02 | Homologada |
+| REG-UC002-13 | A verificação examina correspondência, completude e coerência entre tipos/relações e exigências de fundamentação. | Q-02 | Homologada |
+| REG-UC002-14 | Inconsistências devem ser comunicadas ao Administrador para correção externa e repetição da verificação. | Q-02 | Homologada |
+| REG-UC002-15 | Somente conjuntos de modelos conformes e compatíveis podem ser disponibilizados para instanciação. | Q-02 | Homologada |
 
 **Diretriz interpretativa discutida:** exigir fundamentação de elementos e relações, não apenas cadastramento de documentos; a suficiência e a verificabilidade da fundamentação serão aprofundadas na especificação e na articulação com UC-001.
 
@@ -98,7 +102,7 @@ A descrever em discussão própria. Situações candidatas: incompatibilidade en
 | ID | Questão | Situação |
 |---|---|---|
 | Q-01 | Como será elaborada e empacotada a estrutura normativa em correspondência com o modelo tipológico? | **Homologada em 26/11/2026 — estrutura abstrata de exigências normativas vinculadas a tipos e relações; elaboração externa coordenada e importação conjunta. Formato técnico a definir.** |
-| Q-02 | Quais critérios verificam a compatibilidade entre os modelos abstratos? | A definir |
+| Q-02 | Quais critérios verificam a compatibilidade entre os modelos abstratos? | **Homologada em 26/11/2026 — correspondência, completude e coerência; inconsistências comunicadas ao Administrador e modelos incompatíveis não disponibilizados.** |
 | Q-03 | Como identificar, vincular e verificar normas e dispositivos concretos na instanciação? | A definir |
 | Q-04 | Como manter a vigência, a historicidade e a atualização dos fundamentos normativos? | A definir |
 | Q-05 | Como distribuir responsabilidades entre Administrador da Plataforma e Gestor de Entidade ao complementar a fundamentação? | A definir |
@@ -121,6 +125,26 @@ Dessa forma, toda estrutura institucional concreta poderá ser acompanhada da es
 
 **Delimitação conceitual:** a exigência normativa se refere à função jurídica que a fundamentação deverá desempenhar; sua satisfação por documento ou conjunto de dispositivos concretos deve ser examinada na instanciação. Não se define, nesta etapa, o formato técnico do arquivo de importação.
 
+### Decisão homologada — Q-02: compatibilidade entre modelos abstratos
+
+**Situação:** redação integral homologada pelo autor em 26/11/2026. Complementa a narrativa canônica UC-002 v0.2 sem alterá-la.
+
+A Plataforma CIVITAS deverá verificar a compatibilidade entre a Estrutura Organizacional Tipológica e sua correspondente Estrutura Normativa de Referência antes de disponibilizá-las para utilização.
+
+Essa verificação deverá examinar a correspondência entre os tipos e relações organizacionais e as exigências de fundamentação normativa a eles associadas, identificando eventuais ausências, inconsistências ou incompatibilidades.
+
+A verificação deverá assegurar que os elementos e relações organizacionais sujeitos à fundamentação normativa disponham das exigências correspondentes, de modo que sua futura instanciação possa ser acompanhada da indicação dos fundamentos jurídicos pertinentes.
+
+As inconsistências identificadas deverão ser apresentadas ao Administrador da Plataforma, permitindo que sejam corrigidas nos modelos elaborados externamente e que a verificação seja novamente realizada.
+
+Somente os conjuntos de modelos considerados conformes e compatíveis poderão ser disponibilizados para instanciação na Plataforma CIVITAS.
+
+**Critérios aprovados:** (i) **correspondência** entre exigências e tipos/relações identificáveis; (ii) **completude** das exigências para tipos/relações que requerem fundamentação; (iii) **coerência** entre exigências e restrições organizacionais.
+
+**Delimitação:** trata-se de compatibilidade entre modelos abstratos, não da verificação da suficiência jurídica de normas concretas. A implementação técnica será definida posteriormente.
+
+**Questão terminológica em discussão, sem alteração homologada:** considerar a denominação “Estrutura Normativa Tipológica” em lugar de “Estrutura Normativa de Referência”, para explicitar o paralelismo com “Estrutura Organizacional Tipológica”. A redação canônica v0.2 permanece intacta até decisão do autor.
+
 ## Rastreabilidade e controle de mudanças
 
 | Registro | Situação |
@@ -128,5 +152,7 @@ Dessa forma, toda estrutura institucional concreta poderá ser acompanhada da es
 | Narrativa UC-002 v0.2 | **Homologada em 26/11/2026** |
 | UC-001 | Dependência funcional identificada; narrativa v0.5 preservada |
 | Q-01 — Estrutura normativa de referência tipológica | **Redação homologada em 26/11/2026; REG-UC002-08 a REG-UC002-11 incorporadas** |
+| Q-02 — Compatibilidade entre modelos abstratos | **Redação homologada em 26/11/2026; REG-UC002-12 a REG-UC002-15 incorporadas** |
+| Terminologia — Estrutura Normativa Tipológica | **Em discussão; não homologada** |
 | Seções auxiliares 1–4 e 6–9 | Organização documental preliminar, sem homologação implícita |
 | Decomposição funcional | Não iniciada |
