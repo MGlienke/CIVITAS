@@ -114,6 +114,11 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | REG-14 | A substituição do modelo constitutivo depende de alteração do fundamento normativo constitutivo pertinente, além das condições de integridade da Q-03. | Integridade / normativa | Decisão Q-04 e observação homologatória | Homologada como diretriz; critérios jurídicos específicos a detalhar |
 | REG-15 | Mudanças na estrutura organizacional interna de Estado, Entidade Pública ou Órgão não implicam necessariamente substituição do tipo ou perda de identidade institucional. | Historicidade / organização | Decisão Q-04 | Homologada |
 | REG-16 | A exclusão de uma estrutura concreta para esvaziamento do modelo só será admitida quando não comprometer dados ou relações institucionais sujeitos a preservação; condições detalhadas a definir. | Integridade / historicidade | Decisão Q-04 | Homologada com detalhamento pendente |
+| REG-17 | A instauração de uma estrutura concreta de Estado deverá partir de modelo tipológico selecionado e da Constituição indicada pelo Administrador. | Constitucional / institucional | Decisão Q-05 | Homologada |
+| REG-18 | A IA somente poderá propor elementos e relações cuja identificação e posição institucional possam ser justificadas por fundamento normativo identificável; lacunas não autorizam elementos presumidos. | Verdade administrativa / verificabilidade | Decisão Q-05 e observação do autor | Homologada |
+| REG-19 | A proposta assistida por IA deverá apresentar elementos, relações e os fundamentos normativos usados para justificá-los, para revisão, correção e complementação pelo Administrador. | Rastreabilidade / revisão | Decisão Q-05 | Homologada |
+| REG-20 | A estrutura inicial será constituída após aprovação do Administrador e preservará a correspondência entre instâncias, tipos e fundamentos normativos. | Governança / rastreabilidade | Decisão Q-05 | Homologada |
+| REG-21 | A elaboração inicial observará os estados Em preparação, Aprovada e Constituída; o detalhamento posterior poderá ser progressivo sem alterar o fundamento constitutivo. | Ciclo de vida | Decisão Q-05 | Homologada |
 
 > As regras vinculadas à narrativa expressam requisitos de domínio e comportamento. Ainda não representam contratos técnicos nem serviços identificados.
 
@@ -125,7 +130,7 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | Q-02 | Como se verifica e comunica a conformidade de um modelo? | Capacidade específica de verificação, serviço de conformidade, interface administrativa e relatório associado ao modelo e à versão | **Homologada — decisão Q-02 (26/11/2026); detalhamento técnico pendente** |
 | Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Substituição apenas após desativação de modelo vazio; modelos com instâncias vinculadas são protegidos contra alteração, desativação e substituição | **Homologada — decisão Q-03 (26/11/2026)** |
 | Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Proteger o modelo tipológico enquanto houver instâncias; admitir esvaziamento/exclusão de estrutura concreta sob condições de preservação; distinguir alteração constitutiva normativa de evolução da organização interna | **Homologada — decisão Q-04 (26/11/2026), com observação constitutiva do autor** |
-| Q-05 | Quais estados de elaboração de uma estrutura concreta serão admitidos? | Estruturas parciais, revisão e publicação | Em aberto |
+| Q-05 | Quais estados de elaboração de uma estrutura concreta serão admitidos? | Instanciação do Estado assistida por IA com referência constitucional, proposta rastreável, revisão pelo Administrador e estados Em preparação / Aprovada / Constituída | **Homologada — decisão Q-05 (26/11/2026), com vedação de elementos sem justificativa normativa** |
 | Q-06 | Qual o escopo de permissões do Administrador e de eventuais outros participantes? | Autorização e responsabilidades | Em aberto |
 | Q-07 | Como o MT-BR deverá materializar os tipos, relações e restrições aprovados? | Artefato conceitual separado; matriz tipológica própria | Em elaboração; fora da homologação UC-001 v0.5 |
 
@@ -187,6 +192,45 @@ A CIVITAS deverá, portanto, preservar a distinção entre **(a) alteração ou 
 
 **Delimitação:** a relação exata entre determinadas alterações constitucionais, a necessidade de nova versão tipológica e a extinção de entes ou entidades exige análise normativa específica. A expressão “somente se a Constituição for mudada” é registrada como a diretriz conceitual aprovada para este modelo, sem afirmar que toda emenda constitucional exija substituição tipológica. A evolução da organização interna e seu controle histórico serão detalhados em casos de uso próprios.
 
+### Decisão homologada — Q-05: instanciação constitucional assistida por IA
+
+**Situação:** Redação e três estados de elaboração aprovados pelo autor em 26/11/2026, com observação adicional expressamente integrada à homologação. Complementa o UC-001 sem modificar a narrativa canônica v0.5.
+
+A constituição de uma instância de Estado na Plataforma CIVITAS deverá estar fundamentada na Constituição que estabelece sua organização institucional.
+
+Para iniciar a instanciação, o Administrador selecionará o modelo tipológico correspondente e indicará a Constituição que fundamenta a organização do Estado a ser representado.
+
+A plataforma deverá disponibilizar um mecanismo de inteligência artificial capaz de analisar a referência normativa indicada e identificar os elementos e as relações institucionais nela estabelecidos, produzindo uma proposta de estrutura organizacional concreta compatível com o modelo tipológico selecionado.
+
+A proposta deverá apresentar os elementos identificados, suas relações institucionais e os fundamentos normativos utilizados para justificá-los, permitindo ao Administrador examinar, corrigir e complementar o resultado.
+
+A estrutura organizacional inicial somente será efetivamente constituída após a aprovação do Administrador, preservando-se a correspondência entre os elementos instanciados, seus tipos organizacionais e os fundamentos normativos que sustentam sua existência e posição institucional.
+
+A instanciação inicial não precisará contemplar todos os detalhes da organização administrativa do Estado, mas deverá representar os elementos institucionais identificados e aprovados a partir da Constituição. O detalhamento posterior ocorrerá progressivamente, conforme a incorporação de Entidades Públicas, órgãos e suas estruturas administrativas.
+
+#### Estados de elaboração homologados
+
+| Estado | Significado |
+|---|---|
+| Em preparação | A IA está preparando a proposta, ou o Administrador está revisando e complementando os resultados. |
+| Aprovada | O Administrador validou a estrutura inicial proposta e seus fundamentos. |
+| Constituída | A estrutura aprovada foi instanciada na Plataforma CIVITAS e está disponível para utilização. |
+
+Os estados correspondem ao **processo de constituição inicial da estrutura**. Não se confundem com os estados de vigência, existência jurídica ou evolução posterior de cada organização, que terão tratamento específico.
+
+#### Observação expressa do autor — integrante da homologação
+
+**Nenhum elemento ou relação da estrutura organizacional estatal poderá ser proposto como válido, aprovado ou instanciado sem justificativa normativa identificável.** A IA deverá limitar suas propostas aos elementos cuja existência, classificação e posição institucional possam ser sustentadas pela Constituição indicada ou pelos fundamentos normativos pertinentes. Diante de lacuna, ambiguidade ou insuficiência de fundamento, deverá registrar a ocorrência para exame do Administrador, sem inventar elementos ou vínculos.
+
+A exigência protege a **Verdade Administrativa desde a constituição da estrutura organizacional**, e se aplica igualmente às correções e aos complementos introduzidos pelo Administrador: a aprovação humana não substitui a necessidade de fundamento normativo.
+
+#### Delimitações
+
+- A Constituição indicada é a referência constitutiva principal. O tratamento de normas complementares, fontes e sua vigência será detalhado na especificação, sem relaxar a exigência de fundamento normativo verificável.
+- A análise por IA **não** constitui decisão jurídica autônoma. O Administrador revisa, corrige e aprova; não se presume que a IA tenha localizado todos os elementos constitucionais.
+- Os critérios de suficiência da fundamentação, níveis de evidência, formatos e contratos técnicos continuam para a fase de especificação funcional.
+- O detalhamento gradual da organização não equivale a substituir o modelo tipológico, conforme Q-03 e Q-04.
+
 ---
 
 ## Rastreabilidade e controle de mudanças
@@ -200,6 +244,7 @@ A CIVITAS deverá, portanto, preservar a distinção entre **(a) alteração ou 
 | Q-02 — Verificação e comunicação da conformidade | **Redação funcional homologada; serviço específico e interface administrativa requeridos** |
 | Q-03 — Versionamento e substituição dos modelos | **Redação e definição de modelo vazio homologadas; substituição somente após desativação de versão sem instâncias vinculadas** |
 | Q-04 — Estabilidade constitutiva versus evolução organizacional | **Redação homologada com a observação constitutiva adicional do autor; condições técnicas e jurídicas específicas pendentes** |
+| Q-05 — Instanciação constitucional assistida por IA | **Redação e estados homologados; exigência de justificação normativa para cada elemento e relação como proteção da Verdade Administrativa** |
 | Decomposição funcional e especificação dos serviços derivados | **Não iniciadas por este documento** |
 
 **Atenção:** o fato de este documento ter sido salvo em repositório não constitui, por si só, homologação das novas formulações complementares. Qualquer alteração da narrativa canônica exige uma nova versão e aprovação explícita.
