@@ -14,7 +14,7 @@ As jornadas **não duplicam** nem substituem as narrativas canônicas dos casos 
 
 | Jornada | Nome | Casos de uso | Marco final | Situação |
 |---|---|---|---|---|
-| [JRN-CIV-001](./JRN-CIV-001_Preparacao_da_Plataforma_e_Habilitacao_da_Primeira_Organizacao_Institucional_v0_1.md) | Preparação da Plataforma e Habilitação da Primeira Organização Institucional | UC-001 a UC-006 | Marco A — autorização da operação administrativa inicial | v0.1 — proposta documental para homologação |
+| [JRN-CIV-001](./JRN-CIV-001_Preparacao_da_Plataforma_e_Habilitacao_da_Primeira_Organizacao_Institucional_v0_1.md) | Preparação da Plataforma e Habilitação da Primeira Organização Institucional | UC-001 a UC-006 | Marco A — autorização da operação administrativa inicial | v0.1 — homologada em 26/11/2026 |
 
 ## Convenção
 
