@@ -114,12 +114,28 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | ID | Questão | Alternativas / implicações | Decisão / situação |
 |---|---|---|---|
 | Q-01 | Como modelos tipológicos são empacotados e transportados para importação? | Formatos, intercâmbio e compatibilidade | Em aberto; etapa de especificação |
-| Q-02 | Como se verifica e comunica a conformidade de um modelo? | Critérios de validação e tratamento de inconsistências | Em aberto |
+| Q-02 | Como se verifica e comunica a conformidade de um modelo? | Capacidade específica de verificação, serviço de conformidade, interface administrativa e relatório associado ao modelo e à versão | **Homologada — decisão Q-02 (26/11/2026); detalhamento técnico pendente** |
 | Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Evolução, compatibilidade e histórico | Em aberto |
 | Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Migração, permanência da versão anterior, validação | Em aberto |
 | Q-05 | Quais estados de elaboração de uma estrutura concreta serão admitidos? | Estruturas parciais, revisão e publicação | Em aberto |
 | Q-06 | Qual o escopo de permissões do Administrador e de eventuais outros participantes? | Autorização e responsabilidades | Em aberto |
 | Q-07 | Como o MT-BR deverá materializar os tipos, relações e restrições aprovados? | Artefato conceitual separado; matriz tipológica própria | Em elaboração; fora da homologação UC-001 v0.5 |
+
+### Decisão homologada — Q-02: verificação e comunicação da conformidade
+
+**Situação:** Redação integral homologada pelo autor em 26/11/2026. A decisão complementa o UC-001 sem modificar sua narrativa canônica v0.5.
+
+A Plataforma CIVITAS deverá dispor de uma capacidade específica para verificar a conformidade dos modelos tipológicos importados em relação ao Metamodelo Organizacional nativo.
+
+Essa capacidade será disponibilizada por meio de um serviço de verificação de conformidade, responsável por examinar os elementos, as relações e as restrições presentes no modelo importado, identificando eventuais inconsistências, incompatibilidades ou omissões.
+
+O Administrador da Plataforma deverá dispor de uma interface que permita solicitar a verificação, acompanhar seus resultados, consultar as inconsistências identificadas e repetir a verificação após as correções necessárias.
+
+A plataforma deverá registrar os resultados das verificações, preservando sua associação com o modelo tipológico e sua respectiva versão.
+
+Somente modelos cuja conformidade tenha sido aprovada poderão ser disponibilizados para instanciação.
+
+**Delimitação:** a necessidade de um serviço específico e de uma interface administrativa está homologada. A decisão sobre adotar um microserviço independente permanece para a decomposição técnica. A distinção entre conformidade estrutural e validação jurídica/normativa foi recomendada para análise futura, não homologada como parte da redação Q-02.
 
 ---
 
@@ -131,6 +147,7 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | CIV-UC-TPL v1.0 | **Template homologado** |
 | Transposição documental para as nove seções | **Preparada; revisão formal do detalhamento complementar pendente** |
 | MT-BR-001 a MT-BR-005 | **Decisões conceituais aprovadas; pertencem ao modelo brasileiro específico** |
+| Q-02 — Verificação e comunicação da conformidade | **Redação funcional homologada; serviço específico e interface administrativa requeridos** |
 | Decomposição funcional e especificação dos serviços derivados | **Não iniciadas por este documento** |
 
 **Atenção:** o fato de este documento ter sido salvo em repositório não constitui, por si só, homologação das novas formulações complementares. Qualquer alteração da narrativa canônica exige uma nova versão e aprovação explícita.
