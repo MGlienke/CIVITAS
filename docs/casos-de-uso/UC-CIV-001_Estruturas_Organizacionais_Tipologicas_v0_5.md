@@ -119,6 +119,11 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | REG-19 | A proposta assistida por IA deverá apresentar elementos, relações e os fundamentos normativos usados para justificá-los, para revisão, correção e complementação pelo Administrador. | Rastreabilidade / revisão | Decisão Q-05 | Homologada |
 | REG-20 | A estrutura inicial será constituída após aprovação do Administrador e preservará a correspondência entre instâncias, tipos e fundamentos normativos. | Governança / rastreabilidade | Decisão Q-05 | Homologada |
 | REG-21 | A elaboração inicial observará os estados Em preparação, Aprovada e Constituída; o detalhamento posterior poderá ser progressivo sem alterar o fundamento constitutivo. | Ciclo de vida | Decisão Q-05 | Homologada |
+| REG-22 | A CIVITAS distingue os papéis de Administrador da Plataforma e Gestor de Entidade, com responsabilidades institucionais diferentes. | Governança / autorização | Decisão Q-06 | Homologada |
+| REG-23 | Importação e conformidade de modelos tipológicos, constituição inicial do Estado e gestão do CRM/habilitação de clientes são responsabilidades do Administrador da Plataforma. | Governança / CRM | Decisão Q-06 | Homologada |
+| REG-24 | Cada cliente da plataforma deverá possuir um Gestor de Entidade, autorizado a constituir e manter a estrutura organizacional interna de sua respectiva Entidade Pública. | Governança / organização | Decisão Q-06 | Homologada |
+| REG-25 | O Gestor de Entidade atua no âmbito institucional autorizado, sem administrar os modelos tipológicos gerais ou os demais clientes da CIVITAS. | Autorização / segregação de funções | Decisão Q-06 | Homologada |
+| REG-26 | A existência jurídica/institucional de uma Entidade Pública é independente de sua habilitação como cliente CIVITAS. | Distinção institucional | Decisão Q-06 | Homologada |
 
 > As regras vinculadas à narrativa expressam requisitos de domínio e comportamento. Ainda não representam contratos técnicos nem serviços identificados.
 
@@ -131,7 +136,7 @@ Dessa forma, a CIVITAS permitirá representar diferentes organizações estatais
 | Q-03 | Como coexistem versões diferentes de um modelo utilizado? | Substituição apenas após desativação de modelo vazio; modelos com instâncias vinculadas são protegidos contra alteração, desativação e substituição | **Homologada — decisão Q-03 (26/11/2026)** |
 | Q-04 | Como tratar mudanças de modelo quando já existem instâncias? | Proteger o modelo tipológico enquanto houver instâncias; admitir esvaziamento/exclusão de estrutura concreta sob condições de preservação; distinguir alteração constitutiva normativa de evolução da organização interna | **Homologada — decisão Q-04 (26/11/2026), com observação constitutiva do autor** |
 | Q-05 | Quais estados de elaboração de uma estrutura concreta serão admitidos? | Instanciação do Estado assistida por IA com referência constitucional, proposta rastreável, revisão pelo Administrador e estados Em preparação / Aprovada / Constituída | **Homologada — decisão Q-05 (26/11/2026), com vedação de elementos sem justificativa normativa** |
-| Q-06 | Qual o escopo de permissões do Administrador e de eventuais outros participantes? | Autorização e responsabilidades | Em aberto |
+| Q-06 | Qual o escopo de permissões do Administrador e de eventuais outros participantes? | Papéis separados de Administrador da Plataforma e Gestor de Entidade; CRM e habilitação de clientes sob o Administrador; gestão da estrutura interna sob o Gestor autorizado | **Homologada — decisão Q-06 (26/11/2026)** |
 | Q-07 | Como o MT-BR deverá materializar os tipos, relações e restrições aprovados? | Artefato conceitual separado; matriz tipológica própria | Em elaboração; fora da homologação UC-001 v0.5 |
 
 ### Decisão homologada — Q-02: verificação e comunicação da conformidade
@@ -231,6 +236,46 @@ A exigência protege a **Verdade Administrativa desde a constituição da estrut
 - Os critérios de suficiência da fundamentação, níveis de evidência, formatos e contratos técnicos continuam para a fase de especificação funcional.
 - O detalhamento gradual da organização não equivale a substituir o modelo tipológico, conforme Q-03 e Q-04.
 
+### Decisão homologada — Q-06: administração da plataforma e gestão das entidades
+
+**Situação:** Redação homologada pelo autor em 26/11/2026. Complementa o UC-001 sem alterar a narrativa canônica v0.5.
+
+A Plataforma CIVITAS deverá distinguir dois papéis administrativos principais: o **Administrador da Plataforma** e o **Gestor de Entidade**.
+
+O Administrador da Plataforma será responsável pela administração geral do ambiente CIVITAS, incluindo a gestão dos modelos tipológicos de referência, a constituição inicial das estruturas estatais e a criação das condições necessárias para que Entidades Públicas possam utilizar a plataforma.
+
+Caberá também ao Administrador da Plataforma realizar a gestão dos clientes CIVITAS, por meio de funcionalidades de relacionamento e administração de clientes (CRM), permitindo registrar, habilitar e acompanhar as Entidades Públicas que utilizam os serviços da plataforma.
+
+Cada cliente da Plataforma CIVITAS deverá possuir um **Gestor de Entidade**, responsável pela administração da respectiva organização institucional no ambiente CIVITAS.
+
+Ao Gestor de Entidade caberá constituir, organizar e manter a estrutura organizacional interna da Entidade Pública sob sua responsabilidade, observando seus fundamentos normativos, as competências institucionais e as regras estabelecidas pela plataforma.
+
+A atuação do Gestor de Entidade ficará restrita ao âmbito institucional para o qual estiver autorizado, não abrangendo a administração dos modelos tipológicos gerais nem a gestão de outros clientes da plataforma.
+
+Dessa forma, a CIVITAS separará a governança das estruturas institucionais de referência, a administração comercial e operacional dos clientes e a gestão da organização interna de cada Entidade Pública.
+
+#### Distribuição de responsabilidades homologada
+
+| Responsabilidade | Administrador da Plataforma | Gestor de Entidade |
+|---|---|---|
+| Administrar os modelos tipológicos | Sim | Não |
+| Importar modelos tipológicos | Sim | Não |
+| Verificar e aprovar conformidade | Sim, com apoio de serviço especializado | Não |
+| Constituir a instância inicial de Estado | Sim | Não |
+| Administrar o CRM de clientes | Sim | Não |
+| Habilitar Entidades Públicas como clientes | Sim | Não |
+| Designar o Gestor de Entidade | Sim, conforme autorização | Não, inicialmente |
+| Constituir a organização interna da Entidade Pública | Não, como atividade ordinária | Sim |
+| Manter e evoluir a estrutura organizacional interna | Não, como atividade ordinária | Sim |
+
+#### Distinção institucional
+
+A existência jurídica e institucional de uma Entidade Pública **independe de sua condição de cliente da CIVITAS**. O posicionamento institucional na organização do Estado, o relacionamento comercial/operacional com a plataforma e a gestão administrativa interna são fatos relacionados, mas distintos.
+
+**Delimitação:** os papéis correspondem a responsabilidades e contextos de atuação, não necessariamente a categorias de Pessoas distintas. Regras concretas de autorização, delegação, substituição de gestores e representação serão definidas nas especificações funcionais posteriores.
+
+**Referência arquitetural preliminar, sem atribuição de serviços nesta etapa:** A101-ADM, A102-GDC (CRM), A103-GEP, C302-EOR e C103-IEA.
+
 ---
 
 ## Rastreabilidade e controle de mudanças
@@ -245,6 +290,7 @@ A exigência protege a **Verdade Administrativa desde a constituição da estrut
 | Q-03 — Versionamento e substituição dos modelos | **Redação e definição de modelo vazio homologadas; substituição somente após desativação de versão sem instâncias vinculadas** |
 | Q-04 — Estabilidade constitutiva versus evolução organizacional | **Redação homologada com a observação constitutiva adicional do autor; condições técnicas e jurídicas específicas pendentes** |
 | Q-05 — Instanciação constitucional assistida por IA | **Redação e estados homologados; exigência de justificação normativa para cada elemento e relação como proteção da Verdade Administrativa** |
+| Q-06 — Separação entre Administrador da Plataforma e Gestor de Entidade | **Redação e responsabilidades homologadas, incluindo CRM e gestão institucional de clientes** |
 | Decomposição funcional e especificação dos serviços derivados | **Não iniciadas por este documento** |
 
 **Atenção:** o fato de este documento ter sido salvo em repositório não constitui, por si só, homologação das novas formulações complementares. Qualquer alteração da narrativa canônica exige uma nova versão e aprovação explícita.
