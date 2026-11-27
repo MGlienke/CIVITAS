@@ -1,6 +1,6 @@
 # DEC-A107-007 — Arquitetura de Implementação e Persistência do A107-EOB
 
-**Estado:** PROPOSTA v0.1 — EM REVISÃO, NÃO HOMOLOGADA  
+**Estado:** **HOMOLOGADA — v0.1, pelo autor em 26/11/2026**  
 **Data:** 26/11/2026  
 **Incremento:** INC-001 — Marco A (homologado)  
 **Módulo:** A107-EOB — Estrutura Organizacional de Base  
@@ -277,6 +277,10 @@ Os testes unitários com dublês não demonstram, isoladamente, prontidão insti
 
 ## 15. Alcance da decisão
 
-A homologação futura desta DEC autorizará o **desenho arquitetural e o modelo lógico de persistência**, **não** significará criação de tabelas, APIs, código, execução de testes nem homologação operacional do INC-001. O próximo passo será o **modelo físico DDL + interfaces TypeScript/JSON Schema + testes de contrato**, respeitando os campos e contratos já homologados.
+A homologação desta DEC aprova o **desenho arquitetural e o modelo lógico de persistência**, **não** significará criação de tabelas, APIs, código, execução de testes nem homologação operacional do INC-001. O próximo passo será o **modelo físico DDL + interfaces TypeScript/JSON Schema + testes de contrato**, respeitando os campos e contratos já homologados.
 
-**Estado:** proposta para revisão do autor; não homologada.
+**Estado:** arquitetura de implementação e persistência homologada; não implementada.
+
+## 16. Homologação expressa
+
+Em 26/11/2026, o autor homologou expressamente a **DEC-A107-007 v0.1**. Ficam aprovadas as escolhas de **Node.js com TypeScript e PostgreSQL**, um serviço **A107-EOB modular**, as fronteiras por portas/adaptadores, o esquema PostgreSQL independente **`civitas_plataforma.a107`**, o modelo lógico de tabelas da seção 5, a separação entre elegibilidade técnica e autorização institucional, a persistência histórica imutável, o controle de idempotência, a outbox e a abordagem de reavaliação seletiva. O detalhamento físico DDL, os contratos TypeScript/JSON Schema, migrações, deploy e testes executados não estão homologados nem realizados por esta decisão.
