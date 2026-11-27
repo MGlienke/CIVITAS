@@ -1,0 +1,36 @@
+name: A103-GEP T1 — Protótipo simulado
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "plataforma/a103-gep/**"
+      - ".github/workflows/a103-gep-t1-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "plataforma/a103-gep/**"
+      - ".github/workflows/a103-gep-t1-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  simulacao:
+    name: Node 24 — ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: plataforma/a103-gep
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Testes de simulacao, sem fontes ou banco reais
+        run: npm test
