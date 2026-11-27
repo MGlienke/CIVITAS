@@ -1,6 +1,6 @@
 # ESP-A103-CS04-001 — Constituição e Registro de Organização Institucional
 
-**Versão:** 0.1 — **PROPOSTA, NÃO HOMOLOGADA**  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 27/11/2026** (especificação funcional e transacional, sem implementação)  
 **Data:** 27/11/2026  
 **Módulo proprietário:** A103-GEP  
 **Contrato de referência:** CS-04 — Constituir Organização Institucional (ID lógico editorial da Matriz de Componentes e Contratos de Serviços v0.1)  
@@ -212,10 +212,14 @@ Testes **não implementados nem executados**. Os 19 testes A107 v0.3.0 não prov
 8. **Numeração e catálogo de artefatos:** verificar colisões e conferir padrão antes da atribuição de SRV/DAT/INV/REG/RFU/RNF/TST/LOG/MET/MON definitivos.
 9. **Aceite integrado:** provas com dados institucionais legítimos e ambiente segregado; mocks não servirão como evidências reais.
 
-## 14. Deliberação solicitada
+## 14. Registro de homologação — 27/11/2026
 
-Solicita-se **homologar ou revisar** esta especificação **CS-04 v0.1**: distinção entre constituição jurídica, registro e publicação; operações e estados; invariantes de identidade, proveniência, historicidade, prova e autoridade; atomicidade local; rastreabilidade; matriz de testes.
+Em 27/11/2026, o autor declarou expressamente **“homologado”** para a **ESP-A103-CS04-001 v0.1 — Constituição e Registro de Organização Institucional**.
 
-**Escopo deste documento:** apenas modelo de operação proprietária e suas regras. A aprovação **não homologa** DDL, arquitetura física, autenticação operacional, endpoint, serviço executável, publicação real de identidade, autoridade pública concreta ou autorização de Marco A.
+**Escopo homologado:** especificação funcional e transacional de CS-04, incluindo distinção entre constituição jurídica, registro no A103 e publicação de versão; operações lógicas e máquina de estados; identidade e controle de duplicidade; origem e referências probatórias; competência para a publicação a comprovar por mecanismo de autorização próprio; versionamento, histórico, retificações, idempotência, concorrência e atomicidade local; separação entre publicação registral, verificação ontológica no A107 e autorização do Marco A pelo Administrador da Plataforma.
 
-**Estado:** proposta no PR documental, aguardando decisão do autor.
+**Limites da homologação:** não foram aprovados DDL, migrações, arquitetura física, endpoints, atribuição definitiva de SRV e outros códigos pendentes de catálogo, procedimentos reais de autenticação/autorização, constituição jurídica concreta, publicação institucional real, operação executável nem autorização de Marco A. Os 14 testes candidatos constituem critérios para implementação futura e **não foram executados**. Permanecem pendentes as decisões técnicas e operacionais da seção 13.
+
+**Baselines preservados:** DEC-A103-001 v0.1, ESP-A103-DAT-001 v0.1, ESP-A103-CE01-001 v0.1, A107-EOB v0.3.0 e CM-01 a CM-04. Esta homologação não altera o código existente do A107.
+
+**Próximo marco:** integração documental do PR #6 à `main`, quando realizada separadamente, seguida do detalhamento de contratos, controles de autorização, manifesto probatório e persistência física do A103-GEP.
