@@ -6,9 +6,9 @@
 
 | UC | Resultado esperado | Situação verificada | Dependência / próximo resultado concreto |
 |---|---|---|---|
-| 001 | EOT constituídas, importadas, validadas e utilizadas | Narrativa homologada; gestão/importação EOT não implementada fim a fim | Importação e versionamento EOT; A107 |
-| 002 | ENT/ENI, correspondência normativa e fundamentos | Narrativa homologada; A108-BDN sem serviço executável | Fonte normativa, normas e correspondência à EOT |
-| 003 | Ontologia de Referência e verificação de realização | Motor A107-EOB v0.3.0 com 19 testes; implementação parcial do UC | Completar suporte semântico e fontes para os requisitos |
+| 001 | EOT constituídas, importadas, validadas e utilizadas | **T5: importação e versionamento preliminares simulados aprovados em CI**; UC-001 não concluído | Metamodelo nativo real, MT-BR, serviço proprietário A107, importação oficial, autoria e integração institucional |
+| 002 | ENT/ENI, correspondência normativa e fundamentos | **T5: validação estrutural de ENT associada à EOT simulada**; UC-002 não concluído | A108-BDN, fontes normativas reais, ENI e verificação da pertinência jurídica das referências |
+| 003 | Ontologia de Referência e verificação de realização | Motor A107-EOB v0.3.0 com 19 testes; **T5 utiliza apenas vocabulário ontológico fictício de laboratório** | Vincular à Ontologia de Referência real, verificar semântica constitutiva e determinação progressiva; UC-003 não concluído |
 | 004 | Organização incorporada à estrutura estatal | ESP-A103-CE01-001, DAT-001, DEC-001 e CS04-001 homologados; **A103 não operacional** | Identidade, registro e publicação em serviço proprietário com evidência legítima; depende de UC-001–003 |
 | 005 | Organização habilitada como cliente e GOI designado | Narrativa homologada; fluxo A102/A103 pendente | CS-05, C101/C103 e **UC-007** para identidade de Pessoa |
 | 006 | CM-01 a CM-04 cumpridas e Marco A autorizado por ato competente | Regras A107 e contrato simulado CE-01 para CM01-R01; **sem autorização real** | UC-005, UC-007, A103/A108/C302/C309 e ato distinto do Administrador |
@@ -40,7 +40,7 @@
 | T2 | **Laboratório de persistência A103 — código integrado à main; PostgreSQL CI aprovado** | PostgreSQL 18 temporário, migração, rollback, atomicidade, idempotência, versões e outbox testados em CI (PR #9) | **Somente SIMULADO**; sem execução no banco local, sem fonte/autoridade real; ESP-A103-CS04-002 (PR #7) continua não homologada |
 | T3 | **Fronteira de confiança A103 — laboratório simulado validado** | Duplo atestado Ed25519 com separação de papéis, hash do comando, escopo, audiência, tempo e negação antes de persistir; CI Linux, Windows e PostgreSQL aprovada (PR #11) | **Não é autorização/origem institucional real**, falta C103-IEA, UC-007, identidade/competência jurídica, revogação, proteção do perímetro e cadeia de custódia |
 | T4 | **Integração A103 → CE-01 → A107 implementada em laboratório (PR #13)** | **34 testes A103 + 19 testes A107**, sem falhas/ignorados em PostgreSQL 18 de CI; CM01-R01 atendida **apenas com fonte SIMULADA** | Fonte/autoridade/custódia reais e C103-IEA/UC-007 ausentes; CM-01 completa/Marco A não autorizados |
-| T5 | Implementar fontes EOT/ENT e demais condições | UC-001 a 003 avaliáveis; CM-01 com provas completas | Preservar fonte e fundamento |
+| T5 | **Laboratório EOT/ENT de importação, validação e versão** | **20/20 testes em Linux e Windows**; correspondência EOT/ENT, exigências abstratas, bloqueios de modelo e referência ao vocabulário fictício (PR #15) | Não há EOT/ENT/ontologia reais, A108-BDN, ENI ou verificação ontológica substantiva; UC-001–003 ainda não concluídos |
 | T6 | Fluxo UC-005/006 e Marco A | Ato de autorização separado e verificável | Depende UC-007, CM-01 a CM-04 e decisão competente |
 
 ## Regras de segurança e governança
@@ -81,3 +81,13 @@
 - **Resultado do laboratório:** fato/manifesto SIMULADOS permitiram `CM01-R01 = ATENDIDA` **apenas no harness de teste**; resultado agregado `INDETERMINADA`, elegibilidade `VERIFICACAO_PENDENTE`. O resultado **não foi persistido no A107** e não autoriza Marco A.
 - **Negativas:** ausência de identidade não gera prova negativa; consulta anterior à publicação não demonstra existência pretérita; acesso negado provoca `A107E0002`; não há autenticação institucional real.
 - **Próximo trabalho (T5):** fontes EOT/ENT/ontologia e dependências institucionais reais, sem afirmar autenticidade de uma prova de laboratório. PR #7 continua proposta técnica não homologada.
+
+
+## Registro de execução T5 — 27/11/2026
+
+- **UC relacionados:** UC-CIV-001 (modelos EOT), UC-CIV-002 (ENT e exigências abstratas) e UC-CIV-003 (referências ao vocabulário ontológico). **Nenhum está concluído fim a fim.**
+- **Entrega:** `plataforma/a107-modelos-lab` — protótipo independente com formato de intercâmbio `CIVITAS-T5-LAB-1` **não definitivo**, importação conjunta EOT/ENT, verificador estrutural, relatórios de inconsistências, registro por versão em memória e bloqueio de desativação de modelo com vínculos simulados.
+- **Validação:** PR #15 integrado à `main`, commit `fd4f4f4`; [20/20 testes aprovados, 0 falhas e 0 ignorados em Linux e Windows](https://github.com/MGlienke/CIVITAS/actions/runs/45938887250).
+- **Distinção essencial:** o vocabulário ontológico usado no T5 é **fixture**, não a Ontologia de Referência; regras de tipos e exigências não verificam a suficiência jurídica de normas concretas. O MT-BR e os contratos proprietários reais A107/A108 permanecem ausentes.
+- **Sem mudança operacional:** A107-EOB v0.3.0, A103-GEP, A108, C103-IEA, evidências reais, PostgreSQL local e Marco A não foram modificados pelo T5.
+- **Próxima etapa recomendada:** substituir gradualmente fixtures por metamodelo e ontologia de referência efetivamente versionados; fechar interoperabilidade A107/A108 e preservar autoria e trilha antes de habilitar modelos institucionais reais.
