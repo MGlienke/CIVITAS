@@ -1,9 +1,10 @@
 # CIVITAS — Matriz de Componentes e Contratos de Serviços
 
-**Versão:** 0.1 — proposta inicial, não homologada  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 26/11/2026**  
 **Data:** 26/11/2026  
 **Baseline:** CIVITAS — Mapa de Domínios e Módulos v0.5 (MAP-011 / MAP-012), decorrente da v0.4.  
 **Rastreabilidade:** JRN-CIV-001 a 006, UC-CIV-001 a 015 e Matriz de Dependências e Sequenciamento de Implementação v0.1.  
+**Escopo da homologação:** responsabilidades, contratos lógicos candidatos, rastreabilidade e critérios preliminares. Contratos técnicos finais, códigos SRV definitivos, APIs e decisões DSP-01 a DSP-07 continuam sujeitos à especificação modular.  
 **Nota:** os identificadores `CS-01`…`CS-21` são IDs editoriais temporários desta matriz, **não** IDs `SRV-MODULO-999` homologados nem endpoints ou contratos técnicos definitivos.
 
 ## 1. Regras de decomposição
@@ -128,4 +129,8 @@ Cada linha descreve uma *operação lógica candidata*: não implica um microser
 
 ## 7. Estado de revisão
 
-A matriz constitui **primeira proposta de contratos lógicos**, baseada no mapa v0.5. Ainda **não houve homologação específica dos serviços**, códigos `SRV`, interfaces, APIs, objetos de dados ou detalhes de persistência. A implementação do módulo C105-MSG é linha de trabalho independente já existente; a matriz não altera seu contrato aprovado.
+A matriz constitui **matriz de contratos lógicos homologada como baseline de planejamento**, baseada no mapa v0.5. Ainda **não houve homologação individual de contratos técnicos de serviços**, códigos `SRV`, interfaces, APIs, objetos de dados ou detalhes de persistência. A implementação do módulo C105-MSG é linha de trabalho independente já existente; a matriz não altera seu contrato aprovado.
+
+## 8. Homologação da matriz
+
+Em 26/11/2026, o autor confirmou expressamente a **Matriz de Componentes e Contratos de Serviços v0.1** e autorizou a definição do primeiro incremento executável. A homologação consolida a **alocação de responsabilidades e interfaces lógicas previstas**, mas não transforma os IDs temporários CS-01 a CS-21 em identificadores SRV definitivos, não aprova automaticamente APIs ou detalhes técnicos futuros e não considera implementados os módulos. As decisões de detalhamento DSP-01 a DSP-07 serão resolvidas no projeto técnico de cada módulo, sem alterar o mapa de domínios e módulos v0.5 homologado.
