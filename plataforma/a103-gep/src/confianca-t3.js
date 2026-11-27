@@ -29,7 +29,8 @@ export class VerificadorAtestadosT3 {
   }
   verificar(token, kind, now = Date.now()) {
     if (!plain(token) || Object.keys(token).sort().join('|') !== 'kid|payload|signature' ||
-        !nonempty(token.kid) || !nonempty(token.payload) || !nonempty(token.signature) ||
+        !nonempty(token.kid) || typeof token.payload !== 'string' || !token.payload.length ||
+        typeof token.signature !== 'string' || token.signature.length > 256 || !token.signature.length ||
         token.payload.length > MAX_TOKEN_BYTES || !b64pattern.test(token.payload) || !b64pattern.test(token.signature)) deny();
     const authority = this.#authorities.get(token.kid);
     if (!authority || authority.kind !== kind) deny();
