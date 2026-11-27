@@ -7,7 +7,8 @@
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test dist/tests/*.test.js",
     "demo": "npm run build && node dist/src/cli-demo.js",
-    "pg-demo": "npm run build && node dist/src/pg-runner.js"
+    "pg-demo": "npm run build && node dist/src/pg-runner.js",
+    "test:integration": "npm run build && node tests/integration-postgres.mjs"
   },
   "dependencies": {
     "pg": "^8.13.0"
