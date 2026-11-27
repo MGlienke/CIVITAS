@@ -1,0 +1,22 @@
+# CIVITAS — arquivos locais, compilados e credenciais
+**/node_modules/
+**/dist/
+**/coverage/
+**/.nyc_output/
+**/.env
+**/.env.*
+!**/.env.example
+**/*.log
+**/npm-debug.log*
+**/*.bak
+**/*.bak-*
+**/*.backup
+**/*.tmp
+**/*.swp
+**/.DS_Store
+**/Thumbs.db
+**/*.dump
+**/*.sql.gz
+**/*.sqlite
+**/*.sqlite3
+**/test-results/
