@@ -1,0 +1,20 @@
+{
+  "name": "@civitas/a107-eob-service",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "demo": "npm run build && node dist/src/cli-demo.js",
+    "pg-demo": "npm run build && node dist/src/pg-runner.js",
+    "test:integration": "npm run build && node tests/integration-postgres.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.4",
+    "typescript": "^5.6.0"
+  }
+}

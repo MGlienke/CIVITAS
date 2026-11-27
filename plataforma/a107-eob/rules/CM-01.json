@@ -1,0 +1,80 @@
+{
+  "id": "CM-01",
+  "nome": "Identidade Institucional",
+  "versao": "0.1.0",
+  "situacao": "HOMOLOGADA",
+  "modulo_verificador": "A107-EOB",
+  "ambito": "MARCO_A",
+  "referencias": [
+    "DEC-A107-001",
+    "DEC-A107-002",
+    "SRV-A107-003",
+    "INC-001"
+  ],
+  "sujeito": {
+    "tipo": "OrganizacaoInstitucional",
+    "referencia": "organizacao_id"
+  },
+  "fontes": [
+    "A103-GEP",
+    "A107-EOB",
+    "A108-BDN"
+  ],
+  "requisitos": [
+    {
+      "id": "CM01-R01",
+      "propriedade": "identidade_institucional",
+      "operador": "existe",
+      "fonte": "A103-GEP",
+      "evidencia_exigida": "registro da organização"
+    },
+    {
+      "id": "CM01-R02",
+      "propriedade": "tipo_institucional",
+      "operador": "corresponde",
+      "fonte": "A107-EOB",
+      "evidencia_exigida": "EOT e versão aplicável",
+      "parametros": {
+        "referencia": "tipo_eot_aplicavel"
+      }
+    },
+    {
+      "id": "CM01-R03",
+      "propriedade": "posicao_institucional",
+      "operador": "relacionado_a",
+      "fonte": "A103-GEP",
+      "evidencia_exigida": "cadeia mínima institucional e vínculos",
+      "parametros": {
+        "relacao": "posicionado_na_estrutura_estatal"
+      }
+    },
+    {
+      "id": "CM01-R04",
+      "propriedade": "fundamento_constitutivo",
+      "operador": "fundamentado_em",
+      "fonte": "A108-BDN",
+      "evidencia_exigida": "ato constitutivo normativamente pertinente"
+    },
+    {
+      "id": "CM01-R05",
+      "propriedade": "determinacoes_institucionais",
+      "operador": "corresponde",
+      "fonte": "A107-EOB",
+      "evidencia_exigida": "ENT/ENI e determinações aplicáveis",
+      "parametros": {
+        "referencia": "ent_eni_aplicavel"
+      }
+    }
+  ],
+  "composicao": {
+    "operador": "todos",
+    "requisitos": [
+      "CM01-R01",
+      "CM01-R02",
+      "CM01-R03",
+      "CM01-R04",
+      "CM01-R05"
+    ]
+  },
+  "nao_aplicabilidade": "proibida"
+}

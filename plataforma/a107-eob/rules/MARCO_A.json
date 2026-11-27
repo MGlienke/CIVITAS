@@ -1,0 +1,44 @@
+{
+  "id": "MARCO_A",
+  "nome": "Composição das Condições do Marco A",
+  "versao": "0.1.0",
+  "situacao": "HOMOLOGADA",
+  "modulo_verificador": "A107-EOB",
+  "ambito": "OPERACAO_ADMINISTRATIVA_INICIAL",
+  "referencias": [
+    "DEC-A107-001",
+    "DEC-A107-002",
+    "SRV-A107-003",
+    "INC-001"
+  ],
+  "sujeito": {
+    "tipo": "OrganizacaoInstitucional",
+    "referencia": "organizacao_id"
+  },
+  "condicoes": [
+    "CM-01",
+    "CM-02",
+    "CM-03",
+    "CM-04"
+  ],
+  "composicao": {
+    "operador": "todos",
+    "requisitos": [
+      "CM-01",
+      "CM-02",
+      "CM-03",
+      "CM-04"
+    ]
+  },
+  "nao_aplicabilidade": "proibida",
+  "resultados": {
+    "ATENDIDA": "ELEGIVEL_PARA_AUTORIZACAO",
+    "NAO_ATENDIDA": "NAO_ELEGIVEL",
+    "INDETERMINADA": "VERIFICACAO_PENDENTE"
+  },
+  "autoridade_decisoria": {
+    "modulo": "A103-GEP",
+    "papel": "AdministradorDaPlataforma",
+    "regra": "verificação não é autorização"
+  }
+}
