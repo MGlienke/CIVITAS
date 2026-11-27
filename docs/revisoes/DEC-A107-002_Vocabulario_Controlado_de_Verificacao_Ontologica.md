@@ -93,3 +93,13 @@ composicao:
 - **DEC-A107-001:** formato Markdown com requisitos YAML.
 - **DEC-A107-002:** linguagem declarativa, quatro elementos, operadores e composições iniciais, quatro resultados.
 - **INC-001:** execução até Marco A sem habilitar implicitamente Sistemas Estruturantes ou serviços públicos.
+
+## 8. Complementação homologada — aplicação integrada CM-01 a CM-04
+
+Em 26/11/2026, o autor homologou a especificação integrada **A107-EOB — Condições Ontológicas do Marco A (CM-01 a CM-04) v0.1**, ampliando o vocabulário inicial aprovado nesta decisão com:
+
+- **`precede`** — operador temporal de ordenação e validade da sequência de atos, especialmente reconhecimento do Mandatário e convalidação do GOI;
+- **`para_cada`** — composição de requisitos sobre o universo completo de elementos exigíveis, cuja abrangência deverá ser determinada por referências normativas/ontológicas, sobretudo para órgãos de primeiro nível e competências;
+- **regra transversal de suficiência probatória** — inexistência de dados ou indisponibilidade de fonte não demonstra inexistência do fato; falta de evidência suficiente gera estado *indeterminada*.
+
+O vocabulário homologado passa assim a contemplar **oito operadores elementares** (sete iniciais e `precede`) e **quatro operadores de composição** (`todos`, `algum`, `nenhum`, `para_cada`). Os nomes das propriedades e o schema YAML definitivo continuam pendentes de especificação. A especificação integrada é registrada em [A107-EOB — CM-01 a CM-04 v0.1](./A107-EOB_Condicoes_Ontologicas_Marco_A_CM01_a_CM04_v0_1.md).
