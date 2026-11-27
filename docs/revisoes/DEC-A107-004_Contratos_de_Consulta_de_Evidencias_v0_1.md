@@ -3,7 +3,7 @@
 **Módulo consumidor:** A107-EOB — Estrutura Organizacional de Base  
 **Serviço consumidor:** SRV-A107-003 — Verificar Condições Ontológicas de Realização  
 **Incremento:** INC-001 — Marco A  
-**Versão:** 0.1 — **PROPOSTA EM REVISÃO; NÃO HOMOLOGADA**  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 26/11/2026 (contrato semântico comum e responsabilidades)**  
 **Data da elaboração:** 26/11/2026  
 **Referências homologadas:** DEC-A107-001, DEC-A107-002, DEC-A107-003; Especificação Integrada CM-01 a CM-04 v0.1; SRV-A107-003 v0.1; CIV-ESP-TPL v0.4.
 
@@ -250,7 +250,7 @@ Para o A107-EOB, sugerem-se: `DAT-A107-004` (referência de evidência, conforme
 | TST-A107-046 | Documento referenciado sem prova de procedência suficiente | Não presumir fundamento válido |
 | TST-A107-047 | Conjunto de fatos consistente, mas origem sem integridade verificável | Indeterminada quando integridade for exigida |
 
-**Estado:** cenários especificados; não foram executados.
+**Estado:** cenários de teste previstos na especificação homologada; não foram executados.
 
 ## 14. Pendências de interface física e próximos passos
 
@@ -266,3 +266,9 @@ Para o A107-EOB, sugerem-se: `DAT-A107-004` (referência de evidência, conforme
 | P-004-08 | Integração parcial no INC-001 | Dublês contratados e prova de aceite sem fingir fontes reais |
 
 **Recomendação para homologação:** aprovar o *contrato semântico comum*, a regra de completude e a atribuição de responsabilidades, mas não presumir aprovação das APIs físicas, protocolos, schemas finais, mecanismos de snapshot distribuído ou testes ainda não realizados.
+
+## 15. Registro de homologação
+
+Em 26/11/2026, o autor declarou expressamente **homologada a DEC-A107-004 v0.1**. Integram o baseline aprovado os contratos lógicos `ConsultaEvidencia` e `RespostaEvidencia`, a distinção entre fatos fornecidos pelos módulos e avaliação realizada pelo A107-EOB, a atribuição de responsabilidades por fonte, a exigência de procedência e suficiência probatória, a comprovação de completude do universo exigível e o tratamento de indisponibilidade e contradições sem presunção de ausência. Os identificadores CE-01 a CE-12 permanecem referências editoriais provisórias.
+
+**Fora do alcance da homologação:** APIs e protocolos físicos, JSON Schemas definitivos do envelope, métodos específicos de snapshot distribuído, políticas operacionais de timeout/retry, implementação e resultados de testes. Esses assuntos permanecem sujeitos às decisões técnicas posteriores, especialmente DEC-A107-005.
