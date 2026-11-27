@@ -2,6 +2,7 @@ import type {
   ConsultaEvidencia, ContextoAutenticado, EvidenceProvider,
   RespostaEvidencia, EvidenciaReferencial, Diagnostico
 } from '../contracts.js';
+import { A107AcessoNegado } from '../errors.js';
 
 /** CE-01: fronteira contratual; nenhuma implementação de A103 é presumida. */
 export interface RegistroIdentidadeA103 {
@@ -65,7 +66,7 @@ export class AdaptadorCe01A103 implements EvidenceProvider {
     // Não consultar SQL interno do A103. Apenas porta de domínio proprietária.
     const resposta = await this.a103.consultarIdentidadeInstitucional(consulta, contexto);
     if (resposta.status === 'NAO_AUTORIZADA') {
-      throw new Error('A107E0002: fonte A103 negou acesso à evidência');
+      throw new A107AcessoNegado('fonte A103 negou acesso à evidência');
     }
 
     const diag: Diagnostico[] = [];
