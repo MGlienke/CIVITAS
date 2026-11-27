@@ -1,0 +1,48 @@
+name: A107-EOB — Build e testes
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "plataforma/a107-eob/**"
+      - ".github/workflows/a107-eob-ci.yml"
+  push:
+    branches: [main, "feature/a107-eob-v0.2.0"]
+    paths:
+      - "plataforma/a107-eob/**"
+      - ".github/workflows/a107-eob-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: Node.js 24 — compilação e testes locais
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: plataforma/a107-eob
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: plataforma/a107-eob/package-lock.json
+
+      - name: Instalação reproduzível
+        run: npm ci
+
+      - name: Compilação TypeScript
+        run: npm run build
+
+      - name: Testes automatizados sem PostgreSQL
+        run: npm test
+
+# test:integration é intencionalmente excluído: exige banco local isolado,
+# credenciais de teste e pacote MARCO_A previamente publicado.
