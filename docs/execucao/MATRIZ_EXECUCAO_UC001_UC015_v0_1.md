@@ -6,9 +6,9 @@
 
 | UC | Resultado esperado | Situação verificada | Dependência / próximo resultado concreto |
 |---|---|---|---|
-| 001 | EOT constituídas, importadas, validadas e utilizadas | **T5: importação e versionamento preliminares simulados aprovados em CI**; UC-001 não concluído | Metamodelo nativo real, MT-BR, serviço proprietário A107, importação oficial, autoria e integração institucional |
-| 002 | ENT/ENI, correspondência normativa e fundamentos | **T5: validação estrutural de ENT associada à EOT simulada**; UC-002 não concluído | A108-BDN, fontes normativas reais, ENI e verificação da pertinência jurídica das referências |
-| 003 | Ontologia de Referência e verificação de realização | Motor A107-EOB v0.3.0 com 19 testes; **T5 utiliza apenas vocabulário ontológico fictício de laboratório** | Vincular à Ontologia de Referência real, verificar semântica constitutiva e determinação progressiva; UC-003 não concluído |
+| 001 | EOT constituídas, importadas, validadas e utilizadas | T5: importação simulada; **T6: tipos/relações confrontados com inventário derivado da rede ontológica v20 real**; UC-001 não concluído | Metamodelo organizacional executável e modelo MT-BR homologado, importação oficial, autoria e integração institucional |
+| 002 | ENT/ENI, correspondência normativa e fundamentos | T5: estrutura ENT em laboratório; **T6: referências de exigências abstratas verificadas contra pares EOT/ENT vinculados à v20**; UC-002 não concluído | A108-BDN, normas concretas, ENI, pertinência normativa e homologação MT-BR |
+| 003 | Ontologia de Referência e verificação de realização | A107-EOB v0.3.0 com 19 testes; **T6 extrai 158 conceitos e 247 relações da rede v20 da Biblioteca e valida correspondência textual em laboratório** | Completar metamodelo, regras ontológicas, validação semântica substantiva e determinação progressiva; UC-003 não concluído |
 | 004 | Organização incorporada à estrutura estatal | ESP-A103-CE01-001, DAT-001, DEC-001 e CS04-001 homologados; **A103 não operacional** | Identidade, registro e publicação em serviço proprietário com evidência legítima; depende de UC-001–003 |
 | 005 | Organização habilitada como cliente e GOI designado | Narrativa homologada; fluxo A102/A103 pendente | CS-05, C101/C103 e **UC-007** para identidade de Pessoa |
 | 006 | CM-01 a CM-04 cumpridas e Marco A autorizado por ato competente | Regras A107 e contrato simulado CE-01 para CM01-R01; **sem autorização real** | UC-005, UC-007, A103/A108/C302/C309 e ato distinto do Administrador |
@@ -41,7 +41,8 @@
 | T3 | **Fronteira de confiança A103 — laboratório simulado validado** | Duplo atestado Ed25519 com separação de papéis, hash do comando, escopo, audiência, tempo e negação antes de persistir; CI Linux, Windows e PostgreSQL aprovada (PR #11) | **Não é autorização/origem institucional real**, falta C103-IEA, UC-007, identidade/competência jurídica, revogação, proteção do perímetro e cadeia de custódia |
 | T4 | **Integração A103 → CE-01 → A107 implementada em laboratório (PR #13)** | **34 testes A103 + 19 testes A107**, sem falhas/ignorados em PostgreSQL 18 de CI; CM01-R01 atendida **apenas com fonte SIMULADA** | Fonte/autoridade/custódia reais e C103-IEA/UC-007 ausentes; CM-01 completa/Marco A não autorizados |
 | T5 | **Laboratório EOT/ENT de importação, validação e versão** | **20/20 testes em Linux e Windows**; correspondência EOT/ENT, exigências abstratas, bloqueios de modelo e referência ao vocabulário fictício (PR #15) | Não há EOT/ENT/ontologia reais, A108-BDN, ENI ou verificação ontológica substantiva; UC-001–003 ainda não concluídos |
-| T6 | Fluxo UC-005/006 e Marco A | Ato de autorização separado e verificável | Depende UC-007, CM-01 a CM-04 e decisão competente |
+| T6 | **Referência computacional parcial da Ontologia v20** | Extração rastreada de 158 conceitos e 247 relações; **36/36 testes em Linux/Windows**; confronto estrutural de EOT/ENT com conceitos e triplas da rede (PR #17) | Metamodelo nativo computacional ausente; MT-BR matriz v0.1 explicitamente não homologada; verificação semântica/jurídica real pendente |
+| T7 (planejado, originalmente T6) | Fluxo UC-005/006 e Marco A | Ato de autorização separado e verificável | Depende UC-007, CM-01 a CM-04 e decisão competente |
 
 ## Regras de segurança e governança
 
@@ -91,3 +92,14 @@
 - **Distinção essencial:** o vocabulário ontológico usado no T5 é **fixture**, não a Ontologia de Referência; regras de tipos e exigências não verificam a suficiência jurídica de normas concretas. O MT-BR e os contratos proprietários reais A107/A108 permanecem ausentes.
 - **Sem mudança operacional:** A107-EOB v0.3.0, A103-GEP, A108, C103-IEA, evidências reais, PostgreSQL local e Marco A não foram modificados pelo T5.
 - **Próxima etapa recomendada:** substituir gradualmente fixtures por metamodelo e ontologia de referência efetivamente versionados; fechar interoperabilidade A107/A108 e preservar autoria e trilha antes de habilitar modelos institucionais reais.
+
+
+## Registro de execução T6 — 27/11/2026
+
+- **Escopo efetivo:** UC-CIV-001/002/003. Não se tratou do Marco A; a antiga linha de planejamento `T6 — Fluxo UC-005/006` foi **renumerada para T7** para corresponder ao incremento T6 efetivamente executado e evitar colisão de nomenclatura.
+- **Fonte primária:** `CIVITAS - Rede Ontologica - v20.md` (Biblioteca; rede conceitual/relacional v20 aprovada). Derivado `plataforma/a107-modelos-lab/referencias/ontologia_v20_extracao_t6.json`: **158 conceitos, 247 relações distintas**, extraídos das seções 3 e 5, sem alterar a fonte.
+- **Fonte complementar examinada:** `CIVITAS_MT_BR_Matriz_Relacoes_Restricoes_v0_1.xlsx` (Biblioteca), painel com 25 tipos/categorias, 18 relações, 20 restrições e aviso **PROPOSTA NÃO HOMOLOGADA**. A aprovação das cinco decisões MT-BR **não homologa** toda a matriz.
+- **Implementação:** `src/referencia-v20.js` confere identificadores estáveis e triplas da rede contra um par EOT/ENT **SIMULADO**, sem inferir relações ou autorizar tipo organizacional real.
+- **Validação:** PR #17 integrado à `main`, commit `e99cf77`. [CI Linux/Windows: 36/36 testes aprovados, sem falhas e sem SKIP](https://github.com/MGlienke/CIVITAS/actions/runs/45939504161).
+- **Limites/pendências:** o metamodelo organizacional nativo computacional não foi identificado como baseline pronto; matriz MT-BR requer revisão/homologação própria; não há serviço oficial A108 nem compatibilidade semântica plena. Fonte original v20 ainda não está versionada no Git com hash original; seu derivado é artefato auxiliar, não nova ontologia canônica.
+- **Relatório de fontes:** [RELATORIO_T6_FONTES_ONTOLOGIA_MTBR_v0_1.md](RELATORIO_T6_FONTES_ONTOLOGIA_MTBR_v0_1.md).
