@@ -38,7 +38,7 @@
 | T0 | Matriz e rastreabilidade por UC | Estado/entregas/pendências explícitos | Nenhum UC concluído sem prova ponta a ponta |
 | T1 | Protótipo A103 em memória e testes | Propostas, identidade, versionamento, idempotência, retificações e registros marcados SIMULADO | Não é CS-04 institucional real |
 | T2 | **Laboratório de persistência A103 — código integrado à main; PostgreSQL CI aprovado** | PostgreSQL 18 temporário, migração, rollback, atomicidade, idempotência, versões e outbox testados em CI (PR #9) | **Somente SIMULADO**; sem execução no banco local, sem fonte/autoridade real; ESP-A103-CS04-002 (PR #7) continua não homologada |
-| T3 | Segurança e origem legítima | Contexto de autorização institucional verificado, sem vazamento em negação | Mock não vale como autenticação real |
+| T3 | **Fronteira de confiança A103 — laboratório simulado validado** | Duplo atestado Ed25519 com separação de papéis, hash do comando, escopo, audiência, tempo e negação antes de persistir; CI Linux, Windows e PostgreSQL aprovada (PR #11) | **Não é autorização/origem institucional real**, falta C103-IEA, UC-007, identidade/competência jurídica, revogação, proteção do perímetro e cadeia de custódia |
 | T4 | Integração A103-CE01-A107 | CM01-R01 avaliada com origem real e prova recuperável | Não implica CM-01 completa nem Marco A |
 | T5 | Implementar fontes EOT/ENT e demais condições | UC-001 a 003 avaliáveis; CM-01 com provas completas | Preservar fonte e fundamento |
 | T6 | Fluxo UC-005/006 e Marco A | Ato de autorização separado e verificável | Depende UC-007, CM-01 a CM-04 e decisão competente |
@@ -51,7 +51,7 @@
 4. Cada relatório deve indicar **UC afetado, efetivamente executado, testes, limites e próximos bloqueios**.
 5. O PR #7 e seu inventário físico permanecem **proposta, não homologação por inferência**.
 
-**Estado geral:** nenhum dos UC-001 a UC-015 foi demonstrado completo ponta a ponta. A107-EOB possui componente parcial testado; A103-GEP possui especificações homologadas e protótipo isolado a validar sem constituição institucional real.
+**Estado geral:** nenhum dos UC-001 a UC-015 foi demonstrado completo ponta a ponta. A107-EOB possui componente parcial testado; A103-GEP possui T1 em memória e T2/T3 simulados com integração PostgreSQL e verificações criptográficas de laboratório, sem constituição institucional real nem controle C103-IEA.
 
 
 ## Registro de execução T2 — 27/11/2026
@@ -61,3 +61,13 @@
 - **Validação:** PR #9 integrado à `main`, commit `7a93194`; PostgreSQL 18 real em GitHub Actions temporário — [integração aprovada](https://github.com/MGlienke/CIVITAS/actions/runs/45937101878). Testes sem banco em Linux e Windows — [aprovados](https://github.com/MGlienke/CIVITAS/actions/runs/45937101811).
 - **O que permanece ausente:** proposta/revisão de constituição institucional real, autorização C103-IEA, custódia documental e normas autoritativas externas, snapshot bitemporal completo, CE-01 com fonte real, Marco A e implantação no PostgreSQL local.
 - **Delimitação:** PR #7 mantém situação documental de proposta; T2 não valida juridicamente registros nem representa autorização para produção.
+
+
+## Registro de execução T3 — 27/11/2026
+
+- **UC relacionado:** UC-CIV-004, recorte de CS-04; reflexos futuros em UC-005/006 e dependência de UC-007. Nenhum UC encerrado.
+- **Entrega:** `src/confianca-t3.js` e testes unitários/integrados no diretório `plataforma/a103-gep`, com dois atestados Ed25519 independentes de laboratório: autorização da operação e procedência das referências. Identidade extraída do atestado verificado, sem confiar em campo de principal no comando.
+- **Validação:** PR #11 integrado à `main`, commit `4fcd00d`. [Linux/Windows aprovados](https://github.com/MGlienke/CIVITAS/actions/runs/45937605993) e [PostgreSQL 18 temporário aprovado](https://github.com/MGlienke/CIVITAS/actions/runs/45937606045).
+- **Critérios verificados:** assinatura inválida, emissor/papel incorreto, expiração, audiência ou escopo divergente, alteração do comando/prova, negativa antes de consultar o banco, aceitação de atestado duplo válido **somente em SIMULADO**, e idempotência no PostgreSQL de teste.
+- **Bloqueios para T3 real:** serviço de identidade C103-IEA, acreditação pública/IDUP (UC-007), autoridade/competência jurídica, canais autenticados e segregação de privilégios, revogação e replay distribuído, custódia e validade das referências institucionais. O T2 pode ser chamado diretamente no laboratório e **não é uma fronteira segura de produção**.
+- **Sem mudança de baseline:** PR #7 é proposta não homologada, A107 v0.3.0 permanece intacto, e nenhum dado simulado é prova real ou autorização de Marco A.
