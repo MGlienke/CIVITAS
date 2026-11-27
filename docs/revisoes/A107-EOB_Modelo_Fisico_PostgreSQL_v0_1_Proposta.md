@@ -1,12 +1,12 @@
 # A107-EOB — Modelo Físico PostgreSQL v0.1
 
-**Situação:** PROPOSTA EM REVISÃO — **NÃO HOMOLOGADA / NÃO EXECUTADA**  
+**Situação:** **HOMOLOGADA v0.1 pelo autor em 26/11/2026 — NÃO EXECUTADA**  
 **Data:** 26/11/2026  
 **Base:** DEC-A107-007 homologada; SRV-A107-003; CM-01–04; DEC-A107-001 a 006.
 
 ## Objetivo
 
-Primeira migração para banco `civitas_plataforma` e schema independente `a107`, sem alterações no schema `c105`. A proposta adota PostgreSQL 18 e UUIDs, interfaces com módulos proprietários por referências externas (sem FKs SQL cruzadas).
+Modelo físico homologado para primeira migração no banco `civitas_plataforma` e schema independente `a107`, sem alterações no schema `c105`. A proposta adota PostgreSQL 18 e UUIDs, interfaces com módulos proprietários por referências externas (sem FKs SQL cruzadas).
 
 ## Artefatos
 
@@ -36,4 +36,8 @@ As tabelas são: `pacotes_regras`, `execucoes`, `verificacoes`, `resultados_cond
 
 A inspeção estrutural da migração e a contagem dos elementos passaram, mas **não houve validação de execução em PostgreSQL real**. Antes de homologar/executar: testar em banco de desenvolvimento, confirmar privilégios SQL, a trilha mínima de auditoria durável e os contratos de fontes; definir hash canônico, retenção, bloqueio de alterações em resultados e cobertura dos testes de concorrência, migração e rollback. A migração é executada uma vez sob gerenciador de migrações.
 
-**Próxima ação:** revisar o DDL contido no pacote ZIP, aprovar o modelo físico ou solicitar ajustes, e então incorporar os arquivos SQL ao repositório e executar testes em PostgreSQL de desenvolvimento.
+**Próxima ação:** incorporar os arquivos SQL ao repositório e executar testes controlados no PostgreSQL de desenvolvimento, validando DDL e gatilhos antes de qualquer implantação operacional.
+
+## Registro de homologação
+
+Em 26/11/2026, o autor declarou expressamente **“aprovado”** para o modelo físico PostgreSQL A107-EOB v0.1, incluindo dez tabelas, índices, gatilhos de proteção histórica e a validação de fechamento das quatro condições e 23 requisitos. A homologação **aprova o desenho e o script de migração como baseline**, mas não equivale à execução da migração ou à aprovação de testes de banco. O SQL e README continuam disponíveis no pacote de artefatos da conversa; sua incorporação física ao GitHub permanece pendente.
