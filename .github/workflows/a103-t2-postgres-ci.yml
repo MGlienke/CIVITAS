@@ -1,0 +1,59 @@
+name: A103-GEP T2 — PostgreSQL real em CI (somente simulação)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "plataforma/a103-gep/**"
+      - ".github/workflows/a103-t2-postgres-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  postgres-t2:
+    name: PostgreSQL 18 — integração e rollback
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: a103_t2
+          POSTGRES_PASSWORD: test_only_password
+          POSTGRES_DB: a103_t2_dev
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U a103_t2 -d a103_t2_dev"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      A103_T2_TEST_ONLY: "1"
+      A103_T2_DATABASE_URL: "postgresql://a103_t2:test_only_password@127.0.0.1:5432/a103_t2_dev"
+    defaults:
+      run:
+        working-directory: plataforma/a103-gep
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Instalar dependências isoladas
+        run: npm install --no-audit --no-fund
+      - name: Aplicar migração T2 no banco temporário de CI
+        run: |
+          node --input-type=module -e '
+            import pg from "pg";
+            import { readFileSync } from "node:fs";
+            const client = new pg.Client({ connectionString: process.env.A103_T2_DATABASE_URL });
+            await client.connect();
+            try {
+              await client.query(readFileSync("db/migrations/001_a103_t2_simulacao.sql", "utf8"));
+              console.log("Migração T2 aplicada no PostgreSQL temporário.");
+            } finally { await client.end(); }
+          '
+      - name: Testar T1 e T2 com PostgreSQL efetivo (sem SKIP)
+        run: npm test
