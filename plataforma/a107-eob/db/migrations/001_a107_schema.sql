@@ -1,8 +1,15 @@
 -- CIVITAS — A107-EOB / DEC-A107-007
--- Migration 001 — proposta física v0.1, NÃO HOMOLOGADA / NÃO EXECUTADA
--- Banco alvo: civitas_plataforma (PostgreSQL 18); não cria banco nem papéis
--- Requer pgcrypto para gen_random_uuid() em versões antigas; PG18 já fornece gen_random_uuid().
--- Executar sob papel com CREATE no banco; não executar sobre banco de produção sem aprovação.
+-- Migration 001 — modelo físico inicial v0.1, validado em ambiente de teste.
+-- Homologação técnica: esquema a107, restrições, gatilhos, persistência,
+-- idempotência e rollback verificados no PostgreSQL 18.6.
+-- Ambiente de integração automatizada: banco isolado civitas_a107_teste.
+-- O modelo também foi instalado em civitas_plataforma durante validação anterior;
+-- isso NÃO representa autorização de implantação em produção.
+-- A migração cria somente o schema/objetos, sem criar bancos nem papéis.
+-- PostgreSQL 18 já fornece gen_random_uuid() (versões antigas podem requerer extensão).
+-- ATENÇÃO: script de criação inicial, NÃO idempotente em instalações existentes.
+-- NÃO executar novamente sobre um schema a107 já instalado; revisar manualmente
+-- toda implantação e exigir autorização formal para ambientes institucionais.
 BEGIN;
 
 CREATE SCHEMA IF NOT EXISTS a107;
