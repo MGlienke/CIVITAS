@@ -37,7 +37,7 @@
 |---|---|---|---|
 | T0 | Matriz e rastreabilidade por UC | Estado/entregas/pendências explícitos | Nenhum UC concluído sem prova ponta a ponta |
 | T1 | Protótipo A103 em memória e testes | Propostas, identidade, versionamento, idempotência, retificações e registros marcados SIMULADO | Não é CS-04 institucional real |
-| T2 | Persistência A103 isolada | Migração/rollback, publicação atômica, concorrência e outbox testados em desenvolvimento | ESP-A103-CS04-002 (PR #7) ainda não homologada |
+| T2 | **Laboratório de persistência A103 — código integrado à main; PostgreSQL CI aprovado** | PostgreSQL 18 temporário, migração, rollback, atomicidade, idempotência, versões e outbox testados em CI (PR #9) | **Somente SIMULADO**; sem execução no banco local, sem fonte/autoridade real; ESP-A103-CS04-002 (PR #7) continua não homologada |
 | T3 | Segurança e origem legítima | Contexto de autorização institucional verificado, sem vazamento em negação | Mock não vale como autenticação real |
 | T4 | Integração A103-CE01-A107 | CM01-R01 avaliada com origem real e prova recuperável | Não implica CM-01 completa nem Marco A |
 | T5 | Implementar fontes EOT/ENT e demais condições | UC-001 a 003 avaliáveis; CM-01 com provas completas | Preservar fonte e fundamento |
@@ -52,3 +52,12 @@
 5. O PR #7 e seu inventário físico permanecem **proposta, não homologação por inferência**.
 
 **Estado geral:** nenhum dos UC-001 a UC-015 foi demonstrado completo ponta a ponta. A107-EOB possui componente parcial testado; A103-GEP possui especificações homologadas e protótipo isolado a validar sem constituição institucional real.
+
+
+## Registro de execução T2 — 27/11/2026
+
+- **UC relacionado:** UC-CIV-004, recorte técnico de CS-04, sem conclusão do caso de uso.
+- **Entrega:** `plataforma/a103-gep/db/migrations/001_a103_t2_simulacao.sql` e `src/pg-simulacao.js`; migração propositalmente manual e restrita a laboratório.
+- **Validação:** PR #9 integrado à `main`, commit `7a93194`; PostgreSQL 18 real em GitHub Actions temporário — [integração aprovada](https://github.com/MGlienke/CIVITAS/actions/runs/45937101878). Testes sem banco em Linux e Windows — [aprovados](https://github.com/MGlienke/CIVITAS/actions/runs/45937101811).
+- **O que permanece ausente:** proposta/revisão de constituição institucional real, autorização C103-IEA, custódia documental e normas autoritativas externas, snapshot bitemporal completo, CE-01 com fonte real, Marco A e implantação no PostgreSQL local.
+- **Delimitação:** PR #7 mantém situação documental de proposta; T2 não valida juridicamente registros nem representa autorização para produção.
