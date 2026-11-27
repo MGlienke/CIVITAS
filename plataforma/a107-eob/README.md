@@ -1,4 +1,32 @@
-# CIVITAS — A107-EOB — Núcleo Node.js/TypeScript v0.1
+# CIVITAS — A107-EOB — Núcleo Node.js/TypeScript v0.2.0
+
+**Situação atual (v0.2.0):** implementação e integração técnica com PostgreSQL em banco de teste homologadas nos cenários INT-001 a INT-004; **não liberada para produção**. Os adaptadores institucionais, a autenticação real e as verificações jurídico-ontológicas especializadas ainda não foram implantados.
+
+## Testes de integração reproduzíveis — A107-INT-005
+
+A suíte `tests/integration-postgres.mjs` utiliza o PostgreSQL real e cobre:
+- INT-001: persistência da verificação, 4 condições, 23 requisitos e outbox;
+- INT-002: repetição idempotente e erro `A107E0005` em pedido divergente;
+- INT-003: falha artificial depois do INSERT da outbox, antes do COMMIT, com ROLLBACK;
+- INT-004: duas chamadas concorrentes com identificador idêntico e apenas uma gravação.
+
+**Proteção obrigatória:** executar somente com `DATABASE_URL` apontando para `127.0.0.1`/`localhost`, usuário `civitas_a107_teste`, banco `civitas_a107_teste`, esquema previamente instalado e pacote `MARCO_A` já publicado por processo controlado. A suíte exige também `A107_TEST_INTEGRATION=SIM`. Ela cria identificadores exclusivos a cada rodada, **grava dados de teste que permanecem no banco** para auditoria, e não apaga nem altera registros antigos.
+
+```powershell
+cd C:\CIVITAS\CIVITAS-repo\plataforma\a107-eob
+# Configurar DATABASE_URL com a credencial de teste nesta sessao; nunca salvar senha no repositorio
+$env:A107_TEST_INTEGRATION = "SIM"
+npm run test:integration
+Remove-Item Env:A107_TEST_INTEGRATION -ErrorAction SilentlyContinue
+```
+
+Os seis testes locais permanecem disponíveis em `npm test`, sem PostgreSQL. O relatório histórico da homologação manual está em `docs/revisoes/A107-INT-005_Consolidacao_e_Versionamento_v0_2.md` na raiz do repositório.
+
+---
+
+## Notas históricas da implementação inicial v0.1
+
+O conteúdo abaixo registra o estado inicial do serviço **antes** dos testes reais de integração; referências a integrações PostgreSQL pendentes devem ser lidas como histórico, não como estado atual.
 
 **Estado:** primeira implementação técnica para desenvolvimento/testes, **não homologada nem implantada**.  
 **Base:** SRV-A107-003, DEC-A107-001..007 e PostgreSQL `civitas_plataforma.a107` (modelo físico v0.1 homologado e 5 testes manuais de banco aprovados pelo usuário).  
