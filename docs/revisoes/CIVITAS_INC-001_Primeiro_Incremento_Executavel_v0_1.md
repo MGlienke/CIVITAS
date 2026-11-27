@@ -1,9 +1,9 @@
 # CIVITAS — INC-001 — Primeiro Incremento Executável: Constituição e Habilitação Inicial de Organização Institucional
 
-**Versão:** 0.1 — proposta para homologação, elaborada em 26/11/2026  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 26/11/2026**  
 **Referências:** Mapa de Domínios e Módulos v0.5 (homologado), Matriz de Dependências v0.1, Matriz de Componentes e Contratos de Serviços v0.1 (homologada), UC-CIV-001 a 007 (conforme aplicáveis).  
 **Marco de aceite:** autorização técnica do Marco A por Administrador da Plataforma, após verificar CM-01 a CM-04.  
-**Situação:** escopo proposto para revisão, não é entrega implementada ou homologação do INC-001.
+**Situação:** escopo funcional e critérios de aceitação homologados. A implementação do INC-001 ainda não ocorreu.
 
 ## 1. Objetivo e resultado observável
 
@@ -106,3 +106,7 @@ O incremento não equivale à implantação integral dos 54 módulos. A realiza�
 **Não exigir:** implantação das jornadas 3–6 nem de todos os módulos; credencial S; acreditação privada; serviços públicos digitais; automação de recebimento definitivo e faturamento.
 
 **Não confundir:** a criação deste documento não significa que o incremento foi implementado ou homologado. O projeto detalhado dos contratos `SRV`, topologia de serviços, dados, interfaces e testes permanece etapa seguinte.
+
+## 9. Homologação expressa
+
+Em 26/11/2026 o autor homologou expressamente o **INC-001**, aprovando seu objetivo, recorte de UC-001 a UC-007, pacotes P0–P5 e critérios de aceitação AT-01–AT-15. A partir deste baseline inicia-se a especificação técnica modular, começando pelo A107-EOB. Esta homologação não aprova antecipadamente contratos técnicos ou serviços ainda não especificados.
