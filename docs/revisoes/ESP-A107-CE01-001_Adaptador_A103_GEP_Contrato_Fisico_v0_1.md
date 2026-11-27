@@ -1,6 +1,6 @@
 # ESP-A107-CE01-001 — Adaptador de evidências A103-GEP / CE-01
 
-**Versão da especificação:** 0.1 — **PROPOSTA, NÃO HOMOLOGADA**
+**Versão da especificação:** 0.1 — **HOMOLOGADA pelo autor em 27/11/2026**, com escopo contratual simulado e sem integração institucional real.
 **Implementação contratual inicial:** branch `feature/a107-ce01-a103-v0.1`.
 **Referência técnica estável:** `a107-eob-v0.2.0`.
 **Consumidor:** A107-EOB, SRV-A107-003.
@@ -93,9 +93,9 @@ Estes testes utilizam **fonte contratual simulada**. São aceites preliminares d
 5. Executar testes integrados com fonte real e registros de prova legítimos, com autorização formal e rastreabilidade.
 6. Manter o A107 sem poder de autorizar Marco A.
 
-**Status da entrega:** implementação e testes de contrato criados na branch para validação; nenhum teste desta branch foi ainda comprovado por execução local ou CI, nem mesclado à `main`.
+**Status da entrega:** 19/19 testes locais aprovados no Windows; GitHub Actions aprovado em Linux e Windows, com proteção LF das regras. Homologação restrita ao contrato e adaptador simulado; PR #2 ainda não integrado à `main`.
 
-## 6. Correção da fronteira de autorização — proposta para avaliação
+## 6. Correção da fronteira de autorização — homologada no escopo contratual
 
 **Implementação:** `src/errors.ts` define `A107AcessoNegado`, erro tipado com `A107E0002`; `src/adapters/a103-ce01.ts` o emite quando a porta informa `NAO_AUTORIZADA`; `src/engine.ts` interrompe a avaliação diante desse erro ou de resposta de provedor com `status_consulta = NAO_AUTORIZADA`.
 
@@ -103,4 +103,12 @@ Estes testes utilizam **fonte contratual simulada**. São aceites preliminares d
 
 **Testes de ponta a ponta:** `tests/ce01-authorization-e2e.test.ts` verifica (a) negativa contratual do A103, (b) exceção tipada da porta, (c) envelope de provedor com `NAO_AUTORIZADA`, (d) recusa de autorização anterior à consulta e (e) distinção da indisponibilidade. Para demonstrar ausência de persistência usa-se repositório espião **em memória**, não um banco real. Provas físicas de banco e autenticação institucional ainda são pendentes. Os testes não realizam autorização do Marco A.
 
-**Estado:** proposta submetida ao PR #2, sem homologação; a aprovação de CI valida a compilação e os testes locais, não a interface real proprietária A103.
+**Estado:** especificação contratual homologada pelo autor em 27/11/2026. A aprovação de CI valida a compilação e os testes locais, não a interface real proprietária A103.
+
+## 7. Registro de homologação — 27/11/2026
+
+Em 27/11/2026, após a execução local de **19 testes, com 19 aprovações e nenhuma falha**, e após a confirmação das execuções do GitHub Actions com sucesso em **Windows e Linux**, o autor declarou **“Homologado”** para a ESP-A107-CE01-001 v0.1.
+
+**Escopo homologado:** interface contratual CE-01 com porta abstrata para A103-GEP, mapeamento de registros referenciados para CM01-R01, tratamento conservador de insuficiência probatória, propagação de acesso negado como `A107E0002` e garantia testada em repositório simulado de que a negativa não persiste uma verificação concluída. A verificação ontológica permanece distinta da autorização do Marco A.
+
+**Não incluído:** conexão com serviço real A103-GEP, autenticação e autorização institucional efetivas, prova de historicidade jurídica completa, verificação de outros requisitos e autorização do Marco A. A homologação não é aprovação para produção. A incorporação à `main` e eventual identificação de nova versão são atos separados.
