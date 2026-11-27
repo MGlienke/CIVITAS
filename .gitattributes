@@ -1,0 +1,3 @@
+# CIVITAS — arquivos com integridade SHA-256 dependente dos bytes exatos.
+# O Git nao deve converter quebras de linha dos artefatos de regras.
+/plataforma/a107-eob/rules/** text eol=lf

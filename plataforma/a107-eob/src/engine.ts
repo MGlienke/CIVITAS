@@ -1,4 +1,5 @@
 import { randomUUID } from 'node:crypto';
+import { A107AcessoNegado } from './errors.js';
 import type { ComandoVerificacao, ContextoAutenticado, ConsultaEvidencia, EvidenciaReferencial, EvidenceProvider, ResultadoCondicao, ResultadoRequisito, ResultadoVerificacao, RespostaEvidencia, EstadoMarcoA, Diagnostico } from './contracts.js';
 import type { PacoteCarregado, RegraRequisito } from './rule-loader.js';
 import { eligibleFromState, validateMarcoAResult, validateEvidenceResponse } from './invariants.js';
@@ -44,10 +45,14 @@ export async function avaliarComFontes(comando:ComandoVerificacao, contexto:Cont
       if(provider){
         try {
           const reply=await provider.consultar(query,contexto);
+          // A negativa de acesso não é uma constatação ontológica e interrompe a verificação.
+          // Protege também fornecedores que devolvem o estado em vez de lançar exceção.
+          if(reply.status_consulta==='NAO_AUTORIZADA') throw new A107AcessoNegado('fonte negou acesso à consulta institucional');
           validateEvidenceResponse(query,reply);
           consultas.push({consulta:query,resposta:reply});
           state=avaliarRequisito(r,reply);
         } catch(e){
+          if(e instanceof A107AcessoNegado) throw e;
           state={estado:'INDETERMINADA',justificativa:'Resposta não utilizável; integração com fonte pendente.',diagnosticos:[{codigo:'A107W0009',descricao:String(e)}],evidencias:[]};
         }
       }
