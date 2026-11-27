@@ -1,0 +1,62 @@
+name: A103 T4 — A103 PostgreSQL CE-01 A107 (laboratorio)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "plataforma/a103-gep/**"
+      - ".github/workflows/a103-t4-ce01-a107-ci.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  laboratorio:
+    name: A103 → CE-01 → A107 com PostgreSQL 18
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: a103_t4
+          POSTGRES_PASSWORD: test_only_password
+          POSTGRES_DB: a103_t4_dev
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U a103_t4 -d a103_t4_dev"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      A103_T2_TEST_ONLY: "1"
+      A103_T4_LAB_ONLY: "1"
+      A103_T2_DATABASE_URL: "postgresql://a103_t4:test_only_password@127.0.0.1:5432/a103_t4_dev"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Preparar A107 existente sem modificar seus contratos
+        working-directory: plataforma/a107-eob
+        run: |
+          npm ci
+          npm run build
+      - name: Preparar A103 e migrar somente banco temporario
+        working-directory: plataforma/a103-gep
+        run: |
+          npm install --no-audit --no-fund
+          node --input-type=module -e '
+            import pg from "pg";
+            import {readFileSync} from "node:fs";
+            const client=new pg.Client({connectionString:process.env.A103_T2_DATABASE_URL});
+            await client.connect();
+            try {await client.query(readFileSync("db/migrations/001_a103_t2_simulacao.sql","utf8"));}
+            finally {await client.end();}
+          '
+      - name: Executar toda suite A103 inclusive T4-PG sem SKIP
+        working-directory: plataforma/a103-gep
+        run: |
+          npm test
+      - name: Regressao A107-EOB original
+        working-directory: plataforma/a107-eob
+        run: npm test
