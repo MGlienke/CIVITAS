@@ -39,7 +39,7 @@
 | T1 | Protótipo A103 em memória e testes | Propostas, identidade, versionamento, idempotência, retificações e registros marcados SIMULADO | Não é CS-04 institucional real |
 | T2 | **Laboratório de persistência A103 — código integrado à main; PostgreSQL CI aprovado** | PostgreSQL 18 temporário, migração, rollback, atomicidade, idempotência, versões e outbox testados em CI (PR #9) | **Somente SIMULADO**; sem execução no banco local, sem fonte/autoridade real; ESP-A103-CS04-002 (PR #7) continua não homologada |
 | T3 | **Fronteira de confiança A103 — laboratório simulado validado** | Duplo atestado Ed25519 com separação de papéis, hash do comando, escopo, audiência, tempo e negação antes de persistir; CI Linux, Windows e PostgreSQL aprovada (PR #11) | **Não é autorização/origem institucional real**, falta C103-IEA, UC-007, identidade/competência jurídica, revogação, proteção do perímetro e cadeia de custódia |
-| T4 | Integração A103-CE01-A107 | CM01-R01 avaliada com origem real e prova recuperável | Não implica CM-01 completa nem Marco A |
+| T4 | **Integração A103 → CE-01 → A107 implementada em laboratório (PR #13)** | **34 testes A103 + 19 testes A107**, sem falhas/ignorados em PostgreSQL 18 de CI; CM01-R01 atendida **apenas com fonte SIMULADA** | Fonte/autoridade/custódia reais e C103-IEA/UC-007 ausentes; CM-01 completa/Marco A não autorizados |
 | T5 | Implementar fontes EOT/ENT e demais condições | UC-001 a 003 avaliáveis; CM-01 com provas completas | Preservar fonte e fundamento |
 | T6 | Fluxo UC-005/006 e Marco A | Ato de autorização separado e verificável | Depende UC-007, CM-01 a CM-04 e decisão competente |
 
@@ -71,3 +71,13 @@
 - **Critérios verificados:** assinatura inválida, emissor/papel incorreto, expiração, audiência ou escopo divergente, alteração do comando/prova, negativa antes de consultar o banco, aceitação de atestado duplo válido **somente em SIMULADO**, e idempotência no PostgreSQL de teste.
 - **Bloqueios para T3 real:** serviço de identidade C103-IEA, acreditação pública/IDUP (UC-007), autoridade/competência jurídica, canais autenticados e segregação de privilégios, revogação e replay distribuído, custódia e validade das referências institucionais. O T2 pode ser chamado diretamente no laboratório e **não é uma fronteira segura de produção**.
 - **Sem mudança de baseline:** PR #7 é proposta não homologada, A107 v0.3.0 permanece intacto, e nenhum dado simulado é prova real ou autorização de Marco A.
+
+
+## Registro de execução T4 — 27/11/2026
+
+- **UC relacionado:** UC-CIV-004, fluxo técnico de laboratório de registro publicado → consulta A103 → CE-01 → avaliação A107; também recorte CM01-R01 de UC-CIV-006, **não** conclusão de nenhum dos dois UC.
+- **Entrega:** `plataforma/a103-gep/src/ce01-porta-laboratorio.js` + `tests/integration-ce01-a107-t4.test.js`; usa o `AdaptadorCe01A103` e o motor de regras A107 **sem modificação de seu código**.
+- **Validação efetiva:** PR #13 integrado à `main`, commit `c0b1e10`. [PostgreSQL 18 + testes A103 34/34, testes A107 19/19, sem SKIP](https://github.com/MGlienke/CIVITAS/actions/runs/45938522091); Linux e Windows [aprovados](https://github.com/MGlienke/CIVITAS/actions/runs/45938522025); regressão T2/T3 PostgreSQL [aprovada](https://github.com/MGlienke/CIVITAS/actions/runs/45938522003).
+- **Resultado do laboratório:** fato/manifesto SIMULADOS permitiram `CM01-R01 = ATENDIDA` **apenas no harness de teste**; resultado agregado `INDETERMINADA`, elegibilidade `VERIFICACAO_PENDENTE`. O resultado **não foi persistido no A107** e não autoriza Marco A.
+- **Negativas:** ausência de identidade não gera prova negativa; consulta anterior à publicação não demonstra existência pretérita; acesso negado provoca `A107E0002`; não há autenticação institucional real.
+- **Próximo trabalho (T5):** fontes EOT/ENT/ontologia e dependências institucionais reais, sem afirmar autenticidade de uma prova de laboratório. PR #7 continua proposta técnica não homologada.
