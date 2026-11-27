@@ -1,6 +1,6 @@
 # DEC-A103-001 — Identidade, Constituição, Historicidade e Agregação Probatória
 
-**Versão:** 0.1 — **PROPOSTA, NÃO HOMOLOGADA**  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 27/11/2026** (decisões arquiteturais D1–D4, sem implementação)  
 **Data:** 27/11/2026  
 **Módulo:** A103-GEP  
 **Escopo:** CE-01 / CM01-R01 / INC-001 — Marco A  
@@ -137,8 +137,17 @@ São **critérios de teste futuros**; não há implementação nova.
 6. **Definir DDL isolado e contratos de serviços:** somente após homologar as decisões de identidade, origem, tempo e prova; realizar testes com dados de prova segregados e não atribuir a eles natureza de evidência real.
 7. **Planejar evolução contratual CE-01:** eventual ampliação de proveniência e múltiplas provas deve ser versionada e testada com A107 sem modificar a tag v0.3.0.
 
-## 9. Deliberação solicitada
+## 9. Registro de homologação — 27/11/2026
 
-Solicita-se avaliação das quatro decisões **D1–D4**, especialmente do agregado probatório versionado de D4. O documento é uma **proposta arquitetural**, não altera as especificações homologadas nem implementa qualquer código, banco, endpoint ou autorização.
+Em 27/11/2026, o autor declarou expressamente **“homologado”** para a **DEC-A103-001 v0.1**, aprovando o conjunto das quatro decisões arquiteturais propostas:
 
-**Estado:** rascunho para revisão; homologação documental e eventual merge dependerão de aprovação explícita do autor.
+- **D1 — Identidade institucional e unicidade:** identificador estável da Organização Institucional atribuído pelo A103, tratamento contextual de duplicidades e preservação da identidade nas versões;
+- **D2 — Constituição e origem legítima:** distinção entre ato/operação proprietária de constituição e consulta de evidências, origem rastreável e publicação controlada de versões aptas a servir como evidências;
+- **D3 — Reconstrução histórica:** distinção entre `referencia_temporal` e `conhecimento_ate`, preservação de correções, snapshots por fonte e tratamento conservador de conflitos;
+- **D4 — Agregação probatória:** manifesto de referências versionado, sob responsabilidade de A103 quanto ao agregado, mantendo cada documento original sob custódia de seu proprietário.
+
+**Limites do aceite:** aprovam-se regras e decisões arquiteturais, incluindo os princípios de integridade e os critérios de teste propostos. Não foi homologada implementação executável, DDL, procedimento real CS-04, autenticação/autorização institucional, mecanismo operacional de snapshot/manifesto nem integração com fonte real. Os 12 testes candidatos ainda não foram executados. A adaptação A107 v0.3.0 e as regras CM-01 a CM-04 permanecem inalteradas.
+
+**Próximos artefatos:** especificar a operação proprietária de constituição/registro (CS-04), o formato e a recuperação do manifesto probatório, os controles de autorização, a persistência e os cenários integrados, com confirmação de IDs oficiais e novas homologações quando cabíveis.
+
+**Situação do PR:** homologação registrada na branch documental; incorporação à `main` será ato separado.
