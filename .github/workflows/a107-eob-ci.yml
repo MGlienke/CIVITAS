@@ -6,11 +6,13 @@ on:
     paths:
       - "plataforma/a107-eob/**"
       - ".github/workflows/a107-eob-ci.yml"
+      - ".gitattributes"
   push:
-    branches: [main, "feature/a107-eob-v0.2.0"]
+    branches: [main, "feature/a107-eob-v0.2.0", "feature/a107-ce01-a103-v0.1"]
     paths:
       - "plataforma/a107-eob/**"
       - ".github/workflows/a107-eob-ci.yml"
+      - ".gitattributes"
   workflow_dispatch:
 
 permissions:
@@ -18,9 +20,13 @@ permissions:
 
 jobs:
   build-and-test:
-    name: Node.js 24 — compilação e testes locais
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+    name: Node.js 24 — ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: plataforma/a107-eob
@@ -34,6 +40,25 @@ jobs:
           node-version: "24"
           cache: npm
           cache-dependency-path: plataforma/a107-eob/package-lock.json
+
+      - name: Verificar LF dos arquivos de regras (integridade por bytes)
+        shell: bash
+        run: |
+          node --input-type=module -e '
+            import { readdirSync, readFileSync } from "node:fs";
+            const rules = "rules";
+            for (const name of readdirSync(rules)) {
+              if (!name.endsWith(".md") && !name.endsWith(".json")) continue;
+              const bytes = readFileSync(`${rules}/${name}`);
+              for (let i = 0; i < bytes.length - 1; i++) {
+                if (bytes[i] === 13 && bytes[i + 1] === 10) {
+                  console.error(`Arquivo com CRLF: ${name}`);
+                  process.exitCode = 1;
+                  break;
+                }
+              }
+            }
+          '
 
       - name: Instalação reproduzível
         run: npm ci
