@@ -1,7 +1,7 @@
 # CIVITAS — SRV-A107-003 — Verificar Condições Ontológicas de Realização
 
 **Módulo:** A107-EOB — Estrutura Organizacional de Base  
-**Versão:** 0.1 — **MINUTA PARA REVISÃO; NÃO HOMOLOGADA**  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 26/11/2026 (contrato lógico e comportamento verificável)**  
 **Data:** 26/11/2026  
 **Incremento:** INC-001, homologado  
 **Decisões homologadas:** DEC-A107-001 (Markdown/YAML), DEC-A107-002 (vocabulário controlado, inclusive `precede` e `para_cada`), especificação integrada CM-01 a CM-04 v0.1, Mapa de Domínios e Módulos v0.5, Matriz de Componentes e Serviços v0.1.  
@@ -288,4 +288,8 @@ Os testes acima ampliam os TST-A107-009 a 017 homologados no conjunto integrado;
 
 Antes de iniciar código, verificar: (a) decisões técnicas abertas para o escopo resolvidas; (b) cinco arquivos de condição e composição com schemas validados; (c) contratos de consulta de fontes acordados; (d) política de segurança/autorização; (e) persistência e idempotência especificadas; (f) catálogo de erros e logs/métricas/monitoring detalhados; (g) testes definidos antes da implementação.
 
-**Estado final desta minuta:** proposta completa de contrato lógico e comportamento verificável; **não** aprovação antecipada de API, modelo físico, testes executados ou entrada em produção.
+**Estado após homologação:** aprovado o contrato lógico e o comportamento verificável. **Não** equivale à homologação dos contratos físicos, esquema YAML definitivo, testes executados, implementação ou entrada em produção.
+
+## 17. Registro de homologação
+
+Em 26/11/2026, o autor declarou expressamente **homologado o SRV-A107-003 v0.1**, aprovando a finalidade, fronteiras, entradas e saídas lógicas, operadores e semântica de avaliação, regras de suficiência probatória, persistência lógica, invariantes, catálogo preliminar de ocorrências e critérios de testes. As decisões técnicas DEC-A107-003 a DEC-A107-008 permanecem em aberto e deverão ser tratadas antes da codificação pertinente. A homologação não afirma a realização ou aprovação de testes, nem a implementação do serviço.
