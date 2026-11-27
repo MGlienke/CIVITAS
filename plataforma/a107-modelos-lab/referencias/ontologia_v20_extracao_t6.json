@@ -1,0 +1,2042 @@
+{
+  "identificador": "CIVITAS-ONTOLOGIA-V20-DERIVADO-T6",
+  "fonte_documental": "CIVITAS - Rede Ontologica - v20.md",
+  "versao_fonte": "v20",
+  "situacao": "EXTRACAO_TECNICA_DA_FONTE_NAO_HOMOLOGACAO_COMPUTACIONAL",
+  "escopo": "Conceitos da secao 3 e relacoes diretas da secao 5; NAO representa metamodelo organizacional, EOT, ENT ou satisfacao juridica",
+  "total_linhas_fonte": 4153,
+  "conceitos": [
+    {
+      "codigo": "CON-001",
+      "nome": "PESSOA",
+      "identificador": "pessoa"
+    },
+    {
+      "codigo": "CON-002",
+      "nome": "POVO",
+      "identificador": "povo"
+    },
+    {
+      "codigo": "CON-003",
+      "nome": "PODER CONSTITUINTE ORIGINÁRIO",
+      "identificador": "poder_constituinte_originario"
+    },
+    {
+      "codigo": "CON-004",
+      "nome": "CONSTITUIÇÃO",
+      "identificador": "constituicao"
+    },
+    {
+      "codigo": "CON-005",
+      "nome": "ESTADO",
+      "identificador": "estado"
+    },
+    {
+      "codigo": "CON-006",
+      "nome": "CIDADANIA",
+      "identificador": "cidadania"
+    },
+    {
+      "codigo": "CON-007",
+      "nome": "EDUCAÇÃO PARA A CIDADANIA",
+      "identificador": "educacao_para_cidadania"
+    },
+    {
+      "codigo": "CON-008",
+      "nome": "NORMA JURÍDICA",
+      "identificador": "norma_juridica"
+    },
+    {
+      "codigo": "CON-009",
+      "nome": "PODER DE ESTADO",
+      "identificador": "poder_de_estado"
+    },
+    {
+      "codigo": "CON-010",
+      "nome": "ENTE FEDERATIVO",
+      "identificador": "ente_federativo"
+    },
+    {
+      "codigo": "CON-011",
+      "nome": "ADMINISTRAÇÃO PÚBLICA",
+      "identificador": "administracao_publica"
+    },
+    {
+      "codigo": "CON-012",
+      "nome": "ENTIDADE PÚBLICA",
+      "identificador": "entidade_publica"
+    },
+    {
+      "codigo": "CON-013",
+      "nome": "ÓRGÃO PÚBLICO",
+      "identificador": "orgao_publico"
+    },
+    {
+      "codigo": "CON-014",
+      "nome": "COMPETÊNCIA",
+      "identificador": "competencia"
+    },
+    {
+      "codigo": "CON-015",
+      "nome": "AGENTE PÚBLICO",
+      "identificador": "agente_publico"
+    },
+    {
+      "codigo": "CON-016",
+      "nome": "SISTEMA ESTRUTURANTE",
+      "identificador": "sistema_estruturante"
+    },
+    {
+      "codigo": "CON-017",
+      "nome": "REPRESENTAÇÃO",
+      "identificador": "representacao"
+    },
+    {
+      "codigo": "CON-018",
+      "nome": "PAPEL INSTITUCIONAL",
+      "identificador": "papel_institucional"
+    },
+    {
+      "codigo": "CON-019",
+      "nome": "POSIÇÃO INSTITUCIONAL",
+      "identificador": "posicao_institucional"
+    },
+    {
+      "codigo": "CON-020",
+      "nome": "CIDADÃO",
+      "identificador": "cidadao"
+    },
+    {
+      "codigo": "CON-021",
+      "nome": "PÚBLICO ADMINISTRADO",
+      "identificador": "publico_administrado"
+    },
+    {
+      "codigo": "CON-022",
+      "nome": "RELAÇÃO INSTITUCIONAL",
+      "identificador": "relacao_institucional"
+    },
+    {
+      "codigo": "CON-023",
+      "nome": "METAORGANIZAÇÃO DA CIDADANIA",
+      "identificador": "metaorganizacao_da_cidadania"
+    },
+    {
+      "codigo": "CON-024",
+      "nome": "HISTORICIDADE",
+      "identificador": "historicidade"
+    },
+    {
+      "codigo": "CON-025",
+      "nome": "ORGANICIDADE",
+      "identificador": "organicidade"
+    },
+    {
+      "codigo": "CON-026",
+      "nome": "FUNÇÃO DO ESTADO",
+      "identificador": "funcao_do_estado"
+    },
+    {
+      "codigo": "CON-027",
+      "nome": "SERVIÇO PÚBLICO",
+      "identificador": "servico_publico"
+    },
+    {
+      "codigo": "CON-028",
+      "nome": "PODER DE POLÍCIA",
+      "identificador": "poder_de_policia"
+    },
+    {
+      "codigo": "CON-029",
+      "nome": "INTERVENÇÃO",
+      "identificador": "intervencao"
+    },
+    {
+      "codigo": "CON-030",
+      "nome": "FOMENTO",
+      "identificador": "fomento"
+    },
+    {
+      "codigo": "CON-031",
+      "nome": "CONCESSIONÁRIO",
+      "identificador": "concessionario"
+    },
+    {
+      "codigo": "CON-032",
+      "nome": "PERMISSIONÁRIO",
+      "identificador": "permissionario"
+    },
+    {
+      "codigo": "CON-033",
+      "nome": "AUTORIZATÁRIO",
+      "identificador": "autorizatario"
+    },
+    {
+      "codigo": "CON-034",
+      "nome": "CARTA DE SERVIÇOS",
+      "identificador": "carta_de_servicos"
+    },
+    {
+      "codigo": "CON-035",
+      "nome": "FINALIDADE",
+      "identificador": "finalidade"
+    },
+    {
+      "codigo": "CON-036",
+      "nome": "RESULTADO",
+      "identificador": "resultado"
+    },
+    {
+      "codigo": "CON-037",
+      "nome": "CRITÉRIO DE PERTENCIMENTO",
+      "identificador": "criterio_de_pertencimento"
+    },
+    {
+      "codigo": "CON-038",
+      "nome": "SUFICIÊNCIA",
+      "identificador": "suficiencia"
+    },
+    {
+      "codigo": "CON-039",
+      "nome": "INDIVIDUALIZAÇÃO DE EFEITOS",
+      "identificador": "individualizacao_de_efeitos"
+    },
+    {
+      "codigo": "CON-040",
+      "nome": "CARÁTER RELACIONAL",
+      "identificador": "carater_relacional"
+    },
+    {
+      "codigo": "CON-041",
+      "nome": "PADRONIZAÇÃO",
+      "identificador": "padronizacao"
+    },
+    {
+      "codigo": "CON-042",
+      "nome": "FUNCIONALIDADE DE PRESTAÇÃO",
+      "identificador": "funcionalidade_de_prestacao"
+    },
+    {
+      "codigo": "CON-043",
+      "nome": "COMPONENTE DIGITALIZÁVEL",
+      "identificador": "componente_digitalizavel"
+    },
+    {
+      "codigo": "CON-044",
+      "nome": "UNIVERSO DIGITALIZÁVEL",
+      "identificador": "universo_digitalizavel"
+    },
+    {
+      "codigo": "CON-045",
+      "nome": "PROCESSO ADMINISTRATIVO",
+      "identificador": "processo_administrativo"
+    },
+    {
+      "codigo": "CON-046",
+      "nome": "ESPÉCIE DE PROCESSO ADMINISTRATIVO",
+      "identificador": "especie_de_processo_administrativo"
+    },
+    {
+      "codigo": "CON-047",
+      "nome": "PROCEDIMENTO PADRONIZADO",
+      "identificador": "procedimento_padronizado"
+    },
+    {
+      "codigo": "CON-048",
+      "nome": "ATUAÇÃO ADMINISTRATIVA",
+      "identificador": "atuacao_administrativa"
+    },
+    {
+      "codigo": "CON-049",
+      "nome": "ATO ADMINISTRATIVO",
+      "identificador": "ato_administrativo"
+    },
+    {
+      "codigo": "CON-050",
+      "nome": "EFEITO JURÍDICO",
+      "identificador": "efeito_juridico"
+    },
+    {
+      "codigo": "CON-051",
+      "nome": "CONDIÇÕES DE VALIDADE",
+      "identificador": "condicoes_de_validade"
+    },
+    {
+      "codigo": "CON-052",
+      "nome": "VALIDADE POR DESIGN",
+      "identificador": "validade_por_design"
+    },
+    {
+      "codigo": "CON-053",
+      "nome": "MOTIVO",
+      "identificador": "motivo"
+    },
+    {
+      "codigo": "CON-054",
+      "nome": "OBJETO",
+      "identificador": "objeto"
+    },
+    {
+      "codigo": "CON-055",
+      "nome": "FORMA",
+      "identificador": "forma"
+    },
+    {
+      "codigo": "CON-056",
+      "nome": "FORMALIDADES",
+      "identificador": "formalidades"
+    },
+    {
+      "codigo": "CON-057",
+      "nome": "PRESSUPOSTO DE DIREITO",
+      "identificador": "pressuposto_de_direito"
+    },
+    {
+      "codigo": "CON-058",
+      "nome": "PRESSUPOSTO DE FATO",
+      "identificador": "pressuposto_de_fato"
+    },
+    {
+      "codigo": "CON-059",
+      "nome": "CONTEXTO DA RELAÇÃO INSTITUCIONAL",
+      "identificador": "contexto_da_relacao_institucional"
+    },
+    {
+      "codigo": "CON-060",
+      "nome": "SITUAÇÃO JURÍDICA",
+      "identificador": "situacao_juridica"
+    },
+    {
+      "codigo": "CON-061",
+      "nome": "GESTÃO ARQUIVÍSTICA",
+      "identificador": "gestao_arquivistica"
+    },
+    {
+      "codigo": "CON-062",
+      "nome": "ARQUIVO PÚBLICO",
+      "identificador": "arquivo_publico"
+    },
+    {
+      "codigo": "CON-063",
+      "nome": "ACERVO ARQUIVÍSTICO",
+      "identificador": "acervo_arquivistico"
+    },
+    {
+      "codigo": "CON-064",
+      "nome": "REPOSITÓRIO",
+      "identificador": "repositorio"
+    },
+    {
+      "codigo": "CON-065",
+      "nome": "DOCUMENTO ARQUIVÍSTICO",
+      "identificador": "documento_arquivistico"
+    },
+    {
+      "codigo": "CON-066",
+      "nome": "DOCUMENTO ARQUIVÍSTICO DIGITAL",
+      "identificador": "documento_arquivistico_digital"
+    },
+    {
+      "codigo": "CON-067",
+      "nome": "ATUAÇÃO INSTITUCIONAL",
+      "identificador": "atuacao_institucional"
+    },
+    {
+      "codigo": "CON-068",
+      "nome": "CADEIA DE CUSTÓDIA",
+      "identificador": "cadeia_de_custodia"
+    },
+    {
+      "codigo": "CON-069",
+      "nome": "PROVENIÊNCIA",
+      "identificador": "proveniencia"
+    },
+    {
+      "codigo": "CON-070",
+      "nome": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL",
+      "identificador": "condicoes_de_confiabilidade_documental"
+    },
+    {
+      "codigo": "CON-071",
+      "nome": "AUTENTICIDADE",
+      "identificador": "autenticidade"
+    },
+    {
+      "codigo": "CON-072",
+      "nome": "INTEGRIDADE",
+      "identificador": "integridade"
+    },
+    {
+      "codigo": "CON-073",
+      "nome": "CONFIABILIDADE",
+      "identificador": "confiabilidade"
+    },
+    {
+      "codigo": "CON-074",
+      "nome": "VERIFICABILIDADE",
+      "identificador": "verificabilidade"
+    },
+    {
+      "codigo": "CON-075",
+      "nome": "CADEIA DE CONFIANÇA",
+      "identificador": "cadeia_de_confianca"
+    },
+    {
+      "codigo": "CON-076",
+      "nome": "VALIDADE JURÍDICA",
+      "identificador": "validade_juridica"
+    },
+    {
+      "codigo": "CON-077",
+      "nome": "EVIDÊNCIA",
+      "identificador": "evidencia"
+    },
+    {
+      "codigo": "CON-078",
+      "nome": "PROVA",
+      "identificador": "prova"
+    },
+    {
+      "codigo": "CON-079",
+      "nome": "VERDADE ADMINISTRATIVA",
+      "identificador": "verdade_administrativa"
+    },
+    {
+      "codigo": "CON-080",
+      "nome": "FUNÇÃO INSTITUCIONAL",
+      "identificador": "funcao_institucional"
+    },
+    {
+      "codigo": "CON-081",
+      "nome": "AGENTE TECNOLÓGICO",
+      "identificador": "agente_tecnologico"
+    },
+    {
+      "codigo": "CON-082",
+      "nome": "ENTIDADE PÚBLICA EMITENTE",
+      "identificador": "entidade_publica_emitente"
+    },
+    {
+      "codigo": "CON-083",
+      "nome": "ENTIDADE PÚBLICA RECEBEDORA",
+      "identificador": "entidade_publica_recebedora"
+    },
+    {
+      "codigo": "CON-084",
+      "nome": "RELAÇÃO INTERINSTITUCIONAL",
+      "identificador": "relacao_interinstitucional"
+    },
+    {
+      "codigo": "CON-085",
+      "nome": "ATRIBUIÇÃO DE VERDADE",
+      "identificador": "atribuicao_de_verdade"
+    },
+    {
+      "codigo": "CON-086",
+      "nome": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "identificador": "condicoes_de_sustentacao"
+    },
+    {
+      "codigo": "CON-087",
+      "nome": "CONDIÇÃO INSTITUCIONAL",
+      "identificador": "condicao_institucional"
+    },
+    {
+      "codigo": "CON-088",
+      "nome": "PRESTADOR VINCULADO",
+      "identificador": "prestador_vinculado"
+    },
+    {
+      "codigo": "CON-089",
+      "nome": "FORNECEDOR",
+      "identificador": "fornecedor"
+    },
+    {
+      "codigo": "CON-090",
+      "nome": "TERCEIRIZADO",
+      "identificador": "terceirizado"
+    },
+    {
+      "codigo": "CON-091",
+      "nome": "REPRESENTANTE",
+      "identificador": "representante"
+    },
+    {
+      "codigo": "CON-092",
+      "nome": "FUNDAMENTO JURÍDICO",
+      "identificador": "fundamento_juridico"
+    },
+    {
+      "codigo": "CON-093",
+      "nome": "PODER DE REPRESENTAÇÃO",
+      "identificador": "poder_de_representacao"
+    },
+    {
+      "codigo": "CON-094",
+      "nome": "PARTICIPAÇÃO INSTITUCIONAL",
+      "identificador": "participacao_institucional"
+    },
+    {
+      "codigo": "CON-095",
+      "nome": "PROCESSO ADMINISTRATIVO DE CONTRATAÇÃO PÚBLICA",
+      "identificador": "processo_administrativo_de_contratacao_publica"
+    },
+    {
+      "codigo": "CON-096",
+      "nome": "PROCESSO ADMINISTRATIVO DISCIPLINAR",
+      "identificador": "processo_administrativo_disciplinar"
+    },
+    {
+      "codigo": "CON-097",
+      "nome": "PROCESSO ADMINISTRATIVO FISCAL",
+      "identificador": "processo_administrativo_fiscal"
+    },
+    {
+      "codigo": "CON-098",
+      "nome": "PROCESSO ADMINISTRATIVO DE TOMBAMENTO",
+      "identificador": "processo_administrativo_de_tombamento"
+    },
+    {
+      "codigo": "CON-099",
+      "nome": "PROCESSO ADMINISTRATIVO DE CONTROLE EXTERNO",
+      "identificador": "processo_administrativo_de_controle_externo"
+    },
+    {
+      "codigo": "CON-100",
+      "nome": "PROCESSO ADMINISTRATIVO AMBIENTAL",
+      "identificador": "processo_administrativo_ambiental"
+    },
+    {
+      "codigo": "CON-101",
+      "nome": "PROCESSO ADMINISTRATIVO DE DESAPROPRIAÇÃO",
+      "identificador": "processo_administrativo_de_desapropriacao"
+    },
+    {
+      "codigo": "CON-102",
+      "nome": "ADMINISTRAÇÃO DIRETA",
+      "identificador": "administracao_direta"
+    },
+    {
+      "codigo": "CON-103",
+      "nome": "ADMINISTRAÇÃO INDIRETA",
+      "identificador": "administracao_indireta"
+    },
+    {
+      "codigo": "CON-104",
+      "nome": "AUTARQUIA",
+      "identificador": "autarquia"
+    },
+    {
+      "codigo": "CON-105",
+      "nome": "FUNDAÇÃO PÚBLICA",
+      "identificador": "fundacao_publica"
+    },
+    {
+      "codigo": "CON-106",
+      "nome": "EMPRESA PÚBLICA",
+      "identificador": "empresa_publica"
+    },
+    {
+      "codigo": "CON-107",
+      "nome": "SOCIEDADE DE ECONOMIA MISTA",
+      "identificador": "sociedade_de_economia_mista"
+    },
+    {
+      "codigo": "CON-108",
+      "nome": "UNIDADE ADMINISTRATIVA",
+      "identificador": "unidade_administrativa"
+    },
+    {
+      "codigo": "CON-109",
+      "nome": "ATRIBUIÇÃO",
+      "identificador": "atribuicao"
+    },
+    {
+      "codigo": "CON-110",
+      "nome": "SERVIDOR PÚBLICO",
+      "identificador": "servidor_publico"
+    },
+    {
+      "codigo": "CON-111",
+      "nome": "EMPREGADO PÚBLICO",
+      "identificador": "empregado_publico"
+    },
+    {
+      "codigo": "CON-112",
+      "nome": "AGENTE TEMPORÁRIO",
+      "identificador": "agente_temporario"
+    },
+    {
+      "codigo": "CON-113",
+      "nome": "USUÁRIO DE SERVIÇO PÚBLICO",
+      "identificador": "usuario_de_servico_publico"
+    },
+    {
+      "codigo": "CON-114",
+      "nome": "TITULARIDADE DO SERVIÇO PÚBLICO",
+      "identificador": "titularidade_do_servico_publico"
+    },
+    {
+      "codigo": "CON-115",
+      "nome": "PRESTAÇÃO DIRETA",
+      "identificador": "prestacao_direta"
+    },
+    {
+      "codigo": "CON-116",
+      "nome": "PRESTAÇÃO DELEGADA",
+      "identificador": "prestacao_delegada"
+    },
+    {
+      "codigo": "CON-117",
+      "nome": "COMPROMISSO DE ATENDIMENTO",
+      "identificador": "compromisso_de_atendimento"
+    },
+    {
+      "codigo": "CON-118",
+      "nome": "PADRÃO DE QUALIDADE DO SERVIÇO",
+      "identificador": "padrao_de_qualidade_do_servico"
+    },
+    {
+      "codigo": "CON-119",
+      "nome": "IDENTIFICAÇÃO",
+      "identificador": "identificacao"
+    },
+    {
+      "codigo": "CON-120",
+      "nome": "AUTENTICAÇÃO",
+      "identificador": "autenticacao"
+    },
+    {
+      "codigo": "CON-121",
+      "nome": "ASSINATURA ELETRÔNICA",
+      "identificador": "assinatura_eletronica"
+    },
+    {
+      "codigo": "CON-122",
+      "nome": "COMUNICAÇÃO INSTITUCIONAL",
+      "identificador": "comunicacao_institucional"
+    },
+    {
+      "codigo": "CON-123",
+      "nome": "DOMICÍLIO DIGITAL",
+      "identificador": "domicilio_digital"
+    },
+    {
+      "codigo": "CON-124",
+      "nome": "NOTIFICAÇÃO / INTIMAÇÃO",
+      "identificador": "notificacao_intimacao"
+    },
+    {
+      "codigo": "CON-125",
+      "nome": "PUBLICIDADE",
+      "identificador": "publicidade"
+    },
+    {
+      "codigo": "CON-126",
+      "nome": "TRANSPARÊNCIA",
+      "identificador": "transparencia"
+    },
+    {
+      "codigo": "CON-127",
+      "nome": "TEMPORALIDADE",
+      "identificador": "temporalidade"
+    },
+    {
+      "codigo": "CON-128",
+      "nome": "REGISTRO DE TEMPO",
+      "identificador": "registro_de_tempo"
+    },
+    {
+      "codigo": "CON-129",
+      "nome": "METADADOS ARQUIVÍSTICOS",
+      "identificador": "metadados_arquivisticos"
+    },
+    {
+      "codigo": "CON-130",
+      "nome": "CLASSIFICAÇÃO ARQUIVÍSTICA",
+      "identificador": "classificacao_arquivistica"
+    },
+    {
+      "codigo": "CON-131",
+      "nome": "AVALIAÇÃO DOCUMENTAL",
+      "identificador": "avaliacao_documental"
+    },
+    {
+      "codigo": "CON-132",
+      "nome": "DESTINAÇÃO DOCUMENTAL",
+      "identificador": "destinacao_documental"
+    },
+    {
+      "codigo": "CON-133",
+      "nome": "PRESERVAÇÃO DIGITAL",
+      "identificador": "preservacao_digital"
+    },
+    {
+      "codigo": "CON-134",
+      "nome": "TRANSFERÊNCIA DE CUSTÓDIA",
+      "identificador": "transferencia_de_custodia"
+    },
+    {
+      "codigo": "CON-135",
+      "nome": "PRODUTOR DO DOCUMENTO",
+      "identificador": "produtor_do_documento"
+    },
+    {
+      "codigo": "CON-136",
+      "nome": "CREDENCIAL",
+      "identificador": "credencial"
+    },
+    {
+      "codigo": "CON-137",
+      "nome": "NÍVEL DE CONFIANÇA",
+      "identificador": "nivel_de_confianca"
+    },
+    {
+      "codigo": "CON-138",
+      "nome": "SELO DO TEMPO",
+      "identificador": "selo_do_tempo"
+    },
+    {
+      "codigo": "CON-139",
+      "nome": "INTEROPERABILIDADE",
+      "identificador": "interoperabilidade"
+    },
+    {
+      "codigo": "CON-140",
+      "nome": "COMPARTILHAMENTO DE DADOS",
+      "identificador": "compartilhamento_de_dados"
+    },
+    {
+      "codigo": "CON-141",
+      "nome": "RECONHECIMENTO INSTITUCIONAL",
+      "identificador": "reconhecimento_institucional"
+    },
+    {
+      "codigo": "CON-142",
+      "nome": "INCORPORAÇÃO INSTITUCIONAL",
+      "identificador": "incorporacao_institucional"
+    },
+    {
+      "codigo": "CON-143",
+      "nome": "ACOLHIMENTO",
+      "identificador": "acolhimento"
+    },
+    {
+      "codigo": "CON-144",
+      "nome": "MANDATO / REPRESENTAÇÃO VOLUNTÁRIA",
+      "identificador": "mandato_representacao_voluntaria"
+    },
+    {
+      "codigo": "CON-145",
+      "nome": "INSTRUMENTO DE REPRESENTAÇÃO",
+      "identificador": "instrumento_de_representacao"
+    },
+    {
+      "codigo": "CON-146",
+      "nome": "VIGÊNCIA",
+      "identificador": "vigencia"
+    },
+    {
+      "codigo": "CON-147",
+      "nome": "APLICABILIDADE",
+      "identificador": "aplicabilidade"
+    },
+    {
+      "codigo": "CON-148",
+      "nome": "HIERARQUIA NORMATIVA",
+      "identificador": "hierarquia_normativa"
+    },
+    {
+      "codigo": "CON-149",
+      "nome": "VERSÃO INSTITUCIONAL",
+      "identificador": "versao_institucional"
+    },
+    {
+      "codigo": "CON-150",
+      "nome": "EVENTO DE ALTERAÇÃO",
+      "identificador": "evento_de_alteracao"
+    },
+    {
+      "codigo": "CON-151",
+      "nome": "TRILHA DE AUDITORIA",
+      "identificador": "trilha_de_auditoria"
+    },
+    {
+      "codigo": "CON-152",
+      "nome": "SISTEMA DE INFORMAÇÃO",
+      "identificador": "sistema_de_informacao"
+    },
+    {
+      "codigo": "CON-153",
+      "nome": "AUTOMAÇÃO",
+      "identificador": "automacao"
+    },
+    {
+      "codigo": "CON-154",
+      "nome": "REGRA DE VALIDAÇÃO",
+      "identificador": "regra_de_validacao"
+    },
+    {
+      "codigo": "CON-155",
+      "nome": "CONTROLE PREVENTIVO",
+      "identificador": "controle_preventivo"
+    },
+    {
+      "codigo": "CON-156",
+      "nome": "PROCESSO ADMINISTRATIVO GERAL",
+      "identificador": "processo_administrativo_geral"
+    },
+    {
+      "codigo": "CON-157",
+      "nome": "PROCESSO DE PROPRIEDADE INDUSTRIAL",
+      "identificador": "processo_de_propriedade_industrial"
+    },
+    {
+      "codigo": "CON-158",
+      "nome": "PROCESSO ANTITRUSTE",
+      "identificador": "processo_antitruste"
+    }
+  ],
+  "relacoes": [
+    {
+      "origem": "ORIGEM",
+      "predicado": "relação",
+      "destino": "DESTINO"
+    },
+    {
+      "origem": "PESSOA",
+      "predicado": "integra",
+      "destino": "POVO"
+    },
+    {
+      "origem": "EDUCAÇÃO PARA A CIDADANIA",
+      "predicado": "capacita",
+      "destino": "PESSOA"
+    },
+    {
+      "origem": "PESSOA",
+      "predicado": "exerce",
+      "destino": "CIDADANIA"
+    },
+    {
+      "origem": "PESSOA",
+      "predicado": "realiza",
+      "destino": "PARTICIPAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "PESSOA",
+      "predicado": "possui",
+      "destino": "CONDIÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "REPRESENTANTE",
+      "predicado": "representa",
+      "destino": "PESSOA"
+    },
+    {
+      "origem": "POVO",
+      "predicado": "é titular de",
+      "destino": "PODER CONSTITUINTE ORIGINÁRIO"
+    },
+    {
+      "origem": "PODER CONSTITUINTE ORIGINÁRIO",
+      "predicado": "estabelece",
+      "destino": "CONSTITUIÇÃO"
+    },
+    {
+      "origem": "CONSTITUIÇÃO",
+      "predicado": "organiza juridicamente",
+      "destino": "ESTADO"
+    },
+    {
+      "origem": "CONSTITUIÇÃO",
+      "predicado": "é uma",
+      "destino": "NORMA JURÍDICA"
+    },
+    {
+      "origem": "ESTADO",
+      "predicado": "institucionaliza",
+      "destino": "CIDADANIA"
+    },
+    {
+      "origem": "ESTADO",
+      "predicado": "promove",
+      "destino": "EDUCAÇÃO PARA A CIDADANIA"
+    },
+    {
+      "origem": "ESTADO",
+      "predicado": "organiza-se em",
+      "destino": "PODER DE ESTADO"
+    },
+    {
+      "origem": "ESTADO",
+      "predicado": "organiza-se em",
+      "destino": "ENTE FEDERATIVO"
+    },
+    {
+      "origem": "EDUCAÇÃO PARA A CIDADANIA",
+      "predicado": "fortalece",
+      "destino": "CIDADANIA"
+    },
+    {
+      "origem": "NORMA JURÍDICA",
+      "predicado": "atribui",
+      "destino": "COMPETÊNCIA"
+    },
+    {
+      "origem": "NORMA JURÍDICA",
+      "predicado": "atribui a titularidade de Serviço Público à",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "NORMA JURÍDICA",
+      "predicado": "disciplina",
+      "destino": "PROCESSO ADMINISTRATIVO"
+    },
+    {
+      "origem": "PRESSUPOSTO DE DIREITO",
+      "predicado": "decorre de",
+      "destino": "NORMA JURÍDICA"
+    },
+    {
+      "origem": "NORMA JURÍDICA",
+      "predicado": "delimita",
+      "destino": "OBJETO"
+    },
+    {
+      "origem": "NORMA JURÍDICA",
+      "predicado": "obriga",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "PODER DE ESTADO",
+      "predicado": "organiza-se por meio de",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "ENTE FEDERATIVO",
+      "predicado": "organiza-se por meio de",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "compreende",
+      "destino": "ENTIDADE PÚBLICA"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "compreende",
+      "destino": "ÓRGÃO PÚBLICO"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "organiza funções transversais por meio de",
+      "destino": "SISTEMA ESTRUTURANTE"
+    },
+    {
+      "origem": "RELAÇÃO INSTITUCIONAL",
+      "predicado": "conecta",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "METAORGANIZAÇÃO DA CIDADANIA",
+      "predicado": "compreende",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "exerce",
+      "destino": "COMPETÊNCIA"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "é titular de",
+      "destino": "SERVIÇO PÚBLICO"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "realiza",
+      "destino": "GESTÃO ARQUIVÍSTICA"
+    },
+    {
+      "origem": "ADMINISTRAÇÃO PÚBLICA",
+      "predicado": "estabelece",
+      "destino": "ARQUIVO PÚBLICO"
+    },
+    {
+      "origem": "AGENTE TECNOLÓGICO",
+      "predicado": "vincula-se à",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA",
+      "predicado": "composta por",
+      "destino": "ÓRGÃO PÚBLICO"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA",
+      "predicado": "possui",
+      "destino": "COMPETÊNCIA"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA",
+      "predicado": "assume papel de",
+      "destino": "ENTIDADE PÚBLICA EMITENTE"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA",
+      "predicado": "assume papel de",
+      "destino": "ENTIDADE PÚBLICA RECEBEDORA"
+    },
+    {
+      "origem": "ÓRGÃO PÚBLICO",
+      "predicado": "exerce",
+      "destino": "COMPETÊNCIA"
+    },
+    {
+      "origem": "AGENTE PÚBLICO",
+      "predicado": "atua em",
+      "destino": "ÓRGÃO PÚBLICO"
+    },
+    {
+      "origem": "ÓRGÃO PÚBLICO",
+      "predicado": "participa de",
+      "destino": "SISTEMA ESTRUTURANTE"
+    },
+    {
+      "origem": "COMPETÊNCIA",
+      "predicado": "fundamenta",
+      "destino": "RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "COMPETÊNCIA",
+      "predicado": "fundamenta",
+      "destino": "FUNÇÃO DO ESTADO"
+    },
+    {
+      "origem": "COMPETÊNCIA",
+      "predicado": "origina",
+      "destino": "SERVIÇO PÚBLICO"
+    },
+    {
+      "origem": "CRITÉRIO DE PERTENCIMENTO",
+      "predicado": "considera",
+      "destino": "COMPETÊNCIA"
+    },
+    {
+      "origem": "COMPETÊNCIA",
+      "predicado": "é exercida segundo",
+      "destino": "PROCESSO ADMINISTRATIVO"
+    },
+    {
+      "origem": "COMPETÊNCIA",
+      "predicado": "fundamenta",
+      "destino": "ATO ADMINISTRATIVO"
+    },
+    {
+      "origem": "COMPETÊNCIA",
+      "predicado": "fundamenta",
+      "destino": "FUNÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "AGENTE PÚBLICO",
+      "predicado": "é espécie de",
+      "destino": "PAPEL INSTITUCIONAL"
+    },
+    {
+      "origem": "AGENTE PÚBLICO",
+      "predicado": "executa",
+      "destino": "FUNÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "PESSOA",
+      "predicado": "pode atuar mediante",
+      "destino": "REPRESENTAÇÃO"
+    },
+    {
+      "origem": "REPRESENTAÇÃO",
+      "predicado": "legitima atuação em nome de",
+      "destino": "PESSOA"
+    },
+    {
+      "origem": "CIDADÃO",
+      "predicado": "é espécie de",
+      "destino": "PAPEL INSTITUCIONAL"
+    },
+    {
+      "origem": "POSIÇÃO INSTITUCIONAL",
+      "predicado": "qualifica",
+      "destino": "PAPEL INSTITUCIONAL"
+    },
+    {
+      "origem": "FUNDAMENTO JURÍDICO",
+      "predicado": "fundamenta",
+      "destino": "PAPEL INSTITUCIONAL"
+    },
+    {
+      "origem": "PARTICIPAÇÃO INSTITUCIONAL",
+      "predicado": "assume",
+      "destino": "PAPEL INSTITUCIONAL"
+    },
+    {
+      "origem": "TERCEIRIZADO",
+      "predicado": "é espécie de",
+      "destino": "POSIÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "REPRESENTANTE",
+      "predicado": "é espécie de",
+      "destino": "POSIÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "FUNDAMENTO JURÍDICO",
+      "predicado": "fundamenta",
+      "destino": "POSIÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "PARTICIPAÇÃO INSTITUCIONAL",
+      "predicado": "ocupa",
+      "destino": "POSIÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "CIDADÃO",
+      "predicado": "integra",
+      "destino": "PÚBLICO ADMINISTRADO"
+    },
+    {
+      "origem": "RELAÇÃO INSTITUCIONAL",
+      "predicado": "conecta",
+      "destino": "PÚBLICO ADMINISTRADO"
+    },
+    {
+      "origem": "METAORGANIZAÇÃO DA CIDADANIA",
+      "predicado": "compreende",
+      "destino": "PÚBLICO ADMINISTRADO"
+    },
+    {
+      "origem": "PARTICIPAÇÃO INSTITUCIONAL",
+      "predicado": "ocorre em",
+      "destino": "RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "METAORGANIZAÇÃO DA CIDADANIA",
+      "predicado": "estrutura-se por meio de",
+      "destino": "RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "SERVIÇO PÚBLICO",
+      "predicado": "estabelece",
+      "destino": "RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "RELAÇÃO INSTITUCIONAL",
+      "predicado": "permite aferir",
+      "destino": "CARÁTER RELACIONAL"
+    },
+    {
+      "origem": "PROCESSO ADMINISTRATIVO",
+      "predicado": "estrutura",
+      "destino": "RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "RELAÇÃO INSTITUCIONAL",
+      "predicado": "desencadeia",
+      "destino": "ATUAÇÃO ADMINISTRATIVA"
+    },
+    {
+      "origem": "PRESSUPOSTO DE FATO",
+      "predicado": "decorre da",
+      "destino": "RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "RELAÇÃO INSTITUCIONAL",
+      "predicado": "possui",
+      "destino": "CONTEXTO DA RELAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "METAORGANIZAÇÃO DA CIDADANIA",
+      "predicado": "preserva",
+      "destino": "HISTORICIDADE"
+    },
+    {
+      "origem": "METAORGANIZAÇÃO DA CIDADANIA",
+      "predicado": "possui",
+      "destino": "ORGANICIDADE"
+    },
+    {
+      "origem": "CONTEXTO DA RELAÇÃO INSTITUCIONAL",
+      "predicado": "particulariza",
+      "destino": "METAORGANIZAÇÃO DA CIDADANIA"
+    },
+    {
+      "origem": "CONTEXTO DA RELAÇÃO INSTITUCIONAL",
+      "predicado": "preserva",
+      "destino": "HISTORICIDADE"
+    },
+    {
+      "origem": "CADEIA DE CUSTÓDIA",
+      "predicado": "preserva",
+      "destino": "HISTORICIDADE"
+    },
+    {
+      "origem": "HISTORICIDADE",
+      "predicado": "contribui para",
+      "destino": "VERIFICABILIDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "derivam de",
+      "destino": "HISTORICIDADE"
+    },
+    {
+      "origem": "CONTEXTO DA RELAÇÃO INSTITUCIONAL",
+      "predicado": "preserva",
+      "destino": "ORGANICIDADE"
+    },
+    {
+      "origem": "ACERVO ARQUIVÍSTICO",
+      "predicado": "caracteriza-se por",
+      "destino": "ORGANICIDADE"
+    },
+    {
+      "origem": "CADEIA DE CUSTÓDIA",
+      "predicado": "preserva",
+      "destino": "ORGANICIDADE"
+    },
+    {
+      "origem": "ORGANICIDADE",
+      "predicado": "contribui para",
+      "destino": "VERIFICABILIDADE"
+    },
+    {
+      "origem": "FUNÇÃO DO ESTADO",
+      "predicado": "inclui",
+      "destino": "SERVIÇO PÚBLICO"
+    },
+    {
+      "origem": "FUNÇÃO DO ESTADO",
+      "predicado": "inclui",
+      "destino": "PODER DE POLÍCIA"
+    },
+    {
+      "origem": "FUNÇÃO DO ESTADO",
+      "predicado": "inclui",
+      "destino": "INTERVENÇÃO"
+    },
+    {
+      "origem": "FUNÇÃO DO ESTADO",
+      "predicado": "inclui",
+      "destino": "FOMENTO"
+    },
+    {
+      "origem": "SERVIÇO PÚBLICO",
+      "predicado": "possui",
+      "destino": "FINALIDADE"
+    },
+    {
+      "origem": "SERVIÇO PÚBLICO",
+      "predicado": "produz",
+      "destino": "RESULTADO"
+    },
+    {
+      "origem": "CARTA DE SERVIÇOS",
+      "predicado": "organiza",
+      "destino": "SERVIÇO PÚBLICO"
+    },
+    {
+      "origem": "SERVIÇO PÚBLICO",
+      "predicado": "é organizado segundo",
+      "destino": "CRITÉRIO DE PERTENCIMENTO"
+    },
+    {
+      "origem": "FUNCIONALIDADE DE PRESTAÇÃO",
+      "predicado": "apoia",
+      "destino": "SERVIÇO PÚBLICO"
+    },
+    {
+      "origem": "SERVIÇO PÚBLICO",
+      "predicado": "pode admitir",
+      "destino": "COMPONENTE DIGITALIZÁVEL"
+    },
+    {
+      "origem": "CONCESSIONÁRIO",
+      "predicado": "é espécie de",
+      "destino": "PRESTADOR VINCULADO"
+    },
+    {
+      "origem": "PERMISSIONÁRIO",
+      "predicado": "é espécie de",
+      "destino": "PRESTADOR VINCULADO"
+    },
+    {
+      "origem": "AUTORIZATÁRIO",
+      "predicado": "é espécie de",
+      "destino": "PRESTADOR VINCULADO"
+    },
+    {
+      "origem": "CARTA DE SERVIÇOS",
+      "predicado": "pode conter",
+      "destino": "FUNCIONALIDADE DE PRESTAÇÃO"
+    },
+    {
+      "origem": "CARTA DE SERVIÇOS",
+      "predicado": "delimita",
+      "destino": "UNIVERSO DIGITALIZÁVEL"
+    },
+    {
+      "origem": "FINALIDADE",
+      "predicado": "permite aferir",
+      "destino": "SUFICIÊNCIA"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "orienta-se pela",
+      "destino": "FINALIDADE"
+    },
+    {
+      "origem": "RESULTADO",
+      "predicado": "permite aferir",
+      "destino": "SUFICIÊNCIA"
+    },
+    {
+      "origem": "RESULTADO",
+      "predicado": "permite aferir",
+      "destino": "INDIVIDUALIZAÇÃO DE EFEITOS"
+    },
+    {
+      "origem": "CRITÉRIO DE PERTENCIMENTO",
+      "predicado": "considera",
+      "destino": "CARÁTER RELACIONAL"
+    },
+    {
+      "origem": "CRITÉRIO DE PERTENCIMENTO",
+      "predicado": "considera",
+      "destino": "SUFICIÊNCIA"
+    },
+    {
+      "origem": "CRITÉRIO DE PERTENCIMENTO",
+      "predicado": "considera",
+      "destino": "INDIVIDUALIZAÇÃO DE EFEITOS"
+    },
+    {
+      "origem": "CRITÉRIO DE PERTENCIMENTO",
+      "predicado": "considera",
+      "destino": "PADRONIZAÇÃO"
+    },
+    {
+      "origem": "PADRONIZAÇÃO",
+      "predicado": "pode ser concretizada por",
+      "destino": "PROCEDIMENTO PADRONIZADO"
+    },
+    {
+      "origem": "COMPONENTE DIGITALIZÁVEL",
+      "predicado": "compõe",
+      "destino": "UNIVERSO DIGITALIZÁVEL"
+    },
+    {
+      "origem": "ESPÉCIE DE PROCESSO ADMINISTRATIVO",
+      "predicado": "é espécie de",
+      "destino": "PROCESSO ADMINISTRATIVO"
+    },
+    {
+      "origem": "PROCEDIMENTO PADRONIZADO",
+      "predicado": "operacionaliza",
+      "destino": "PROCESSO ADMINISTRATIVO"
+    },
+    {
+      "origem": "PROCESSO ADMINISTRATIVO",
+      "predicado": "sujeita-se a",
+      "destino": "CONDIÇÕES DE VALIDADE"
+    },
+    {
+      "origem": "PROCESSO ADMINISTRATIVO",
+      "predicado": "estabelece",
+      "destino": "FORMALIDADES"
+    },
+    {
+      "origem": "ATUAÇÃO ADMINISTRATIVA",
+      "predicado": "realiza-se segundo",
+      "destino": "PROCEDIMENTO PADRONIZADO"
+    },
+    {
+      "origem": "PROCEDIMENTO PADRONIZADO",
+      "predicado": "incorpora",
+      "destino": "CONDIÇÕES DE VALIDADE"
+    },
+    {
+      "origem": "ATUAÇÃO ADMINISTRATIVA",
+      "predicado": "produz",
+      "destino": "ATO ADMINISTRATIVO"
+    },
+    {
+      "origem": "VALIDADE POR DESIGN",
+      "predicado": "caracteriza",
+      "destino": "ATUAÇÃO ADMINISTRATIVA"
+    },
+    {
+      "origem": "ATUAÇÃO ADMINISTRATIVA",
+      "predicado": "examina",
+      "destino": "EVIDÊNCIA"
+    },
+    {
+      "origem": "ATUAÇÃO ADMINISTRATIVA",
+      "predicado": "constitui",
+      "destino": "PROVA"
+    },
+    {
+      "origem": "FUNÇÃO INSTITUCIONAL",
+      "predicado": "integra",
+      "destino": "ATUAÇÃO ADMINISTRATIVA"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "produz",
+      "destino": "EFEITO JURÍDICO"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "sujeita-se a",
+      "destino": "CONDIÇÕES DE VALIDADE"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "fundamenta-se em",
+      "destino": "MOTIVO"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "possui",
+      "destino": "OBJETO"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "exterioriza-se segundo",
+      "destino": "FORMA"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA EMITENTE",
+      "predicado": "pratica",
+      "destino": "ATO ADMINISTRATIVO"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA RECEBEDORA",
+      "predicado": "pratica",
+      "destino": "ATO ADMINISTRATIVO"
+    },
+    {
+      "origem": "ATO ADMINISTRATIVO",
+      "predicado": "fundamenta",
+      "destino": "ATRIBUIÇÃO DE VERDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "derivam de",
+      "destino": "ATO ADMINISTRATIVO"
+    },
+    {
+      "origem": "EFEITO JURÍDICO",
+      "predicado": "altera",
+      "destino": "SITUAÇÃO JURÍDICA"
+    },
+    {
+      "origem": "VALIDADE POR DESIGN",
+      "predicado": "assegura satisfação de",
+      "destino": "CONDIÇÕES DE VALIDADE"
+    },
+    {
+      "origem": "CADEIA DE CONFIANÇA",
+      "predicado": "permite reconhecer",
+      "destino": "CONDIÇÕES DE VALIDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE VALIDADE",
+      "predicado": "fundamentam",
+      "destino": "VALIDADE JURÍDICA"
+    },
+    {
+      "origem": "MOTIVO",
+      "predicado": "fundamenta-se em",
+      "destino": "PRESSUPOSTO DE DIREITO"
+    },
+    {
+      "origem": "MOTIVO",
+      "predicado": "fundamenta-se em",
+      "destino": "PRESSUPOSTO DE FATO"
+    },
+    {
+      "origem": "FORMA",
+      "predicado": "observa",
+      "destino": "FORMALIDADES"
+    },
+    {
+      "origem": "FORMA",
+      "predicado": "pode ser",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "CONTEXTO DA RELAÇÃO INSTITUCIONAL",
+      "predicado": "possui",
+      "destino": "SITUAÇÃO JURÍDICA"
+    },
+    {
+      "origem": "GESTÃO ARQUIVÍSTICA",
+      "predicado": "gere",
+      "destino": "ARQUIVO PÚBLICO"
+    },
+    {
+      "origem": "GESTÃO ARQUIVÍSTICA",
+      "predicado": "gere",
+      "destino": "CADEIA DE CUSTÓDIA"
+    },
+    {
+      "origem": "ARQUIVO PÚBLICO",
+      "predicado": "possui",
+      "destino": "ACERVO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "ARQUIVO PÚBLICO",
+      "predicado": "administra",
+      "destino": "REPOSITÓRIO"
+    },
+    {
+      "origem": "DOCUMENTO ARQUIVÍSTICO",
+      "predicado": "integra",
+      "destino": "ACERVO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "ACERVO ARQUIVÍSTICO",
+      "predicado": "caracteriza-se por",
+      "destino": "PROVENIÊNCIA"
+    },
+    {
+      "origem": "REPOSITÓRIO",
+      "predicado": "custodia",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "ATUAÇÃO INSTITUCIONAL",
+      "predicado": "produz ou recebe",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "DOCUMENTO ARQUIVÍSTICO DIGITAL",
+      "predicado": "é espécie de",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "CADEIA DE CUSTÓDIA",
+      "predicado": "acompanha",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "DOCUMENTO ARQUIVÍSTICO",
+      "predicado": "sujeita-se a",
+      "destino": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL"
+    },
+    {
+      "origem": "DOCUMENTO ARQUIVÍSTICO",
+      "predicado": "pode fornecer",
+      "destino": "EVIDÊNCIA"
+    },
+    {
+      "origem": "RELAÇÃO INTERINSTITUCIONAL",
+      "predicado": "contém",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "ATRIBUIÇÃO DE VERDADE",
+      "predicado": "afirma condição sobre",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "ATRIBUIÇÃO DE VERDADE",
+      "predicado": "é registrada como",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "permite acolher",
+      "destino": "DOCUMENTO ARQUIVÍSTICO"
+    },
+    {
+      "origem": "CADEIA DE CUSTÓDIA",
+      "predicado": "preserva",
+      "destino": "PROVENIÊNCIA"
+    },
+    {
+      "origem": "CADEIA DE CUSTÓDIA",
+      "predicado": "preserva",
+      "destino": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "derivam de",
+      "destino": "CADEIA DE CUSTÓDIA"
+    },
+    {
+      "origem": "PROVENIÊNCIA",
+      "predicado": "contribui para",
+      "destino": "VERIFICABILIDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "derivam de",
+      "destino": "PROVENIÊNCIA"
+    },
+    {
+      "origem": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL",
+      "predicado": "compreende",
+      "destino": "AUTENTICIDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL",
+      "predicado": "compreende",
+      "destino": "INTEGRIDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL",
+      "predicado": "compreende",
+      "destino": "CONFIABILIDADE"
+    },
+    {
+      "origem": "CONDIÇÕES DE CONFIABILIDADE DOCUMENTAL",
+      "predicado": "contribui para",
+      "destino": "VERIFICABILIDADE"
+    },
+    {
+      "origem": "VERIFICABILIDADE",
+      "predicado": "sustenta",
+      "destino": "VERDADE ADMINISTRATIVA"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "derivam de",
+      "destino": "CADEIA DE CONFIANÇA"
+    },
+    {
+      "origem": "VALIDADE JURÍDICA",
+      "predicado": "sustenta",
+      "destino": "VERDADE ADMINISTRATIVA"
+    },
+    {
+      "origem": "PROVA",
+      "predicado": "fundamenta-se em",
+      "destino": "EVIDÊNCIA"
+    },
+    {
+      "origem": "PROVA",
+      "predicado": "contribui para",
+      "destino": "VERDADE ADMINISTRATIVA"
+    },
+    {
+      "origem": "AGENTE TECNOLÓGICO",
+      "predicado": "participa da execução de",
+      "destino": "FUNÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA EMITENTE",
+      "predicado": "inicia",
+      "destino": "RELAÇÃO INTERINSTITUCIONAL"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA RECEBEDORA",
+      "predicado": "verifica",
+      "destino": "CONDIÇÕES DE SUSTENTAÇÃO"
+    },
+    {
+      "origem": "ENTIDADE PÚBLICA RECEBEDORA",
+      "predicado": "acolhe",
+      "destino": "RELAÇÃO INTERINSTITUCIONAL"
+    },
+    {
+      "origem": "RELAÇÃO INTERINSTITUCIONAL",
+      "predicado": "contém",
+      "destino": "ATRIBUIÇÃO DE VERDADE"
+    },
+    {
+      "origem": "RELAÇÃO INTERINSTITUCIONAL",
+      "predicado": "contém",
+      "destino": "CONDIÇÕES DE SUSTENTAÇÃO"
+    },
+    {
+      "origem": "CONDIÇÕES DE SUSTENTAÇÃO",
+      "predicado": "permite acolher",
+      "destino": "ATRIBUIÇÃO DE VERDADE"
+    },
+    {
+      "origem": "CONDIÇÃO INSTITUCIONAL",
+      "predicado": "decorre de vínculo com a",
+      "destino": "ADMINISTRAÇÃO PÚBLICA"
+    },
+    {
+      "origem": "CONDIÇÃO INSTITUCIONAL",
+      "predicado": "pode ser",
+      "destino": "PRESTADOR VINCULADO"
+    },
+    {
+      "origem": "CONDIÇÃO INSTITUCIONAL",
+      "predicado": "pode ser",
+      "destino": "FORNECEDOR"
+    },
+    {
+      "origem": "FUNDAMENTO JURÍDICO",
+      "predicado": "fundamenta",
+      "destino": "CONDIÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "TERCEIRIZADO",
+      "predicado": "pressupõe vínculo com",
+      "destino": "FORNECEDOR"
+    },
+    {
+      "origem": "FUNDAMENTO JURÍDICO",
+      "predicado": "deriva de",
+      "destino": "NORMA JURÍDICA"
+    },
+    {
+      "origem": "FUNDAMENTO JURÍDICO",
+      "predicado": "fundamenta",
+      "destino": "PODER DE REPRESENTAÇÃO"
+    },
+    {
+      "origem": "PARTICIPAÇÃO INSTITUCIONAL",
+      "predicado": "fundamenta-se em",
+      "destino": "FUNDAMENTO JURÍDICO"
+    },
+    {
+      "origem": "PODER DE REPRESENTAÇÃO",
+      "predicado": "habilita",
+      "destino": "PARTICIPAÇÃO INSTITUCIONAL"
+    },
+    {
+      "origem": "Processo Administrativo de Contratação Pública",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Administrativo Disciplinar",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Administrativo Fiscal",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Administrativo de Tombamento",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Administrativo de Controle Externo",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Administrativo Ambiental",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Administrativo de Desapropriação",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Administração Pública",
+      "predicado": "desdobra-se em",
+      "destino": "Administração Direta"
+    },
+    {
+      "origem": "Administração Pública",
+      "predicado": "desdobra-se em",
+      "destino": "Administração Indireta"
+    },
+    {
+      "origem": "Administração Indireta",
+      "predicado": "compreende",
+      "destino": "Autarquia"
+    },
+    {
+      "origem": "Administração Indireta",
+      "predicado": "compreende",
+      "destino": "Fundação Pública"
+    },
+    {
+      "origem": "Administração Indireta",
+      "predicado": "compreende",
+      "destino": "Empresa Pública"
+    },
+    {
+      "origem": "Administração Indireta",
+      "predicado": "compreende",
+      "destino": "Sociedade de Economia Mista"
+    },
+    {
+      "origem": "Órgão Público",
+      "predicado": "compreende",
+      "destino": "Unidade Administrativa"
+    },
+    {
+      "origem": "Competência",
+      "predicado": "relaciona-se com",
+      "destino": "Atribuição"
+    },
+    {
+      "origem": "Agente Público",
+      "predicado": "pode ser",
+      "destino": "Servidor Público"
+    },
+    {
+      "origem": "Agente Público",
+      "predicado": "pode ser",
+      "destino": "Empregado Público"
+    },
+    {
+      "origem": "Agente Público",
+      "predicado": "pode ser",
+      "destino": "Agente Temporário"
+    },
+    {
+      "origem": "Serviço Público",
+      "predicado": "relaciona-se com",
+      "destino": "Usuário de Serviço Público"
+    },
+    {
+      "origem": "Serviço Público",
+      "predicado": "relaciona-se com",
+      "destino": "Titularidade do Serviço Público"
+    },
+    {
+      "origem": "Serviço Público",
+      "predicado": "relaciona-se com",
+      "destino": "Prestação Direta"
+    },
+    {
+      "origem": "Serviço Público",
+      "predicado": "relaciona-se com",
+      "destino": "Prestação Delegada"
+    },
+    {
+      "origem": "Carta de Serviços",
+      "predicado": "compreende",
+      "destino": "Compromisso de Atendimento"
+    },
+    {
+      "origem": "Carta de Serviços",
+      "predicado": "compreende",
+      "destino": "Padrão de Qualidade do Serviço"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Identificação"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Autenticação"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "relaciona-se com",
+      "destino": "Assinatura Eletrônica"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Comunicação Institucional"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Domicílio Digital"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Notificação / Intimação"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Publicidade"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "compreende",
+      "destino": "Transparência"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "relaciona-se com",
+      "destino": "Temporalidade"
+    },
+    {
+      "origem": "Condições de Validade",
+      "predicado": "relaciona-se com",
+      "destino": "Registro de Tempo"
+    },
+    {
+      "origem": "Documento Arquivístico Digital",
+      "predicado": "relaciona-se com",
+      "destino": "Metadados Arquivísticos"
+    },
+    {
+      "origem": "Gestão Arquivística",
+      "predicado": "compreende",
+      "destino": "Classificação Arquivística"
+    },
+    {
+      "origem": "Gestão Arquivística",
+      "predicado": "compreende",
+      "destino": "Avaliação Documental"
+    },
+    {
+      "origem": "Gestão Arquivística",
+      "predicado": "compreende",
+      "destino": "Destinação Documental"
+    },
+    {
+      "origem": "Gestão Arquivística",
+      "predicado": "compreende",
+      "destino": "Preservação Digital"
+    },
+    {
+      "origem": "Cadeia de Custódia",
+      "predicado": "compreende",
+      "destino": "Transferência de Custódia"
+    },
+    {
+      "origem": "Proveniência",
+      "predicado": "relaciona-se com",
+      "destino": "Produtor do Documento"
+    },
+    {
+      "origem": "Cadeia de Confiança",
+      "predicado": "pode ser sustentada por",
+      "destino": "Credencial"
+    },
+    {
+      "origem": "Cadeia de Confiança",
+      "predicado": "pode ser sustentada por",
+      "destino": "Nível de Confiança"
+    },
+    {
+      "origem": "Cadeia de Confiança",
+      "predicado": "pode ser sustentada por",
+      "destino": "Selo do Tempo"
+    },
+    {
+      "origem": "Relação Interinstitucional",
+      "predicado": "relaciona-se com",
+      "destino": "Interoperabilidade"
+    },
+    {
+      "origem": "Relação Interinstitucional",
+      "predicado": "relaciona-se com",
+      "destino": "Compartilhamento de Dados"
+    },
+    {
+      "origem": "Relação Interinstitucional",
+      "predicado": "relaciona-se com",
+      "destino": "Reconhecimento Institucional"
+    },
+    {
+      "origem": "Relação Interinstitucional",
+      "predicado": "relaciona-se com",
+      "destino": "Incorporação Institucional"
+    },
+    {
+      "origem": "Atribuição de Verdade",
+      "predicado": "relaciona-se com",
+      "destino": "Acolhimento"
+    },
+    {
+      "origem": "Participação Institucional",
+      "predicado": "relaciona-se com",
+      "destino": "Mandato / Representação Voluntária"
+    },
+    {
+      "origem": "Poder de Representação",
+      "predicado": "compreende",
+      "destino": "Instrumento de Representação"
+    },
+    {
+      "origem": "Fundamento Jurídico",
+      "predicado": "tem sua aplicação condicionada por",
+      "destino": "Vigência"
+    },
+    {
+      "origem": "Fundamento Jurídico",
+      "predicado": "tem sua aplicação condicionada por",
+      "destino": "Aplicabilidade"
+    },
+    {
+      "origem": "Fundamento Jurídico",
+      "predicado": "tem sua aplicação condicionada por",
+      "destino": "Hierarquia Normativa"
+    },
+    {
+      "origem": "Historicidade",
+      "predicado": "é reconstruída por meio de",
+      "destino": "Versão Institucional"
+    },
+    {
+      "origem": "Historicidade",
+      "predicado": "é reconstruída por meio de",
+      "destino": "Evento de Alteração"
+    },
+    {
+      "origem": "Verificabilidade",
+      "predicado": "compreende",
+      "destino": "Trilha de Auditoria"
+    },
+    {
+      "origem": "Agente Tecnológico",
+      "predicado": "relaciona-se com",
+      "destino": "Sistema de Informação"
+    },
+    {
+      "origem": "Agente Tecnológico",
+      "predicado": "relaciona-se com",
+      "destino": "Automação"
+    },
+    {
+      "origem": "Validade por Design",
+      "predicado": "compreende",
+      "destino": "Regra de Validação"
+    },
+    {
+      "origem": "Validade por Design",
+      "predicado": "compreende",
+      "destino": "Controle Preventivo"
+    },
+    {
+      "origem": "Processo Administrativo Geral",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo de Propriedade Industrial",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Processo Antitruste",
+      "predicado": "é espécie de",
+      "destino": "Processo Administrativo"
+    },
+    {
+      "origem": "Entidade Pública",
+      "predicado": "pode pertencer a",
+      "destino": "Administração Indireta"
+    },
+    {
+      "origem": "Documento Arquivístico",
+      "predicado": "relaciona-se com",
+      "destino": "Metadados Arquivísticos"
+    }
+  ]
+}
