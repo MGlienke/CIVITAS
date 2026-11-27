@@ -4,7 +4,7 @@
 **Versão:** 0.1 — **MINUTA PARA REVISÃO; NÃO HOMOLOGADA**  
 **Data:** 26/11/2026  
 **Incremento:** INC-001, homologado  
-**Decisões homologadas:** DEC-A107-001 (Markdown/YAML), DEC-A107-002 (vocabulário controlado, inclusive \`precede\` e \`para_cada\`), especificação integrada CM-01 a CM-04 v0.1, Mapa de Domínios e Módulos v0.5, Matriz de Componentes e Serviços v0.1.  
+**Decisões homologadas:** DEC-A107-001 (Markdown/YAML), DEC-A107-002 (vocabulário controlado, inclusive `precede` e `para_cada`), especificação integrada CM-01 a CM-04 v0.1, Mapa de Domínios e Módulos v0.5, Matriz de Componentes e Serviços v0.1.  
 **Padrão:** CIV-ESP-TPL v0.4.  
 **Rastreabilidade:** UC-CIV-001, UC-CIV-003, UC-CIV-004, UC-CIV-005, UC-CIV-006 e testes do INC-001.  
 **Nota:** identificadores de objetos, dados, regras e testes são **candidatos nesta minuta**; não indicam homologação individual. Não existe implementação ou teste executado deste serviço.
@@ -37,48 +37,48 @@ A forma de transporte (HTTP, mensageria, função interna) permanece pendente; o
 
 | Campo lógico | Tipo preliminar | Obrigatório | Regra |
 |---|---|---|---|
-| \`solicitacao_id\` | identificador | Sim | Chave de deduplicação da intenção de verificar; único no contexto do solicitante/organização |
-| \`correlation_id\` | identificador | Sim | Correlaciona auditoria e chamadas aos módulos |
-| \`organizacao_id\` | referência institucional | Sim | Deve existir no módulo proprietário A103-GEP |
-| \`ambito_id\` | identificador de âmbito | Sim | INC-001: \`MARCO_A\`; deve existir definição publicada e íntegra |
-| \`referencia_temporal\` | instante ISO 8601 com fuso | Sim | Define momento a respeito do qual fatos/normas serão verificados; não é o momento de execução |
-| \`solicitante\` | principal autenticado e contexto | Sim | Identidade/autorização contextual validada por C103-IEA |
-| \`versao_regras\` | referência a pacote versionado | Opcional | Ausente: resolver versão publicada aplicável ao contexto, registrar seleção; nunca usar versão implícita depois de iniciar a execução |
-| \`motivo\` | referência ao objetivo/processo | Sim | Justificativa/caso de uso para registro e controle de acesso |
+| `solicitacao_id` | identificador | Sim | Chave de deduplicação da intenção de verificar; único no contexto do solicitante/organização |
+| `correlation_id` | identificador | Sim | Correlaciona auditoria e chamadas aos módulos |
+| `organizacao_id` | referência institucional | Sim | Deve existir no módulo proprietário A103-GEP |
+| `ambito_id` | identificador de âmbito | Sim | INC-001: `MARCO_A`; deve existir definição publicada e íntegra |
+| `referencia_temporal` | instante ISO 8601 com fuso | Sim | Define momento a respeito do qual fatos/normas serão verificados; não é o momento de execução |
+| `solicitante` | principal autenticado e contexto | Sim | Identidade/autorização contextual validada por C103-IEA |
+| `versao_regras` | referência a pacote versionado | Opcional | Ausente: resolver versão publicada aplicável ao contexto, registrar seleção; nunca usar versão implícita depois de iniciar a execução |
+| `motivo` | referência ao objetivo/processo | Sim | Justificativa/caso de uso para registro e controle de acesso |
 
-O contexto técnico autenticado é fornecido pela infraestrutura e não deve ser aceito por simples alegação de identidade no payload. \`solicitacao_id\` não deve permitir que cliente modifique resultado ou substitua evidências.
+O contexto técnico autenticado é fornecido pela infraestrutura e não deve ser aceito por simples alegação de identidade no payload. `solicitacao_id` não deve permitir que cliente modifique resultado ou substitua evidências.
 
-**Corte temporal:** a data de consulta de um fato e sua vigência no mundo institucional não se confundem. Fontes devem informar (quando disponíveis) \`vigente_em\`, \`registrado_em\` e a versão/snapshot consultada.
+**Corte temporal:** a data de consulta de um fato e sua vigência no mundo institucional não se confundem. Fontes devem informar (quando disponíveis) `vigente_em`, `registrado_em` e a versão/snapshot consultada.
 
 ## 4. Saídas lógicas
 
 | Campo lógico | Significado |
 |---|---|
-| \`verificacao_id\` | Identificador imutável da execução persistida |
-| \`solicitacao_id\` | Referência à solicitação/deduplicação |
-| \`organizacao_id\`, \`ambito_id\` | Objeto e escopo efetivo |
-| \`referencia_temporal\`, \`executado_em\` | Tempo de validade examinado e tempo de execução |
-| \`pacote_regras\` | Versão, identificadores dos 5 arquivos, hashes e esquema de interpretação |
-| \`estado\` | \`ATENDIDA\`, \`NAO_ATENDIDA\` ou \`INDETERMINADA\` para Marco A |
-| \`elegibilidade\` | \`ELEGIVEL_PARA_AUTORIZACAO\`, \`NAO_ELEGIVEL\` ou \`VERIFICACAO_PENDENTE\` |
-| \`condicoes\` | CM-01–04: estado, requisitos, fontes, evidências, justificativas e eventuais impedimentos |
-| \`qualidade_evidencias\` | Incompletudes, conflitos, indisponibilidades e abrangência comprovada do universo esperado |
-| \`referencias_historicas\` | Identificadores/correlação de persistência e auditoria |
-| \`avisos\` | Alertas não bloqueantes e necessidades de reavaliação |
+| `verificacao_id` | Identificador imutável da execução persistida |
+| `solicitacao_id` | Referência à solicitação/deduplicação |
+| `organizacao_id`, `ambito_id` | Objeto e escopo efetivo |
+| `referencia_temporal`, `executado_em` | Tempo de validade examinado e tempo de execução |
+| `pacote_regras` | Versão, identificadores dos 5 arquivos, hashes e esquema de interpretação |
+| `estado` | `ATENDIDA`, `NAO_ATENDIDA` ou `INDETERMINADA` para Marco A |
+| `elegibilidade` | `ELEGIVEL_PARA_AUTORIZACAO`, `NAO_ELEGIVEL` ou `VERIFICACAO_PENDENTE` |
+| `condicoes` | CM-01–04: estado, requisitos, fontes, evidências, justificativas e eventuais impedimentos |
+| `qualidade_evidencias` | Incompletudes, conflitos, indisponibilidades e abrangência comprovada do universo esperado |
+| `referencias_historicas` | Identificadores/correlação de persistência e auditoria |
+| `avisos` | Alertas não bloqueantes e necessidades de reavaliação |
 
 Cada requisito deverá informar **operador**, **sujeito**, **propriedade/relação ontológica**, **parâmetros**, **resultado**, **justificativa**, **fonte** e **evidências**. Não devolver documentos completos ou dados pessoais desnecessários.
 
-**Invariante de autorização:** \`ELEGIVEL_PARA_AUTORIZACAO\` é constatação técnica; **nunca** \`MARCO_A_AUTORIZADO\`. A decisão cabe ao Administrador da Plataforma em operação separada de A103-GEP.
+**Invariante de autorização:** `ELEGIVEL_PARA_AUTORIZACAO` é constatação técnica; **nunca** `MARCO_A_AUTORIZADO`. A decisão cabe ao Administrador da Plataforma em operação separada de A103-GEP.
 
 ## 5. Representação e carregamento de regras
 
-O A107 deverá carregar os cinco arquivos Markdown/YAML previstos no INC-001: \`CM-01.md\`, \`CM-02.md\`, \`CM-03.md\`, \`CM-04.md\` e \`MARCO_A.md\`, de pacote publicado sob controle de versão.
+O A107 deverá carregar os cinco arquivos Markdown/YAML previstos no INC-001: `CM-01.md`, `CM-02.md`, `CM-03.md`, `CM-04.md` e `MARCO_A.md`, de pacote publicado sob controle de versão.
 
 ### 5.1 Validação prévia
 
 - Validar sintaxe YAML e schema compatível com versão do interpretador, IDs únicos, referências existentes, grafo de dependências sem ciclos proibidos, operadores autorizados e tipos de parâmetros.
 - Garantir que cada propriedade remeta a conceito/relação identificável da rede ontológica vigente para o pacote.
-- Validar escopo institucional e âmbito de operação, completude da lista de condições e impossibilidade de \`NAO_APLICAVEL\` em CM-01–04.
+- Validar escopo institucional e âmbito de operação, completude da lista de condições e impossibilidade de `NAO_APLICAVEL` em CM-01–04.
 - Confirmar integridade do arquivo e pacote (hash criptográfico) e rastrear revisão publicada; não executar arquivos em revisão.
 - Rejeitar expressões arbitrárias, código executável e operadores desconhecidos. O texto natural do Markdown é documentação, não código de avaliação.
 - Capturar versão do pacote antes de consultar evidências. **Nunca** trocar de versão no meio da execução.
@@ -106,43 +106,43 @@ O A107 deverá carregar os cinco arquivos Markdown/YAML previstos no INC-001: \`
 
 ### 7.1 Estados
 
-- \`ATENDIDA\`: requisito demonstrado com evidência suficiente e válida ao contexto.
-- \`NAO_ATENDIDA\`: descumprimento objetivamente demonstrado, inclusive omissão confirmada em universo exigível comprovadamente completo.
-- \`INDETERMINADA\`: informação ausente, fonte indisponível, contradição não resolvida, incompletude ou impossibilidade de verificar integridade/temporalidade.
-- \`NAO_APLICAVEL\`: admissível somente em requisitos que o âmbito e a regra autorizem a dispensar, mediante justificativa. **CM-01–04 nunca são não aplicáveis**.
+- `ATENDIDA`: requisito demonstrado com evidência suficiente e válida ao contexto.
+- `NAO_ATENDIDA`: descumprimento objetivamente demonstrado, inclusive omissão confirmada em universo exigível comprovadamente completo.
+- `INDETERMINADA`: informação ausente, fonte indisponível, contradição não resolvida, incompletude ou impossibilidade de verificar integridade/temporalidade.
+- `NAO_APLICAVEL`: admissível somente em requisitos que o âmbito e a regra autorizem a dispensar, mediante justificativa. **CM-01–04 nunca são não aplicáveis**.
 
 **Regra crítica:** nenhuma falha de comunicação ou consulta vazia é prova automática de ausência. A prova negativa precisa de uma fonte de cobertura completa e suficiente.
 
-### 7.2 Composição \`todos\`
+### 7.2 Composição `todos`
 
-1. Se um requisito obrigatório é comprovadamente \`NAO_ATENDIDA\`, composição \`NAO_ATENDIDA\`.
-2. Caso contrário, se qualquer requisito obrigatório é \`INDETERMINADA\`, composição \`INDETERMINADA\`.
-3. Caso contrário, todos obrigatórios \`ATENDIDA\` → composição \`ATENDIDA\`.
-4. \`NAO_APLICAVEL\` exige fundamentação, exclusão expressamente permitida e registro; não permitido para CM-01–04.
+1. Se um requisito obrigatório é comprovadamente `NAO_ATENDIDA`, composição `NAO_ATENDIDA`.
+2. Caso contrário, se qualquer requisito obrigatório é `INDETERMINADA`, composição `INDETERMINADA`.
+3. Caso contrário, todos obrigatórios `ATENDIDA` → composição `ATENDIDA`.
+4. `NAO_APLICAVEL` exige fundamentação, exclusão expressamente permitida e registro; não permitido para CM-01–04.
 5. **Continuar coletando resultados quando seguro e viável**, mesmo após impedimento conhecido, para fornecer diagnóstico integral. O resultado não é autorização.
 
-### 7.3 Composição \`algum\` (alternativas admissíveis)
+### 7.3 Composição `algum` (alternativas admissíveis)
 
-- Uma alternativa \`ATENDIDA\` → \`ATENDIDA\`, desde que o conjunto de alternativas seja autorizado pela regra.
-- Todas comprovadamente \`NAO_ATENDIDA\` e universo completo → \`NAO_ATENDIDA\`.
-- Nenhuma atendida e alguma \`INDETERMINADA\` → \`INDETERMINADA\`.
+- Uma alternativa `ATENDIDA` → `ATENDIDA`, desde que o conjunto de alternativas seja autorizado pela regra.
+- Todas comprovadamente `NAO_ATENDIDA` e universo completo → `NAO_ATENDIDA`.
+- Nenhuma atendida e alguma `INDETERMINADA` → `INDETERMINADA`.
 - Não aplicabilidade é avaliada segundo exclusão explícita, e não equivale a negativa.
 
-Aplicação CM-04: \`algum\` entre **convalidação ordinária pelo Mandatário reconhecido** e **desbloqueio excepcional expresso, fundamentado e rastreável pelo Administrador**; o desbloqueio não se torna convalidação. Além disso, os requisitos independentes de identificação e reconhecimento do Mandatário continuam obrigatórios.
+Aplicação CM-04: `algum` entre **convalidação ordinária pelo Mandatário reconhecido** e **desbloqueio excepcional expresso, fundamentado e rastreável pelo Administrador**; o desbloqueio não se torna convalidação. Além disso, os requisitos independentes de identificação e reconhecimento do Mandatário continuam obrigatórios.
 
-### 7.4 Composição \`nenhum\`
+### 7.4 Composição `nenhum`
 
-- Uma ocorrência vedada comprovadamente presente → \`NAO_ATENDIDA\`.
-- Ausência de ocorrências comprovada em universo completo → \`ATENDIDA\`.
-- Fonte parcial ou indisponível, sem ocorrência vedada demonstrada → \`INDETERMINADA\`.
+- Uma ocorrência vedada comprovadamente presente → `NAO_ATENDIDA`.
+- Ausência de ocorrências comprovada em universo completo → `ATENDIDA`.
+- Fonte parcial ou indisponível, sem ocorrência vedada demonstrada → `INDETERMINADA`.
 
-### 7.5 Composição \`para_cada\`
+### 7.5 Composição `para_cada`
 
 - O conjunto **esperado** deve ser determinado por referências normativas/ontológicas aplicáveis e acompanhado de prova de cobertura/completude.
 - Avaliar os requisitos para todos os elementos desse conjunto, identificados de forma estável.
-- Se qualquer elemento obrigatório comprovadamente falha → \`NAO_ATENDIDA\`.
-- Se nenhuma falha comprovada, mas existe elemento indeterminado ou cobertura não comprovada → \`INDETERMINADA\`.
-- Todos os elementos exigíveis comprovadamente avaliados e atendidos, com cobertura demonstrada → \`ATENDIDA\`.
+- Se qualquer elemento obrigatório comprovadamente falha → `NAO_ATENDIDA`.
+- Se nenhuma falha comprovada, mas existe elemento indeterminado ou cobertura não comprovada → `INDETERMINADA`.
+- Todos os elementos exigíveis comprovadamente avaliados e atendidos, com cobertura demonstrada → `ATENDIDA`.
 - Coleção vazia **não** significa atendimento automático; requer regra expressa que a admita e prova de que não existem itens obrigatórios.
 
 **CM-02:** universo de órgãos/unidades de primeiro nível exigido pela norma aplicável.  
@@ -152,14 +152,14 @@ Aplicação CM-04: \`algum\` entre **convalidação ordinária pelo Mandatário 
 
 | Operador | Afirmativa verificável | Caso indeterminado típico |
 |---|---|---|
-| \`existe\` | Elemento existe em fonte pertinente sob identidade estável | Busca incompleta ou fonte inacessível |
-| \`corresponde\` | Tipagem/relação coincide com modelo publicado e parâmetros | Modelo incompatível ou sem versão |
-| \`relacionado_a\` | Relação definida ontologicamente liga sujeitos referenciados | Ausência de cobertura de relações |
-| \`fundamentado_em\` | Referência normativa pertinente, identificada e sustentando a proposição | Pertinência/alcance jurídico inconclusivos |
-| \`vigente_em\` | Validade/vigência ao instante pertinente, com regras temporais aplicáveis | Informação temporal insuficiente |
-| \`reconhecido_por\` | Ato de reconhecimento com autor legitimado e referência da decisão | Competência/autoria não verificável |
-| \`satisfaz\` | Condição anteriormente avaliada, coerente em objeto/âmbito/versão/tempo | Resultado antigo incompatível ou sem evidências |
-| \`precede\` | Ordem de atos válida, com referência temporal, autoria e cadeia histórica | Datas insuficientes ou contraditórias |
+| `existe` | Elemento existe em fonte pertinente sob identidade estável | Busca incompleta ou fonte inacessível |
+| `corresponde` | Tipagem/relação coincide com modelo publicado e parâmetros | Modelo incompatível ou sem versão |
+| `relacionado_a` | Relação definida ontologicamente liga sujeitos referenciados | Ausência de cobertura de relações |
+| `fundamentado_em` | Referência normativa pertinente, identificada e sustentando a proposição | Pertinência/alcance jurídico inconclusivos |
+| `vigente_em` | Validade/vigência ao instante pertinente, com regras temporais aplicáveis | Informação temporal insuficiente |
+| `reconhecido_por` | Ato de reconhecimento com autor legitimado e referência da decisão | Competência/autoria não verificável |
+| `satisfaz` | Condição anteriormente avaliada, coerente em objeto/âmbito/versão/tempo | Resultado antigo incompatível ou sem evidências |
+| `precede` | Ordem de atos válida, com referência temporal, autoria e cadeia histórica | Datas insuficientes ou contraditórias |
 
 Verificação de mérito normativo ou legitimidade não deve ser reduzida a booleano não fundamentado nem a geração de texto por IA.
 
@@ -187,24 +187,24 @@ Verificação de mérito normativo ou legitimidade não deve ser reduzida a bool
 | DAT-A107-005 | Registro de execução | fase, correlação, erros, políticas de retentativa e conclusão técnica | A107 |
 
 **Proposta de invariantes:**
-- \`INV-A107-001\`: todo resultado vincula organização, âmbito, tempo e versão de regras.
-- \`INV-A107-002\`: resultado de Marco A não habilita outro âmbito.
-- \`INV-A107-003\`: estado atendido exige evidência suficiente.
-- \`INV-A107-004\`: resultados concluídos são imutáveis; reavaliações criam nova execução.
-- \`INV-A107-005\`: nenhuma verificação persiste autorização técnica em nome do Administrador.
-- \`INV-A107-006\`: dados/documentos permanecem sob responsabilidade dos módulos de origem.
-- \`INV-A107-007\`: idempotência de solicitação não reutiliza resultado de versão/contexto incompatível.
-- \`INV-A107-008\`: uma avaliação não utiliza silenciosamente versões de regras trocadas durante sua execução.
+- `INV-A107-001`: todo resultado vincula organização, âmbito, tempo e versão de regras.
+- `INV-A107-002`: resultado de Marco A não habilita outro âmbito.
+- `INV-A107-003`: estado atendido exige evidência suficiente.
+- `INV-A107-004`: resultados concluídos são imutáveis; reavaliações criam nova execução.
+- `INV-A107-005`: nenhuma verificação persiste autorização técnica em nome do Administrador.
+- `INV-A107-006`: dados/documentos permanecem sob responsabilidade dos módulos de origem.
+- `INV-A107-007`: idempotência de solicitação não reutiliza resultado de versão/contexto incompatível.
+- `INV-A107-008`: uma avaliação não utiliza silenciosamente versões de regras trocadas durante sua execução.
 
 **Reprodutibilidade:** persistir pacote e hash, operadores/versões, parâmetros, referências e evidências suficientes para auditoria e reconstrução histórica. **Reexecução histórica integral** só poderá ser prometida se as fontes retiverem ou disponibilizarem snapshots suficientes; se não, preservar a conclusão histórica e sinalizar limitação de reprocessamento. Não reconstruir historicidade retroativamente a partir de dados correntes.
 
 ## 10. Transições, concorrência e idempotência
 
-Estados técnicos candidatos da execução: \`RECEBIDA\` → \`VALIDANDO\` → \`CONSULTANDO_FONTES\` → \`AVALIANDO\` → \`CONCLUIDA\`; falhas bloqueantes podem resultar \`REJEITADA\` (solicitação inválida) ou \`FALHA_TECNICA\` (sem verificação concluída).
+Estados técnicos candidatos da execução: `RECEBIDA` → `VALIDANDO` → `CONSULTANDO_FONTES` → `AVALIANDO` → `CONCLUIDA`; falhas bloqueantes podem resultar `REJEITADA` (solicitação inválida) ou `FALHA_TECNICA` (sem verificação concluída).
 
 **Não confundir falha técnica com resultado indeterminado:** inconsistência de evidências ou fonte parcialmente indisponível pode gerar uma verificação **concluída e indeterminada**, quando o serviço puder documentar seguramente a insuficiência. Falha de persistência ou impossibilidade de determinar o conjunto de regras não produz resultado concluído.
 
-**Idempotência proposta:** mesma \`solicitacao_id\`, contexto e hash do pedido devolve mesmo \`verificacao_id\`/resultado; mesma chave com parâmetros diferentes é conflito; solicitação nova poderá gerar nova verificação. A correlação e travas de concorrência devem impedir dupla persistência/efeitos. O escopo técnico da transação abrange apenas dados próprios de A107; consultas a fontes externas não fazem parte de transação distribuída.
+**Idempotência proposta:** mesma `solicitacao_id`, contexto e hash do pedido devolve mesmo `verificacao_id`/resultado; mesma chave com parâmetros diferentes é conflito; solicitação nova poderá gerar nova verificação. A correlação e travas de concorrência devem impedir dupla persistência/efeitos. O escopo técnico da transação abrange apenas dados próprios de A107; consultas a fontes externas não fazem parte de transação distribuída.
 
 ## 11. Segurança e autorização
 
@@ -217,28 +217,28 @@ Estados técnicos candidatos da execução: \`RECEBIDA\` → \`VALIDANDO\` → \
 
 ## 12. Catálogo preliminar de erros e ocorrências
 
-Padrão do CIV-ESP-TPL v0.4: \`A107T9999 - [timestamp ISO8601 com fuso]: descrição segura\`, severidade T = C, W, S ou E **expressamente prevista por condição**. No INC-001, códigos abaixo são **propostos**; não há variantes alternativas sem deliberação.
+Padrão do CIV-ESP-TPL v0.4: `A107T9999 - [timestamp ISO8601 com fuso]: descrição segura`, severidade T = C, W, S ou E **expressamente prevista por condição**. No INC-001, códigos abaixo são **propostos**; não há variantes alternativas sem deliberação.
 
 | Código proposto | Tipo | Condição e comportamento |
 |---|---|---|
-| \`A107E0001\` | E | Solicitação inválida — rejeitar sem resultado de verificação |
-| \`A107E0002\` | E | Solicitante não autorizado — negar, registrar trilha segura |
-| \`A107E0003\` | E | Definição de âmbito ou pacote de regras ausente/inválido — não executar |
-| \`A107E0004\` | E | Operador ou propriedade não reconhecido — rejeitar versão do pacote |
-| \`A107E0005\` | E | Conflito de idempotência — não sobrescrever resultado |
-| \`A107E0006\` | E | Falha durável de persistência de resultado/auditoria crítica — abortar conclusão |
-| \`A107W0007\` | W | Evidência insuficiente para requisito — concluir indeterminado quando houver segurança para persistir a avaliação |
-| \`A107W0008\` | W | Fonte consultada indisponível — concluir requisito indeterminado quando viável |
-| \`A107W0009\` | W | Divergência temporal ou material de evidências — requisito indeterminado e diagnóstico |
+| `A107E0001` | E | Solicitação inválida — rejeitar sem resultado de verificação |
+| `A107E0002` | E | Solicitante não autorizado — negar, registrar trilha segura |
+| `A107E0003` | E | Definição de âmbito ou pacote de regras ausente/inválido — não executar |
+| `A107E0004` | E | Operador ou propriedade não reconhecido — rejeitar versão do pacote |
+| `A107E0005` | E | Conflito de idempotência — não sobrescrever resultado |
+| `A107E0006` | E | Falha durável de persistência de resultado/auditoria crítica — abortar conclusão |
+| `A107W0007` | W | Evidência insuficiente para requisito — concluir indeterminado quando houver segurança para persistir a avaliação |
+| `A107W0008` | W | Fonte consultada indisponível — concluir requisito indeterminado quando viável |
+| `A107W0009` | W | Divergência temporal ou material de evidências — requisito indeterminado e diagnóstico |
 
-**Observação:** \`NAO_ATENDIDA\` por descumprimento real não é uma exceção técnica e não requer código de erro. Códigos W catalogam ocorrências que integram resultado parcial; critérios de retentativa/timeout dependem de contratos físicos posteriores. Não derivar classificação somente de HTTP.
+**Observação:** `NAO_ATENDIDA` por descumprimento real não é uma exceção técnica e não requer código de erro. Códigos W catalogam ocorrências que integram resultado parcial; critérios de retentativa/timeout dependem de contratos físicos posteriores. Não derivar classificação somente de HTTP.
 
 ## 13. Eventos e observabilidade
 
 | ID candidato | Evento ou sinal | Finalidade |
 |---|---|---|
-| EVT-A107-001 | \`VerificacaoOntologicaConcluida\` | Disponibilizar conclusão e sua referência, sem significar autorização |
-| EVT-A107-002 | \`VerificacaoOntologicaFalhou\` | Registrar falha técnica, sem conclusão de conformidade |
+| EVT-A107-001 | `VerificacaoOntologicaConcluida` | Disponibilizar conclusão e sua referência, sem significar autorização |
+| EVT-A107-002 | `VerificacaoOntologicaFalhou` | Registrar falha técnica, sem conclusão de conformidade |
 | LOG-A107-001 | Solicitação recebida/rejeitada | Auditoria de sujeito, contexto e motivo |
 | LOG-A107-002 | Fontes consultadas, versão de regras, conclusão | Proveniência e rastreabilidade |
 | MET-A107-001 | Verificações por âmbito e resultado | Gestão e acompanhamento de prontidão |
@@ -252,20 +252,20 @@ Eventos não constituem atos jurídicos. **Publicação assíncrona após persis
 
 | ID candidato | Cenário | Resultado esperado |
 |---|---|---|
-| TST-A107-018 | CM-01–04 completas e válidas | \`ATENDIDA\` e \`ELEGIVEL_PARA_AUTORIZACAO\`, sem autorização |
-| TST-A107-019 | Uma exigência objetivamente descumprida | \`NAO_ATENDIDA\`, diagnóstico por requisito |
-| TST-A107-020 | Evidência ausente sem prova negativa | \`INDETERMINADA\` |
+| TST-A107-018 | CM-01–04 completas e válidas | `ATENDIDA` e `ELEGIVEL_PARA_AUTORIZACAO`, sem autorização |
+| TST-A107-019 | Uma exigência objetivamente descumprida | `NAO_ATENDIDA`, diagnóstico por requisito |
+| TST-A107-020 | Evidência ausente sem prova negativa | `INDETERMINADA` |
 | TST-A107-021 | Fonte indisponível | Verificação indeterminada se puder registrar insuficiência; senão falha técnica |
 | TST-A107-022 | Competências cadastradas corretas, porém universo exigível incompleto | Não concluir atendida |
-| TST-A107-023 | \`para_cada\` sobre coleção vazia sem permissão expressa | Não concluir atendida |
-| TST-A107-024 | Alternativa ordinária de GOI válida | \`algum\` atendida, mantendo Mandatário reconhecido |
+| TST-A107-023 | `para_cada` sobre coleção vazia sem permissão expressa | Não concluir atendida |
+| TST-A107-024 | Alternativa ordinária de GOI válida | `algum` atendida, mantendo Mandatário reconhecido |
 | TST-A107-025 | Desbloqueio excepcional motivado, Mandatário não reconhecido | CM-04 não atendida |
-| TST-A107-026 | Convalidação anterior ao reconhecimento do Mandatário | \`precede\` falha; CM-04 não atendida |
+| TST-A107-026 | Convalidação anterior ao reconhecimento do Mandatário | `precede` falha; CM-04 não atendida |
 | TST-A107-027 | Submissão de Mandatário sem bloqueio imediato do GOI | CM-04 não atendida |
-| TST-A107-028 | \`NAO_APLICAVEL\` em CM-01 | Rejeitar regra/resultado como não elegível |
+| TST-A107-028 | `NAO_APLICAVEL` em CM-01 | Rejeitar regra/resultado como não elegível |
 | TST-A107-029 | Operador desconhecido no YAML | Pacote inválido; nenhuma verificação concluída |
-| TST-A107-030 | Mesmo \`solicitacao_id\`/payload | Retorno idempotente sem duplicação |
-| TST-A107-031 | Mesmo \`solicitacao_id\`/payload divergente | Conflito sem sobrescrita |
+| TST-A107-030 | Mesmo `solicitacao_id`/payload | Retorno idempotente sem duplicação |
+| TST-A107-031 | Mesmo `solicitacao_id`/payload divergente | Conflito sem sobrescrita |
 | TST-A107-032 | Regra atualizada depois de execução | Resultado antigo permanece íntegro |
 | TST-A107-033 | Acesso não autorizado a evidência sensível | Negação e trilha de auditoria |
 | TST-A107-034 | Persistência falha ao concluir | Não informar sucesso nem emitir evento de conclusão |
