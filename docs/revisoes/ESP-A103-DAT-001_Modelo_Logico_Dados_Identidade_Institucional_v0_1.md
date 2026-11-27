@@ -1,6 +1,6 @@
 # ESP-A103-DAT-001 — Modelo Lógico de Dados e Artefatos de Identidade Institucional
 
-**Versão:** 0.1 — **PROPOSTA PARA REVISÃO, NÃO HOMOLOGADA**  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 27/11/2026 no escopo lógico e semântico**  
 **Data:** 27/11/2026  
 **Módulo:** A103-GEP  
 **Objeto:** registro proprietário e consulta de evidências de identidade institucional  
@@ -240,8 +240,14 @@ Os testes acima são critérios propostos, **não executados**.
 7. **Segurança:** definir mecanismo efetivo de autenticação, autorização contextual e proteção de consultas;
 8. **Modelo físico:** somente após essas decisões, elaborar DDL/migrações para ambiente isolado, com critérios de testes e auditoria.
 
-## 12. Situação e deliberação
+## 12. Estado e homologação — 27/11/2026
 
-**Esta especificação é uma proposta, sem homologação e sem efeitos sobre código ou banco de dados.** Não altera ESP-A103-CE01-001 v0.1, ESP-A107-CE01-001 v0.1, condições CM-01 a CM-04 ou tag `a107-eob-v0.3.0`.
+Em 27/11/2026, o autor declarou expressamente **“homologado”** para a **ESP-A103-DAT-001 v0.1**.
 
-**Deliberação solicitada:** revisar e homologar, com ajustes se necessários, a decomposição em cinco artefatos de dados e os princípios de versionamento, proveniência, evidência, consulta e historicidade. As decisões físicas e operacionais permanecem reservadas aos artefatos seguintes.
+**Escopo homologado:** decomposição lógica proposta dos cinco artefatos DAT-A103-001 a DAT-A103-005, seus relacionamentos e cardinalidades lógicas, princípios de identidade estável, versionamento, proveniência, referência probatória, reconstrução histórica por `referencia_temporal` e `conhecimento_ate`, e correspondência funcional com a porta CE-01 do A107-EOB v0.3.0. Invariantes e cenários de testes permanecem critérios documentais a implementar e verificar.
+
+**Limites da homologação:** a homologação não constitui nem executa implementação física do A103, não cria banco, tabelas, endpoints, procedimentos de constituição, fluxos reais de autenticação/autorização, nem certifica a existência de dados ou evidências institucionais. A nomenclatura dos artefatos lógicos foi aprovada no âmbito desta especificação, mas sua atribuição como **IDs definitivos globais** permanece condicionada à conferência do catálogo A103, sem alterar silenciosamente identificadores preexistentes. As decisões listadas na seção 11 continuam pendentes de detalhamento físico/operacional.
+
+**Preservação de baselines:** a especificação não altera ESP-A103-CE01-001 v0.1, ESP-A107-CE01-001 v0.1, CM-01 a CM-04 ou a tag `a107-eob-v0.3.0`.
+
+**Próximo marco:** detalhar constituição/origem legítima do registro, unicidade, seleção histórica e agregação probatória antes da definição de DDL ou da implementação do serviço proprietário. A integração documental à `main` é procedimento separado.
