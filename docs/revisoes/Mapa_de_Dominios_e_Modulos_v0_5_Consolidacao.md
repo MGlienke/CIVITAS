@@ -1,6 +1,6 @@
 # CIVITAS — Mapa de Domínios e Módulos v0.5 — Consolidação
 
-**Situação:** baseline de inventário atualizado conforme decisões expressas do autor em 26/11/2026.  
+**Situação:** **HOMOLOGADO pelo autor em 26/11/2026** — baseline arquitetural vigente da versão v0.5.  
 **Fonte principal:** arquivo Excel `CIVITAS_Mapa_Dominios_e_Modulos_v0_5.xlsx` registrado na Biblioteca CIVITAS, derivado do mapa v0.4.  
 **Alterações em relação à v0.4:** exclusivamente MAP-011 e MAP-012, além da atualização de contagens e referências descritivas pertinentes.
 
@@ -52,3 +52,7 @@
 | 26/11/2026 | MAP-012 | Inclusão do C313-QDP, elevando módulos de 53 a 54 |
 
 **Nota:** esta consolidação Markdown é um resumo controlado. O inventário completo de 54 módulos e os campos de acompanhamento continuam na planilha Excel da Biblioteca, versão v0.5. A [Matriz de Componentes e Contratos de Serviços v0.1](./Matriz_de_Componentes_e_Contratos_de_Servicos_v0_1.md) é proposta de implementação, ainda não homologada.
+
+## 4. Homologação formal
+
+Em 26/11/2026 o autor declarou expressamente homologado o **Mapa de Domínios e Módulos v0.5**, com **16 domínios, 54 módulos**, incluindo **MAP-011 (A107-EOB)** e **MAP-012 (C313-QDP)**. A homologação aprova o inventário e suas responsabilidades arquiteturais, **não** a implementação de todos os módulos nem a **Matriz de Componentes e Contratos de Serviços v0.1**, que permanecerá em revisão.
