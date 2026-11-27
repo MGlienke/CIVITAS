@@ -1,0 +1,33 @@
+name: CIVITAS T5 — EOT/ENT Laboratorio
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "plataforma/a107-modelos-lab/**"
+      - ".github/workflows/a107-modelos-t5-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "plataforma/a107-modelos-lab/**"
+      - ".github/workflows/a107-modelos-t5-ci.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  modelos:
+    name: Node 24 — ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    defaults:
+      run:
+        working-directory: plataforma/a107-modelos-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Testes T5 sem dados ou dependencias institucionais
+        run: npm test
