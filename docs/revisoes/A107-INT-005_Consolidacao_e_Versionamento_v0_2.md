@@ -1,6 +1,6 @@
 # CIVITAS — A107-EOB — A107-INT-005 — Consolidação e Versionamento
 
-**Estado:** relatório de homologação técnica parcial; preparação da versão candidata v0.2.0.
+**Estado:** INT-001 a INT-004 homologados manualmente e reproduzidos com suíte de integração v0.2.0; integração à `main` e tag ainda pendentes.
 **Ambiente validado:** Windows PowerShell, Node.js v24.19.0, PostgreSQL 18.6 em Docker, banco isolado `civitas_a107_teste`.
 **Serviço:** SRV-A107-003 — Verificar Condições Ontológicas de Realização.
 **Referências:** DEC-A107-001 a DEC-A107-007; implementação inicial Node.js/TypeScript v0.1.
@@ -33,7 +33,7 @@ Esta homologação é **técnica e parcial**. Não prova funcionamento de adapta
 
 ## 4. Preparação para versionamento
 
-**Candidata planejada:** v0.2.0 (a versão ainda não deve ser anunciada como publicada até que os fontes estejam no GitHub, revisados e marcados).
+**Versão declarada nos fontes:** v0.2.0. Código publicado na branch `feature/a107-eob-v0.2.0` (commits `a630526` e `e46725f`); revisão, integração à `main` e criação de tag ainda pendentes.
 
 Publicar em diretório próprio, por exemplo `plataforma/a107-eob/`, os seguintes itens de `C:\CIVITAS\a107-eob`:
 - `src/`, `tests/`, `rules/`, `scripts/` e demais arquivos de configuração necessários à compilação;
@@ -45,10 +45,25 @@ Não versionar `DATABASE_URL`, senhas, backups `*.bak*`, `node_modules/`, `dist/
 
 ## 5. Pendências do A107-INT-005
 
-1. Incorporar os testes manuais de INT-001 a INT-004 à suíte reproduzível de integração.
-2. Transferir os fontes locais para uma branch de versionamento no GitHub.
-3. Revisar o conteúdo e os hashes das regras, executar a suíte após clone limpo.
-4. Publicar tag de versão apenas após revisão e aceite.
-5. Preservar a condição `INDETERMINADA`/`VERIFICACAO_PENDENTE` na ausência de fontes institucionais.
+1. [x] Incorporar os testes manuais de INT-001 a INT-004 à suíte reproduzível de integração.
+2. [x] Transferir os fontes locais para uma branch de versionamento no GitHub.
+3. [ ] Revisar o conteúdo, conferir limpeza da branch, validar alterações em revisão antes da integração à `main`.
+4. [ ] Publicar tag da versão somente após revisão e aceite.
+5. [x] Preservar a condição `INDETERMINADA`/`VERIFICACAO_PENDENTE` na ausência de fontes institucionais.
 
 **Critério de encerramento do INT-005:** fontes e testes versionados, documentação consistente, build/testes em clone limpo e identificação inequívoca de limites operacionais.
+
+## 6. Execução da suíte automatizada (evidência posterior)
+
+**Resultado informado da execução de `npm run test:integration`: 4 cenários aprovados, compilação TypeScript sem erros.**
+
+- **INT-001:** verificação persistida `14610d83-a450-4d9b-8fc3-09e7514ec900`.
+- **INT-002:** replay retornou a mesma verificação `14610d83-a450-4d9b-8fc3-09e7514ec900`; conflito de parâmetros divergentes foi rejeitado.
+- **INT-003:** falha após INSERT da outbox levou a rollback; solicitação `TESTE-A107-INT005-eb85eaa0-0696-416b-aaba-5bde22bb7ca3-ROLLBACK` ficou com **0 registros**.
+- **INT-004:** duas chamadas simultâneas retornaram a verificação `49c3b07b-4307-4d7b-a928-6a3869222a56`, persistida uma única vez.
+- **Rodada:** `eb85eaa0-0696-416b-aaba-5bde22bb7ca3`.
+- **Limpeza:** variável `A107_TEST_INTEGRATION` removida após teste; os dados de teste persistidos foram preservados para auditoria.
+
+Arquivos da suíte: `plataforma/a107-eob/tests/integration-postgres.mjs` e script `test:integration` em `package.json`. A suíte é habilitada explicitamente, só aceita credenciais e banco de teste locais, e não publica pacotes de regras.
+
+**Resultado:** homologação técnica reproduzível dos quatro cenários; pendente revisão final, integração à `main` e tag. Não equivale à homologação de fontes institucionais reais nem à liberação para produção.
