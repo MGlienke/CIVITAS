@@ -1,0 +1,119 @@
+{
+  "id": "CM-04",
+  "nome": "Autoridade Institucional",
+  "versao": "0.1.0",
+  "situacao": "HOMOLOGADA",
+  "modulo_verificador": "A107-EOB",
+  "ambito": "MARCO_A",
+  "referencias": [
+    "DEC-A107-001",
+    "DEC-A107-002",
+    "SRV-A107-003",
+    "INC-001"
+  ],
+  "sujeito": {
+    "tipo": "OrganizacaoInstitucional",
+    "referencia": "organizacao_id"
+  },
+  "fontes": [
+    "A103-GEP",
+    "C309-NEC",
+    "C101-PES",
+    "A108-BDN",
+    "C103-IEA",
+    "E302-HIS"
+  ],
+  "requisitos": [
+    {
+      "id": "CM04-R01",
+      "propriedade": "posicao_mandatario",
+      "operador": "existe",
+      "fonte": "A103-GEP",
+      "evidencia_exigida": "posição institucional e fundamento"
+    },
+    {
+      "id": "CM04-R02",
+      "propriedade": "ocupante_posicao_mandatario",
+      "operador": "relacionado_a",
+      "fonte": "C101-PES",
+      "evidencia_exigida": "Pessoa/IDUP vinculada à posição"
+    },
+    {
+      "id": "CM04-R03",
+      "propriedade": "investidura_mandatario",
+      "operador": "fundamentado_em",
+      "fonte": "A108-BDN",
+      "evidencia_exigida": "ato e fundamento de investidura verificáveis"
+    },
+    {
+      "id": "CM04-R04",
+      "propriedade": "reconhecimento_mandatario",
+      "operador": "reconhecido_por",
+      "fonte": "A103-GEP",
+      "evidencia_exigida": "ato por Administrador legitimado",
+      "parametros": {
+        "papel": "AdministradorDaPlataforma"
+      }
+    },
+    {
+      "id": "CM04-R05",
+      "propriedade": "regularizacao_goi",
+      "operador": "satisfaz",
+      "fonte": "A103-GEP",
+      "evidencia_exigida": "convalidação ou desbloqueio excepcional legítimo",
+      "parametros": {
+        "condicao_local": "REGULARIZACAO_GOI"
+      }
+    },
+    {
+      "id": "CM04-R06",
+      "propriedade": "sequencia_institucional",
+      "operador": "precede",
+      "fonte": "E302-HIS",
+      "evidencia_exigida": "submissão-bloqueio imediato; reconhecimento antes da convalidação",
+      "parametros": {
+        "regras_temporais": [
+          "submissao_mandatario -> bloqueio_goi_imediato",
+          "reconhecimento_mandatario -> convalidacao_goi_ordinaria"
+        ],
+        "desbloqueio_excepcional": "não equivale a convalidação nem reconhecimento"
+      }
+    }
+  ],
+  "composicao": {
+    "operador": "todos",
+    "requisitos": [
+      "CM04-R01",
+      "CM04-R02",
+      "CM04-R03",
+      "CM04-R04",
+      "CM04-R05",
+      "CM04-R06"
+    ]
+  },
+  "nao_aplicabilidade": "proibida",
+  "condicoes_locais": [
+    {
+      "id": "REGULARIZACAO_GOI",
+      "composicao": {
+        "operador": "algum",
+        "alternativas": [
+          "CONVALIDACAO_ORDINARIA",
+          "DESBLOQUEIO_EXCEPCIONAL"
+        ]
+      },
+      "alternativas": [
+        {
+          "id": "CONVALIDACAO_ORDINARIA",
+          "fonte": "A103-GEP",
+          "evidencia": "convalidação pelo Mandatário já reconhecido"
+        },
+        {
+          "id": "DESBLOQUEIO_EXCEPCIONAL",
+          "fonte": "A103-GEP",
+          "evidencia": "desbloqueio expresso e fundamentado pelo Administrador, sem efeitos de convalidação"
+        }
+      ]
+    }
+  ]
+}

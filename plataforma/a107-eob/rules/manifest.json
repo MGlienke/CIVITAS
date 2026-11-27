@@ -1,0 +1,43 @@
+{
+  "codigo": "MARCO_A",
+  "versao": "0.1.0",
+  "esquema_versao": "0.1",
+  "arquivos": [
+    {
+      "id": "CM-01",
+      "markdown": "CM-01.md",
+      "json": "CM-01.json",
+      "sha256": "f861cca938dce0ff71a6f8f103daa0c0fc804548a169ad3ef26af721c9dd0171",
+      "json_sha256": "e65595e5df2325039e26c37e2bbf1cfc432183f6ec9ea582ada6df1536348d45"
+    },
+    {
+      "id": "CM-02",
+      "markdown": "CM-02.md",
+      "json": "CM-02.json",
+      "sha256": "3ad0d216e4cdb7219b416c715b378cf53a86325768bee23a1aa6835ba1f01e24",
+      "json_sha256": "7856eba2a6a2297f140915d2926567564b4ed1d167717ce42545ef3904dfa454"
+    },
+    {
+      "id": "CM-03",
+      "markdown": "CM-03.md",
+      "json": "CM-03.json",
+      "sha256": "f314ab0c5ba3963b219c31eabe080623d70c9b5abe56966399c3b8229d4d177c",
+      "json_sha256": "5a0244cd64ad1f748b346a046a44df000453340f6fe2c96f25eb631c539e0073"
+    },
+    {
+      "id": "CM-04",
+      "markdown": "CM-04.md",
+      "json": "CM-04.json",
+      "sha256": "db3a5556710d6afb5aa930ce571b03562b30a995feff7d88ec348573a1ad9361",
+      "json_sha256": "3a4247a1c399f527ebf8cec837c3157439fb2ec73dfba39c88eeeff3b8e38558"
+    },
+    {
+      "id": "MARCO_A",
+      "markdown": "MARCO_A.md",
+      "json": "MARCO_A.json",
+      "sha256": "ebc4072c7c5993c232429bf3747456303c0f5aba289e512d6531476161f3ae1e",
+      "json_sha256": "9f1de9c545319f9b683b2552a56882a1b18a08535f78a5ea8957be13208dc0fa"
+    }
+  ],
+  "hash_sha256": "f7413009df94638503890618f160ed0c7dcd240ea2a22804f1cd948a7e5a38f2"
+}
