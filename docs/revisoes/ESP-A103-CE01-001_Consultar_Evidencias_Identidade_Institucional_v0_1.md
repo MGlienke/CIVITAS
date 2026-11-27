@@ -1,6 +1,6 @@
 # ESP-A103-CE01-001 — Consultar Evidências de Identidade Institucional
 
-**Versão:** 0.1 — **PROPOSTA, NÃO HOMOLOGADA**  
+**Versão:** 0.1 — **HOMOLOGADA pelo autor em 27/11/2026**, no escopo funcional, semântico e contratual  
 **Módulo proprietário:** A103-GEP  
 **Contrato lógico transversal:** CE-01 — Consultar identidade e posição institucional  
 **Consumidor inicial:** A107-EOB / SRV-A107-003  
@@ -193,8 +193,11 @@ IDs definitivos para LOG/MET/MON deverão ser atribuídos no catálogo do módul
 7. **Falhas:** distinção entre `ERRO`, `INDISPONIVEL` e resultado incompleto quando a porta proprietária não possui `PARCIAL`;
 8. **Testes reais:** ambiente isolado de integração, dados institucionais legítimos, política de auditoria e critérios de homologação operacional.
 
-### Deliberação solicitada
+## 13. Registro de homologação — 27/11/2026
 
-Homologar ou revisar **ESP-A103-CE01-001 v0.1** como especificação do serviço proprietário de consulta CE-01 limitada a `CM01-R01`, **sem homologar implementação inexistente**. Após aprovação, iniciar a decomposição de dados/artefatos e definição da interface executável, em branch distinta, com testes e fonte controlada.
+Em 27/11/2026, o autor declarou expressamente **“homologado”** para a **ESP-A103-CE01-001 v0.1**. Ficam homologados o propósito e as responsabilidades da operação proprietária de consulta, sua compatibilidade lógica com CE-01 e o adaptador A107 v0.3.0, o recorte inicial `CM01-R01`, as fronteiras entre evidência, verificação ontológica e autorização institucional, e as exigências de segurança, historicidade e rastreabilidade descritas nesta especificação.
 
-**Estado atual:** somente documento de proposta, sem alteração de código, DDL, regras do A107, serviços institucionais ou dados da plataforma.
+**Limites da homologação:** são aprovados requisitos e critérios para futura implementação, não a implementação do serviço A103. Os identificadores candidatos de invariantes/testes ainda devem ser conferidos com o catálogo A103; IDs definitivos de serviço, DDL, transporte, mecanismos concretos de autenticação/autorização, custos operacionais e testes de integração permanecem por especificar. Não foram implantados endpoints, dados institucionais, mecanismos de autorização ou código A103.
+
+**Próximo marco:** especificar os artefatos proprietários e o modelo de dados do A103, com decisões técnicas e testes próprios, antes de qualquer codificação. A incorporação documental desta homologação à `main` é ato de integração separado.
+
