@@ -799,11 +799,6 @@
   ],
   "relacoes": [
     {
-      "origem": "ORIGEM",
-      "predicado": "relação",
-      "destino": "DESTINO"
-    },
-    {
       "origem": "PESSOA",
       "predicado": "integra",
       "destino": "POVO"
